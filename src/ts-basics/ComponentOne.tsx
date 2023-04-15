@@ -4,11 +4,11 @@ import classes from "./ComponentOne.module.css";
 
 const newArray: string | number[] = [25, 34, 41]
 
-
+type typeState = number 
 
 const ComponentOne = () => {
   const [showPara, setShowPara] = useState(false);
-  const [sampleState, setSampleState] = useState(false)
+  const [sampleState, setSampleState] = useState(0)
   const variableText: string = showPara
     ? "The button has not been pressed"
     : "The button has been pressed again";
@@ -20,8 +20,10 @@ const ComponentOne = () => {
   };
 
   const handleNums = () => {
+
+    /* gets rando from 0 - 2, logs index of rando from array */
     let val: number = Math.floor(Math.random()* 3)
-    console.log(val)
+    setSampleState(newArray[val])
   }
 
   return (
@@ -30,10 +32,10 @@ const ComponentOne = () => {
         <button onClick={handlePara} className={classes.btn}>Change</button>
         <p className={classes.para}>{variableText}</p>
       </section>
-      
+
       <section className={classes.section}>
         <button onClick={handleNums} className={classes.btn}>Change</button>
-        <p className={classes.para}>{variableText}</p>
+        <p className={classes.para}>{sampleState}</p>
       </section>
     </div>
   );
