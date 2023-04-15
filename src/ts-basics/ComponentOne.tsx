@@ -1,11 +1,17 @@
 import React, { useState } from "react";
 import classes from "./ComponentOne.module.css";
 
+
+const newArray: string | number[] = [25, 34, 41]
+
+
+
 const ComponentOne = () => {
   const [showPara, setShowPara] = useState(false);
+  const [sampleState, setSampleState] = useState(false)
   const variableText: string = showPara
     ? "The button has not been pressed"
-    : "The button has been pressed";
+    : "The button has been pressed again";
 
   /* handlers */
 
@@ -13,10 +19,20 @@ const ComponentOne = () => {
     setShowPara(!showPara);
   };
 
+  const handleNums = () => {
+    let val: number = Math.floor(Math.random()* 3)
+    console.log(val)
+  }
+
   return (
     <div className={classes.container}>
       <section className={classes.section}>
-        <button onClick={handlePara} className={classes.btn}></button>
+        <button onClick={handlePara} className={classes.btn}>Change</button>
+        <p className={classes.para}>{variableText}</p>
+      </section>
+      
+      <section className={classes.section}>
+        <button onClick={handleNums} className={classes.btn}>Change</button>
         <p className={classes.para}>{variableText}</p>
       </section>
     </div>

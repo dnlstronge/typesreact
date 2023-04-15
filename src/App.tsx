@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
 import ComponentOne from './ts-basics/ComponentOne';
+import classes from "./App.module.css"
 
 function App() {
   return (
-    <div className="App">
+    <div className={classes.app}>
       <ComponentOne />
     </div>
   );
