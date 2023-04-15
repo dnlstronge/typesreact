@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
