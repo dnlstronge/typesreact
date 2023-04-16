@@ -6,6 +6,8 @@ import AddItem from "./Components/AddItem";
 
 /*  Goal - create a basic todo app using typescript */
 
+/* figure out id (unique) for delete */
+
 function App() {
   const [items, setItems] = useState([
     {

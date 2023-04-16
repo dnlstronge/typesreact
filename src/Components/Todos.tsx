@@ -21,7 +21,7 @@ const Todos: React.FC<PropsWithChildren<{ items: itemsingle }>> = ({
             deleteThis.remove()
           }
           return (
-          <div id={todo.id} className={classes.listitemcontainer}>
+          <div id={} className={classes.listitemcontainer}>
           <li id={todo.text} className={classes.listItem}>{todo.text}</li>
           <button onClick={deleteItem} className={classes.deletebutton}>x</button>
           </div>)
