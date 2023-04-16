@@ -6,10 +6,12 @@ import classes from "./App.module.css";
 /*  Goal - create a basic todo app using typescript */
 
 
+const items: string[] = ["learn typescript", "walk dog"]
+
 function App() {
   return (
     <div className={classes.app}>
-       <Todos />
+       <Todos items={items} />
     </div>
   );
 }
