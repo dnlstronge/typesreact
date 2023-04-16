@@ -16,8 +16,8 @@ const addItem = (itemToAdd: string) => {
 function App() {
   return (
     <div className={classes.app}>
-       <Todos items={items} />
        <AddItem addItem={addItem} />
+       <Todos items={items} />
     </div>
   );
 }
