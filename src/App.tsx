@@ -8,21 +8,22 @@ import AddItem from "./Components/AddItem";
 /*  Goal - create a basic todo app using typescript */
 
 
-const items: string[] = ["learn typescript", "walk dog"]
 
-const addItem = (itemToAdd: string) => {
-  items.push(itemToAdd)
-}
 
 function App() {
-  const [jobs, setJobs] = useState([
-    "learn Typescript",
-    "walkdog"
-  ])
+
+
+
+  const [jobs, setJobs] = useState(["kill self", "kill typescript"])
+const addItem = (itemToAdd: string, ...jobs: string[]) => {
+  let str: string = itemToAdd
+  setJobs({...jobs, str })
+}
+
   return (
     <div className={classes.app}>
        <AddItem addItem={addItem} />
-       <Todos items={items} />
+       <Todos items={jobs} />
     </div>
   );
 }
