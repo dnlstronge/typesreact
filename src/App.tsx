@@ -17,7 +17,7 @@ function App() {
   const [jobs, setJobs] = useState(["kill self", "kill typescript"])
 const addItem = (itemToAdd: string, ...jobs: string[]) => {
   let str: string = itemToAdd
-  setJobs({...jobs, str })
+  setJobs((prev) => {return [...prev, str]} )
 }
 
   return (
