@@ -16,8 +16,10 @@ const Todos: React.FC<PropsWithChildren<{ items: itemsingle }>> = ({
           const uid = index.toString()
           console.log(uid)
           const deleteItem = () => {
-            const deleteThis: any = document.getElementById(uid);
-            deleteThis.remove();
+            const deleteThis = document.getElementById(uid);
+            if( deleteThis !== null) {
+            deleteThis.remove()
+            }
           };
           return (
             <div key={index} id={uid} className={classes.listitemcontainer}>
