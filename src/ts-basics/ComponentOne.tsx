@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "./ComponentOne.module.css";
 
 
-const newArray: string | number[] = [25, 34, 41]
+const newArray: string | number[] = [25, 34, 41, 55, 66, 77, 33]
 
 type typeState = number 
 
@@ -22,7 +22,7 @@ const ComponentOne = () => {
   const handleNums = () => {
 
     /* gets rando from 0 - 2, logs index of rando from array */
-    let val: number = Math.floor(Math.random()* 3)
+    let val: number = Math.floor(Math.random()* 6)
     setSampleState(newArray[val])
   }
 
