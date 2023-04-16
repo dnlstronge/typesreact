@@ -1,3 +1,18 @@
 .container {
     color: white;
 }
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    display: flex;
+    height: 2rem;
+    width: 7rem;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 0.5rem;
+}

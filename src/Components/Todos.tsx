@@ -8,11 +8,13 @@ const Todos: React.FC<PropsWithChildren<{ items: string[] }>> = ({
   items,
 }) => {
   return (
-    <ul>
-      {items.map((todo) => {
-        return <li>{todo}</li>;
-      })}
-    </ul>
+    <div className={classes.container}>
+      <ul className={classes.list}>
+        {items.map((todo) => {
+          return <li className={classes.listItem}>{todo}</li>;
+        })}
+      </ul>
+    </div>
   );
 };
 export default Todos;
