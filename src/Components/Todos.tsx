@@ -1,15 +1,14 @@
 import React from "react";
 import classes from "./Todos.module.css"
 
-/* Should receive todo from props - implement this */
 
-const Todos: React.FC<{items: string[]}> = (props) => {
+import { PropsWithChildren } from "react";
+ 
+const Todos: React.FC<PropsWithChildren<{items: string[]}>> = ({ children, items }) => {
     return (
-        <div className={classes.container}>
-            <ul>
-               
-            </ul>
-        </div>
+        <ul>
+            {children}
+        </ul>
     )
 }
 export default Todos;
