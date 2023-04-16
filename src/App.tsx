@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Todos from "./Components/Todos";
+
 import classes from "./App.module.css";
 import AddItem from "./Components/AddItem";
 
@@ -14,6 +15,10 @@ const addItem = (itemToAdd: string) => {
 }
 
 function App() {
+  const [jobs, setJobs] = useState([
+    "learn Typescript",
+    "walkdog"
+  ])
   return (
     <div className={classes.app}>
        <AddItem addItem={addItem} />
