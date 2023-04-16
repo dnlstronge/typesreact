@@ -7,7 +7,11 @@ import { PropsWithChildren } from "react";
 const Todos: React.FC<PropsWithChildren<{items: string[]}>> = ({ children, items }) => {
     return (
         <ul>
-            {children}
+            {items.map(todo => {
+                return (
+                    <li>{todo}</li>
+                )
+            })}
         </ul>
     )
 }
