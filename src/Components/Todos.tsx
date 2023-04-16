@@ -3,7 +3,10 @@ import classes from "./Todos.module.css";
 
 import { PropsWithChildren } from "react";
 
-const Todos: React.FC<PropsWithChildren<{ items: string[] }>> = ({
+type itemsingle = {id: string,
+                text: string}[]
+
+const Todos: React.FC<PropsWithChildren<{ items: itemsingle }>> = ({
   children,
   items,
 }) => {
@@ -11,9 +14,16 @@ const Todos: React.FC<PropsWithChildren<{ items: string[] }>> = ({
     <div className={classes.container}>
       <ul className={classes.list}>
         {items.map((todo) => {
-          return <li className={classes.listItem}>{todo}</li>;
+
+          return (
+          <div className={classes.listitemcontainer}>
+          <li id={todo.id} className={classes.listItem}>{todo.text}</li>
+          <button className={classes.deletebutton}>x</button>
+          </div>)
         })}
+       
       </ul>
+      
     </div>
   );
 };
