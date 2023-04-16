@@ -18,14 +18,15 @@
     margin-bottom: 1rem;
     background: white;
     border-radius: 6px;
-    padding-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
 }
 .listItem {
     
     display: flex;
     height: 2rem;
-    width: 12rem;
+    width: 14rem;
     background-color: white;
     color: black;
     border: 2px solid gray;
