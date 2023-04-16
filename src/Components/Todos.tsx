@@ -12,14 +12,16 @@ const Todos: React.FC<PropsWithChildren<{ items: itemsingle }>> = ({
   return (
     <div className={classes.container}>
       <ul className={classes.list}>
-        {items.map((todo) => {
+        {items.map((todo, index) => {
+          const uid = index.toString()
+          console.log(uid)
           const deleteItem = () => {
-            const deleteThis: any = document.getElementById(todo.id);
+            const deleteThis: any = document.getElementById(uid);
             deleteThis.remove();
           };
           return (
-            <div id={todo.id} className={classes.listitemcontainer}>
-              <li id={todo.text} className={classes.listItem}>
+            <div key={index} id={uid} className={classes.listitemcontainer}>
+              <li className={classes.listItem}>
                 {todo.text}
               </li>
               <button onClick={deleteItem} className={classes.deletebutton}>
