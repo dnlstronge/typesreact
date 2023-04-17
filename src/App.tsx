@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Todos from "./Components/Todos";
-
+import ComponentToTest from "./Components/Testing/ComponentToTest";
 import classes from "./App.module.css";
 import AddItem from "./Components/AddItem";
 
@@ -57,6 +57,7 @@ function App() {
     <div className={classes.app}>
       <AddItem addItem={newAddItem} />
       <Todos items={data} />
+      <ComponentToTest />
     </div>
   );
 }

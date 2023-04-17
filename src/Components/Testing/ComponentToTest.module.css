@@ -1,3 +1,34 @@
 .container {
-    
+    margin: auto;
+    display: flex;
+    height: 5rem;
+    width: 10rem;
+    flex-direction: row;
+    flex-wrap: initial;
+}
+.counter { 
+    color: white;
+    display: flex; 
+    background: purple;
+    border: 2px solid white;
+    height: 1.8rem;
+    width: 4rem;
+    margin: 0.5rem;
+    text-align: center;
+    padding-left: 1rem;
+    border-radius: 2px;
+}
+.btn {
+    display: flex;
+    border: 2px solid white;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+    color: white;
+    background: purple;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    background-color: rgb(187, 152, 220);
 }

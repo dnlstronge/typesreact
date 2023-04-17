@@ -24,7 +24,7 @@ const ComponentToTest = () => {
 
   return (
     <div className={classes.container}>
-      <p className={classes.counter}></p>
+      <p className={classes.counter}>{counter}</p>
       <button onClick={counterHandler} value={"plus"} className={classes.btn}>
         +
       </button>
