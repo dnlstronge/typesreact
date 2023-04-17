@@ -12,8 +12,12 @@ import DataType from "./Components/Models/dataType"
 
 function App() {
 
-  const todos = [
-
+  /* Dummy data, created using type class and constructer which
+  accepts text parameter */
+  
+  const data = [
+    new DataType("walk the cat"),
+    new DataType("Bounce off the walls")
   ]
   const [items, setItems] = useState([
     {
