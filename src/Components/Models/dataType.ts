@@ -1,4 +1,4 @@
-class Todo {
+class DataType {
     id: string;
     text: string
 
@@ -9,4 +9,4 @@ class Todo {
 }
 
 
-export default Todo;
+export default DataType;

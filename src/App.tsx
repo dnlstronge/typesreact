@@ -8,7 +8,13 @@ import AddItem from "./Components/AddItem";
 
 /* figure out id (unique) for delete */
 
+import DataType from "./Components/Models/dataType"
+
 function App() {
+
+  const todos = [
+
+  ]
   const [items, setItems] = useState([
     {
       id: "walk dog",
