@@ -24,11 +24,11 @@ const ComponentToTest = () => {
 
   return (
     <div className={classes.container}>
-      <p className={classes.counter}>{counter}</p>
-      <button onClick={counterHandler} value={"plus"} className={classes.btn}>
+      <p data-testid="counter" className={classes.counter}>{counter}</p>
+      <button data-test="plus" onClick={counterHandler} value={"plus"} className={classes.btn}>
         +
       </button>
-      <button onClick={counterHandler} value={"minus"} className={classes.btn}>
+      <button data-test="minus" onClick={counterHandler} value={"minus"} className={classes.btn}>
         -
       </button>
     </div>
