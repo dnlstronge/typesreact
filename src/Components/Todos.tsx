@@ -1,28 +1,27 @@
 import React from "react";
 import classes from "./Todos.module.css";
-
+import DataType from "./Models/dataType";
 import { PropsWithChildren } from "react";
 
 type itemsingle = { id: string; text: string }[];
 
-const Todos: React.FC<PropsWithChildren<{ items: itemsingle }>> = ({
+const Todos: React.FC<PropsWithChildren<{ items: DataType[] }>> = ({
   children,
   items,
 }) => {
   return (
     <div className={classes.container}>
       <ul className={classes.list}>
-        {items.map((todo, index) => {
-          const uid = index.toString()
-          console.log(uid)
+        {items.map((todo: DataType, index) => {
+          
           const deleteItem = () => {
-            const deleteThis = document.getElementById(uid);
+            const deleteThis = document.getElementById(todo.id);
             if( deleteThis !== null) {
             deleteThis.remove()
             }
           };
           return (
-            <div key={index} id={uid} className={classes.listitemcontainer}>
+            <div key={index} id={todo.id} className={classes.listitemcontainer}>
               <li className={classes.listItem}>
                 {todo.text}
               </li>

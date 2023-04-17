@@ -14,11 +14,14 @@ function App() {
 
   /* Dummy data, created using type class and constructer which
   accepts text parameter */
-  
-  const data = [
+
+  const [data, setData] = useState([
     new DataType("walk the cat"),
     new DataType("Bounce off the walls")
-  ]
+  ])
+
+  /* dummy data II */
+  
   const [items, setItems] = useState([
     {
       id: "walk dog",
@@ -40,12 +43,19 @@ function App() {
       return [...prev, {id: str, text: str}]
     
   })
-
+}
+  const newAddItem = (itemToAdd: string, ...data: DataType[]) => {
+    let str: string = itemToAdd;
+    setData((prev) => {
+      return [...prev, new DataType(str)]
+    })
   }
+
+  
   return (
     <div className={classes.app}>
-      <AddItem addItem={addItem} />
-      <Todos items={items} />
+      <AddItem addItem={newAddItem} />
+      <Todos items={data} />
     </div>
   );
 }
