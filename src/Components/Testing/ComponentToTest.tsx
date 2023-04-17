@@ -24,8 +24,8 @@ const ComponentToTest = () => {
 
   return (
     <div className={classes.container}>
-      <p data-testid="counter" className={classes.counter}>{counter}</p>
-      <button data-test="plus" onClick={counterHandler} value={"plus"} className={classes.btn}>
+      <p data-testid="counter" id="counter" className={classes.counter}>{counter}</p>
+      <button data-test="plus" onClick={counterHandler} value={"plus"} id="plus" className={classes.btn}>
         +
       </button>
       <button data-test="minus" onClick={counterHandler} value={"minus"} className={classes.btn}>
