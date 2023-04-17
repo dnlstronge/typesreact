@@ -36,6 +36,7 @@ function App() {
   type itemsArray = {id: string, text: string}[]
 
 
+  /* updates dummy data II - (redundant) */ 
 
   const addItem = (itemToAdd: string, ...jobs: { id: string, text: string }[]) => {
     let str: string = itemToAdd;
