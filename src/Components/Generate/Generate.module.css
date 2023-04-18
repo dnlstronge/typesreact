@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    height: 15rem;
+    width: 15rem;
+    background: white;
+    border: 2px solid black;
+    margin: auto;
+}
+.subsection {
+    
+}
