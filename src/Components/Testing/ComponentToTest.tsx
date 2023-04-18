@@ -1,4 +1,4 @@
-import classes from "./ComponentToTest.module.css";
+//import classes from "./ComponentToTest.module.css";
 import React, { ChangeEvent, useState } from "react";
 
 /* Goal - create a component to write some unit tests for  */
@@ -23,12 +23,12 @@ const ComponentToTest = () => {
   };
 
   return (
-    <div className={classes.container}>
-      <p data-testid="counter" id="counter" className={classes.counter}>{counter}</p>
-      <button data-test="plus" onClick={counterHandler} value={"plus"} id="plus" className={classes.btn}>
+    <div >
+      <p data-testid="counter" id="counter">{counter}</p>
+      <button data-testid="plus" onClick={counterHandler} className="fuck" value={"plus"} >
         +
       </button>
-      <button data-test="minus" onClick={counterHandler} value={"minus"} className={classes.btn}>
+      <button data-testid="minus" onClick={counterHandler} value={"minus"}>
         -
       </button>
     </div>

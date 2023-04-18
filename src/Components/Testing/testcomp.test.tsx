@@ -1,4 +1,9 @@
-import { render, fireEvent, screen } from "@testing-library/react";
+/**
+ * @jest-environment jsdom
+ */
+
+
+import { render, fireEvent, screen, } from "@testing-library/react";
 import ComponentToTest from "./ComponentToTest";
 import invariant from "tiny-invariant";
 
@@ -6,23 +11,15 @@ test("incrementCounter", () => {
   // render component
   render(<ComponentToTest />);
 
-  // get elements you want to interact with
+  const plus = screen.queryByTestId("plus")!
+  const counter = screen.queryByTestId("counter")!
+  //console.log(plus)
+  console.log(counter)
+  fireEvent.click(plus)
+  //expect(plus).toHaveClass("fuck")
 
-    
-  const counter = screen.queryByTestId("counter") 
+//   fireEvent.click(plus);
+  expect(counter).not.toBeNull()
+  expect(counter.textContent).toBe("1")
 
-  //const plus = screen.queryByTestId("plus")
- const plus = screen.queryByTestId("plus") as HTMLButtonElement
- //invariant(plus)
-
-
-  // interact
-
-
- 
-
-if(plus != null) {
- fireEvent.click(plus);
-  expect(counter).toHaveTextContext("1");
-}
 });
