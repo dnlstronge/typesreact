@@ -19,8 +19,10 @@ test("incrementCounter", () => {
 
 
   // interact
+
 if(plus != null) {
  fireEvent.click(plus);
+ 
   // assert expected result
   expect(counter).toHaveTextContext("1");
 }
