@@ -1,6 +1,6 @@
 //import classes from "./ComponentToTest.module.css";
 import React, { ChangeEvent, useState } from "react";
-
+import classes from "./ComponentToTest.module.css"
 /* Goal - create a component to write some unit tests for  */
 
 /* [1] - create a simple counter component which increments/deincremnets */
@@ -23,9 +23,9 @@ const ComponentToTest = () => {
   };
 
   return (
-    <div >
+    <div className={classes.container} >
       <p data-testid="counter" id="counter">{counter}</p>
-      <button data-testid="plus" onClick={counterHandler} className="fuck" value={"plus"} >
+      <button data-testid="plus" onClick={counterHandler}  value={"plus"} >
         +
       </button>
       <button data-testid="minus" onClick={counterHandler} value={"minus"}>

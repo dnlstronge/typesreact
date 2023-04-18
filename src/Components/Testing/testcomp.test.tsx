@@ -10,16 +10,26 @@ import invariant from "tiny-invariant";
 test("incrementCounter", () => {
   // render component
   render(<ComponentToTest />);
-
+ 
   const plus = screen.queryByTestId("plus")!
   const counter = screen.queryByTestId("counter")!
-  //console.log(plus)
-  console.log(counter)
-  fireEvent.click(plus)
-  //expect(plus).toHaveClass("fuck")
 
-//   fireEvent.click(plus);
+
+  fireEvent.click(plus)
+
   expect(counter).not.toBeNull()
   expect(counter.textContent).toBe("1")
 
+
+
 });
+
+test("deincrementCounter", () => {
+    render(<ComponentToTest/>)
+    const counter = screen.queryByTestId("counter")!
+    const minus = screen.queryByTestId("minus")!
+
+    fireEvent.click(minus)
+    expect(counter).not.toBeNull()
+    expect(counter.textContent).toBe("-1")
+})
