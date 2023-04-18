@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    flex-direction: column;
     height: 15rem;
     width: 15rem;
     background: white;
@@ -7,5 +8,59 @@
     margin: auto;
 }
 .subsection {
-    
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    height: 4rem;
+    padding: 0.5rem;
+}
+.randonumber {
+    display: flex;
+    height: 2.8rem;
+    width: 3rem;
+    color: white;
+    background: rgb(196, 79, 196);
+    border: 1px solid purple;
+    margin: auto;
+    margin-left: 0.5rem;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn {
+    display: flex;
+    color: white;
+    background: purple;
+    height: 3rem;
+    width: 6rem;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn:hover {
+    background:rgb(249, 177, 249);
+}
+.classtochange {
+    display: flex;
+    height: 2.8rem;
+    width: 4rem;
+    color: white;
+    background: rgb(196, 79, 196);
+    border: 1px solid purple;
+    margin: auto;
+    margin-left: 0.5rem;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 3rem;
+}
+.changedclass {
+    display: flex;
+    height: 2.8rem;
+    width: 4rem;
+    color: rgb(22, 20, 20);
+    background: rgb(221, 203, 221);
+    border: 1px solid rgb(61, 57, 61);
+    margin: auto;
+    margin-left: 0.5rem;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 3rem;
 }

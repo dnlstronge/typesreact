@@ -4,7 +4,7 @@
 
 
 import { render, fireEvent, screen, } from "@testing-library/react";
-import ComponentToTest from "./ComponentToTest";
+import ComponentToTest from "../Components/Testing/ComponentToTest";
 import invariant from "tiny-invariant";
 
 test("incrementCounter", () => {
