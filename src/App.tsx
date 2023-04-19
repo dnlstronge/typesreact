@@ -70,7 +70,7 @@ function App() {
   
   return (
     <div className={classes.app}>
-      <AddItem addItem={newAddItem} />
+      <AddItem updateError={setError} addItem={newAddItem} />
       {error && 
       <p className={classes.errormsg}>Task cannot be empty</p>}
       <NewTodo addItem={newAddItem} />
