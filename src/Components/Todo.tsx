@@ -3,14 +3,14 @@ import classes from "./Todo.module.css"
 import DataType from "./Models/dataType"
 
 
-const Todo = ({key, id, text, delete:deleteItem}: {
-    key: number,
+const Todo = ({uid, id, text, delete:deleteItem}: {
+    uid: number,
     id: string,
     text: string,
     delete: any
 }) => {
     return (
-        <div key={key} id={id} className={classes.listitemcontainer}>
+        <div key={uid} id={id} className={classes.listitemcontainer}>
               <li className={classes.listItem}>
                 {text}
               </li>

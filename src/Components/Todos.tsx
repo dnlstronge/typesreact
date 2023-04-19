@@ -32,7 +32,9 @@ const Todos: React.FC<PropsWithChildren<{ items: DataType[] }>> = ({
             //     x
             //   </button>
             // </div>
-            <Todo key={index} id={todo.id} text={todo.text} delete={deleteItem}/>
+            <div key={index}>
+            <Todo uid={index} id={todo.id} text={todo.text} delete={deleteItem}/>
+            </div>
           );
         })}
       </ul>
