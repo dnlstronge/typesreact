@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import Todos from "./Components/Todos";
-import ComponentToTest from "./Components/Testing/ComponentToTest";
 import classes from "./App.module.css";
 import AddItem from "./Components/AddItem";
-import Generate from "./Components/Generate/Generate";
 import NewTodo from "./Components/NewTodo";
 import Header from "./Components/Header/Header";
 import SideBar from "./Components/SideBar/SideBar";
-
 import DataType from "./Components/Models/dataType";
+import SectionB from "./Components/SectionB/SectionB";
 
 function App() {
   /* Error (invalid task e.g whitespace) */
@@ -50,12 +48,7 @@ function App() {
           </section>
         )}
 
-        {show.show_B && (
-          <section className={classes.sectionB}>
-            <ComponentToTest />
-            <Generate />
-          </section>
-        )}
+        {show.show_B && <SectionB />}
       </div>
     </>
   );
