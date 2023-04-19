@@ -25,7 +25,7 @@ const AddItem: React.FC<{
         onChange={userInputHandler}
         type="text"
         className={classes.input}
-      ></input>
+      />
       <button onClick={addItemHandler} className={classes.btn}>
         Add
       </button>

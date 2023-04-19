@@ -8,7 +8,7 @@ const NewTodo: React.FC<{
 }> = (props) => {
   const userInput = useRef<HTMLInputElement>(null);
 
-  /* handler */
+  /* handlers */
   const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
     if (e.target.value.trim().length > 0) {
       props.updateError(false);
