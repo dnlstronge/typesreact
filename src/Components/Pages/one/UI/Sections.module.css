@@ -1,0 +1,70 @@
+.subsection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    background: black;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  
+
+}
+.btn {
+    font-size: 2rem;
+    height: 6rem;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    color: whitesmoke;
+    border-radius: 6px;
+    border: 3px solid black;
+}
+.btn:hover {
+    background: rgb(133, 131, 131);
+    cursor: pointer;
+}
+.contentfolder {
+    display: flex;
+    background-color: rgb(169, 168, 168);
+    height: 0rem;
+    width: 0;
+    
+}
+.contentFolderTrans {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    transition: width 1s, height 2s;
+}
+
+/* animations*/
+
+
+
+
+@media screen and (max-width: 992px) {
+    .subsection {
+
+    }
+    .btn {
+    
+    }
+    .content {
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .subsection {
+
+    }
+    .btn {
+    
+    }
+    .content {
+        
+    }
+    
+}

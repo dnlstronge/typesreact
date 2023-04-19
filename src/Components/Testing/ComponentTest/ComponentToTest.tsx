@@ -1,6 +1,9 @@
 //import classes from "./ComponentToTest.module.css";
-import React, { ChangeEvent, useState } from "react";
+import React, { useState } from "react";
 import classes from "./ComponentToTest.module.css"
+
+
+
 /* Goal - create a component to write some unit tests for  */
 
 /* [1] - create a simple counter component which increments/deincremnets */

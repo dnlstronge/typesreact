@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "./Todos.module.css";
-import DataType from "./Models/dataType";
+import DataType from "../../../Models/dataType";
 import { PropsWithChildren } from "react";
 import Todo from "./Todo";
 
 
 
-type itemsingle = { id: string; text: string }[];
+
 
 const Todos: React.FC<PropsWithChildren<{ items: DataType[] }>> = ({
   children,

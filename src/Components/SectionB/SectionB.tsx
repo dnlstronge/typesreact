@@ -1,5 +1,5 @@
 import React from "react";
-import ComponentToTest from "../Testing/ComponentToTest";
+import ComponentToTest from "../../Components/Testing/ComponentTest/ComponentToTest";
 import Generate from "../Generate/Generate";
 import classes from "./SectionB.module.css"
 import { sectionBpara } from "../../Content/paragraphs";

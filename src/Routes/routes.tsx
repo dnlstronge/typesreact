@@ -1,5 +1,5 @@
 import App from "../App";
-import SectionOne from "../Components/Pages/Test/SectionOne";
+import SectionOne from "../Components/Pages/one/SectionOne";
 
 
 /* Routes master, all routes are stored and exported to index.jsx from here */

@@ -1,6 +1,6 @@
 import React from "react"
 import classes from "./Todo.module.css"
-import DataType from "./Models/dataType"
+
 
 
 const Todo = ({uid, id, text, delete:deleteItem}: {

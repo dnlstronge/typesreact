@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import multiply from "../Components/logic";
+import multiply from "../Components/Testing/ToDo/logic";
 import { render, fireEvent, screen, } from "@testing-library/react";
 import Generate from "../Components/Generate/Generate";
 

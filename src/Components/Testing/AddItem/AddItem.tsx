@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent } from "react";
-import classes from "./AddItem.module.css";
-import DataType from "./Models/dataType";
+import classes from "./AddItem.module.css"
+import DataType from "../../../Models/dataType";
 
 const AddItem: React.FC<{
   addItem: (itemToAdd: string, ...data: DataType[]) => void;
@@ -12,8 +12,8 @@ const AddItem: React.FC<{
     if (e.target.value.trim().length > 0) {
       updateError(false);
     }
-    if(e.target.value.trim().length > 0) {
-    setUserInput(e.target.value);
+    if (e.target.value.trim().length > 0) {
+      setUserInput(e.target.value);
     }
   };
   const addItemHandler = () => {

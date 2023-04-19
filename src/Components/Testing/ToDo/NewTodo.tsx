@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FormEvent, useRef } from "react";
 import classes from "./AddItem.module.css";
-import DataType from "./Models/dataType";
+import DataType from "../../../Models/dataType";
 
 const NewTodo: React.FC<{
   addItem: (itemToAdd: string, ...data: DataType[]) => void;

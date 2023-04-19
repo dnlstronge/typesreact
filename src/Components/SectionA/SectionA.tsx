@@ -1,17 +1,14 @@
 import React, { useState } from "react";
 import classes from "./SectionA.module.css";
-import AddItem from "../AddItem";
-import NewTodo from "../NewTodo";
-import Todos from "../Todos";
-import DataType from "../Models/dataType";
-
-
+import AddItem from "../Testing/AddItem/AddItem";
+import NewTodo from "../Testing/ToDo/NewTodo";
+import Todos from "../Testing/ToDo/Todos";
+import DataType from "../../Models/dataType";
 
 const SectionA = () => {
-
   /* Error (invalid task e.g whitespace) */
   const [error, setError] = useState(false);
-  
+
   /* Data state */
   const [data, setData] = useState<DataType[]>([]);
 
