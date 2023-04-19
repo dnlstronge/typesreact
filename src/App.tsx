@@ -5,8 +5,7 @@ import classes from "./App.module.css";
 import AddItem from "./Components/AddItem";
 import Generate from "./Components/Generate/Generate";
 import NewTodo from "./Components/NewTodo";
-import Header from "./Components/Header/Header"
-
+import Header from "./Components/Header/Header";
 
 import DataType from "./Components/Models/dataType";
 
@@ -16,17 +15,12 @@ function App() {
 
   const [show, setShow] = useState({
     show_A: false,
-    show_B: false
-  })
+    show_B: false,
+  });
   //const [showSectionB, setShowSectionB] = useState(false)
 
   /* Data state */
-  const [data, setData] = useState<DataType[]>([
-   
-  ]);
-
- 
-
+  const [data, setData] = useState<DataType[]>([]);
 
   /* updates todo list */
 
@@ -44,15 +38,21 @@ function App() {
 
   return (
     <>
-    <Header show={setShow}/>
-    <div className={classes.app}>
-      <AddItem updateError={setError} addItem={newAddItem} />
-      {error && <p className={classes.errormsg}>Task cannot be empty</p>}
-      <NewTodo updateError={setError} addItem={newAddItem} />
-      <Todos items={data} />
-      <ComponentToTest />
-      <Generate />
-    </div>
+      <Header show={setShow} />
+      <div className={classes.app}>
+        {show.show_A && (
+          <section className={classes.sectionA}>
+            <AddItem updateError={setError} addItem={newAddItem} />
+            {error && <p className={classes.errormsg}>Task cannot be empty</p>}
+            <NewTodo updateError={setError} addItem={newAddItem} />
+            <Todos items={data} />
+            <ComponentToTest />
+            <Generate />
+          </section>
+        )}
+
+        {show.show_B && <section className={classes.sectionB}>TBC....</section>}
+      </div>
     </>
   );
 }
