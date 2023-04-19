@@ -6,18 +6,18 @@ import AddItem from "./Components/AddItem";
 import Generate from "./Components/Generate/Generate";
 import NewTodo from "./Components/NewTodo";
 import Header from "./Components/Header/Header";
+import SideBar from "./Components/SideBar/SideBar";
 
 import DataType from "./Components/Models/dataType";
 
 function App() {
-  /* Error */
+  /* Error (invalid task e.g whitespace) */
   const [error, setError] = useState(false);
 
   const [show, setShow] = useState({
     show_A: false,
     show_B: false,
   });
-  //const [showSectionB, setShowSectionB] = useState(false)
 
   /* Data state */
   const [data, setData] = useState<DataType[]>([]);
@@ -40,18 +40,22 @@ function App() {
     <>
       <Header show={setShow} />
       <div className={classes.app}>
+        <SideBar />
         {show.show_A && (
           <section className={classes.sectionA}>
             <AddItem updateError={setError} addItem={newAddItem} />
             {error && <p className={classes.errormsg}>Task cannot be empty</p>}
             <NewTodo updateError={setError} addItem={newAddItem} />
             <Todos items={data} />
+          </section>
+        )}
+
+        {show.show_B && (
+          <section className={classes.sectionB}>
             <ComponentToTest />
             <Generate />
           </section>
         )}
-
-        {show.show_B && <section className={classes.sectionB}>TBC....</section>}
       </div>
     </>
   );

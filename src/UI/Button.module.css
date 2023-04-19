@@ -1,0 +1,16 @@
+.btn {
+    display: flex; 
+    height: 3rem;
+    width: 6rem;
+    background: purple;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 6px;
+}
+.btn:hover {
+    
+    background: rgb(189, 56, 189);
+    cursor: pointer;
+}

@@ -1,16 +1,23 @@
 .app {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: auto;
     background: rgb(71, 70, 70);
-    
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 0rem;
+}
+.sidebar {
+    background: rgb(45, 44, 45);
+    display: flex;
+    height: 35rem;
+    width: 10rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
 }
 .errormsg {
     display: flex;
-    margin: auto;
+    margin-left: 16rem;
     color: white;
 }
