@@ -35,7 +35,3 @@ test("deincrementCounter", () => {
     expect(counter.textContent).toBe("-1")
 })
 
-type props = {
-  addItem: (itemToAdd: string, ...data: DataType[]) => void;
-  updateError: React.Dispatch<React.SetStateAction<boolean>>;}
-
