@@ -1,11 +1,16 @@
 import App from "../App";
 import SectionOne from "../Components/Pages/Test/SectionOne";
 
+
+/* Routes master, all routes are stored and exported to index.jsx from here */
+
 const routes = [
     {path: "/",
-    element: <App />},
+    element: <App />,
+    id: "home"},
     {path: "/sectionone",
-    element: <SectionOne />
+    element: <SectionOne />,
+    id: "sectionone"
   }
 ]
 
