@@ -7,9 +7,6 @@ import Generate from "./Components/Generate/Generate";
 import NewTodo from "./Components/NewTodo";
 import Header from "./Components/Header/Header"
 
-/*  Goal - create a basic todo app using typescript */
-
-/* figure out id (unique) for delete */
 
 import DataType from "./Components/Models/dataType";
 
@@ -17,9 +14,13 @@ function App() {
   /* Error */
   const [error, setError] = useState(false);
 
-  /* Dummy data, created using type class and constructer which
-  accepts text parameter */
+  const [show, setShow] = useState({
+    show_A: false,
+    show_B: false
+  })
+  //const [showSectionB, setShowSectionB] = useState(false)
 
+  /* Data state */
   const [data, setData] = useState<DataType[]>([
    
   ]);
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <>
-    <Header />
+    <Header show={setShow}/>
     <div className={classes.app}>
       <AddItem updateError={setError} addItem={newAddItem} />
       {error && <p className={classes.errormsg}>Task cannot be empty</p>}
