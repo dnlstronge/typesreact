@@ -10,12 +10,12 @@ const NewTodo: React.FC<{
 
   /* handler */
   const changeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value.length > 0) {
+    if (e.target.value.trim().length > 0) {
       props.updateError(false);
     }
   };
   const onSubmitHandler = (e: FormEvent) => {
-    const inputText = userInput.current!.value;
+    const inputText = userInput.current!.value.trim();
     if (inputText.length > 0) {
       props.updateError(false);
     }

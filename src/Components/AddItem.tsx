@@ -9,10 +9,12 @@ const AddItem: React.FC<{
   const [userInput, setUserInput] = useState("");
 
   const userInputHandler = (e: ChangeEvent<HTMLInputElement>) => {
-    if (e.target.value.length > 0) {
+    if (e.target.value.trim().length > 0) {
       updateError(false);
     }
+    if(e.target.value.trim().length > 0) {
     setUserInput(e.target.value);
+    }
   };
   const addItemHandler = () => {
     addItem(userInput);
