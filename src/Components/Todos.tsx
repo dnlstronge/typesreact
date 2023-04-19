@@ -2,6 +2,9 @@ import React from "react";
 import classes from "./Todos.module.css";
 import DataType from "./Models/dataType";
 import { PropsWithChildren } from "react";
+import Todo from "./Todo";
+
+
 
 type itemsingle = { id: string; text: string }[];
 
@@ -21,14 +24,15 @@ const Todos: React.FC<PropsWithChildren<{ items: DataType[] }>> = ({
             }
           };
           return (
-            <div key={index} id={todo.id} className={classes.listitemcontainer}>
-              <li className={classes.listItem}>
-                {todo.text}
-              </li>
-              <button onClick={deleteItem} className={classes.deletebutton}>
-                x
-              </button>
-            </div>
+            // <div key={index} id={todo.id} className={classes.listitemcontainer}>
+            //   <li className={classes.listItem}>
+            //     {todo.text}
+            //   </li>
+            //   <button onClick={deleteItem} className={classes.deletebutton}>
+            //     x
+            //   </button>
+            // </div>
+            <Todo key={index} id={todo.id} text={todo.text} delete={deleteItem}/>
           );
         })}
       </ul>

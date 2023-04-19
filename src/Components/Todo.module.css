@@ -1,0 +1,59 @@
+.container {
+    color: white;
+    width: 50%;
+    margin: auto;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.listitemcontainer {
+    display: flex; 
+    flex-direction: row;
+    height: auto;
+    width: 45%;
+    margin: auto;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 6px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.listItem {
+    
+    display: flex;
+    height: 2rem;
+    width: 14rem;
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.deletebutton {
+    text-align: center;
+    font-size: 1rem;
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 0.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    background: red;
+    color: white;
+    border-radius: 25%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.25rem;
+
+}
+.deletebutton:hover {
+    background-color: rgb(217, 191, 191);
+    cursor: pointer;
+}

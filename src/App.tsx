@@ -46,6 +46,8 @@ function App() {
     
   })
 }
+
+  /* updates todo list */
   const newAddItem = (itemToAdd: string, ...data: DataType[]) => {
     let str: string = itemToAdd;
     setData((prev) => {
