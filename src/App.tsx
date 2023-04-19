@@ -4,6 +4,7 @@ import ComponentToTest from "./Components/Testing/ComponentToTest";
 import classes from "./App.module.css";
 import AddItem from "./Components/AddItem";
 import Generate from "./Components/Generate/Generate";
+import NewTodo from "./Components/NewTodo";
 
 /*  Goal - create a basic todo app using typescript */
 
@@ -59,6 +60,7 @@ function App() {
   return (
     <div className={classes.app}>
       <AddItem addItem={newAddItem} />
+      <NewTodo addItem={newAddItem} />
       <Todos items={data} />
       <ComponentToTest />
       <Generate />
