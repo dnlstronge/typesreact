@@ -9,7 +9,7 @@ import DataType from "../Models/dataType";
 
 const SectionA = () => {
 
-    
+  /* Error (invalid task e.g whitespace) */
   const [error, setError] = useState(false);
   /* Data state */
   const [data, setData] = useState<DataType[]>([]);

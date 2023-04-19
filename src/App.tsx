@@ -6,7 +6,8 @@ import SectionB from "./Components/SectionB/SectionB";
 import SectionA from "./Components/SectionA/SectionA";
 
 function App() {
-  /* Error (invalid task e.g whitespace) */
+
+
 
   const [show, setShow] = useState({
     show_A: false,
