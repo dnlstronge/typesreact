@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent, ChangeEvent } from "react";
+import React, { useState, ChangeEvent } from "react";
 import classes from "./AddItem.module.css";
 import DataType from "./Models/dataType";
 

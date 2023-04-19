@@ -5,7 +5,8 @@
 
 import { render, fireEvent, screen, } from "@testing-library/react";
 import ComponentToTest from "../Components/Testing/ComponentToTest";
-import invariant from "tiny-invariant";
+import DataType from "../Components/Models/dataType";
+
 
 test("incrementCounter", () => {
   // render component
@@ -33,3 +34,8 @@ test("deincrementCounter", () => {
     expect(counter).not.toBeNull()
     expect(counter.textContent).toBe("-1")
 })
+
+type props = {
+  addItem: (itemToAdd: string, ...data: DataType[]) => void;
+  updateError: React.Dispatch<React.SetStateAction<boolean>>;}
+
