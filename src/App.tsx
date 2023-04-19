@@ -73,7 +73,7 @@ function App() {
       <AddItem updateError={setError} addItem={newAddItem} />
       {error && 
       <p className={classes.errormsg}>Task cannot be empty</p>}
-      <NewTodo addItem={newAddItem} />
+      <NewTodo updateError={setError} addItem={newAddItem} />
       <Todos items={data} />
       <ComponentToTest />
       <Generate />
