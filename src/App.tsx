@@ -6,9 +6,6 @@ import SectionB from "./Components/SectionB/SectionB";
 import SectionA from "./Components/SectionA/SectionA";
 
 function App() {
-
-
-
   const [show, setShow] = useState({
     show_A: false,
     show_B: false,
@@ -20,7 +17,6 @@ function App() {
       <div className={classes.app}>
         <SideBar />
         {show.show_A && <SectionA />}
-
         {show.show_B && <SectionB />}
       </div>
     </>
