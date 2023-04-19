@@ -31,6 +31,7 @@ const Header: React.FC<{
         <button onClick={handleshowB} className={classes.btn}>
           Section B
         </button>
+      
       </div>
     </header>
   );

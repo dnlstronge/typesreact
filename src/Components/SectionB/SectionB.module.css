@@ -1,4 +1,11 @@
 .sectionB {
     display: flex;
     flex-direction: row;
+    margin-right: 2rem;
+}
+.counterpara {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: white
+
 }

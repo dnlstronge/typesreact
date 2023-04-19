@@ -11,6 +11,7 @@ const SectionB = () => {
             <div className={classes.countersection}>
                 <p className={classes.counterpara}>{sectionBpara.p1}</p>
                 <ComponentToTest />
+                <p className={classes.counterpara}>{sectionBpara.p2}</p>
             </div>
             <Generate />
           </section>
