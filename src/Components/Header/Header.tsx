@@ -14,18 +14,20 @@ const Header: React.FC<{
 
     const handleshowA = () => {
         show((prev) => {
-           return {...prev, show_A: true}
+           return {show_A: true, show_B: false}
         })
     }
     const handleshowB = () => {
-
+        show((prev) => {
+            return { show_A: false, show_B: true }
+        })
     }
   return (
     <header className={classes.heading}>
       <p className={classes.title}>Playground App</p>
       <div className={classes.btncontainer}>
-        <button className={classes.btn}>Section A</button>
-        <button className={classes.btn}>Section B</button>
+        <button onClick={handleshowA} className={classes.btn}>Section A</button>
+        <button onClick={handleshowB} className={classes.btn}>Section B</button>
       </div>
     </header>
   );
