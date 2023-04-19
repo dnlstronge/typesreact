@@ -15,7 +15,7 @@ const AddItem = ({addItem}:any) => {
     return (
         <div className={classes.container}>
             <input onChange={userInputHandler} type="text" className={classes.input}></input>
-            <button onClick={addItemHandler} className={classes.btn}>Add Item</button>
+            <button onClick={addItemHandler} className={classes.btn}>Add</button>
         </div>
     )
 }   

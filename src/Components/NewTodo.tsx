@@ -23,7 +23,7 @@ const NewTodo: React.FC<{addItem: any}> = (props) => {
         type="text"
         className={classes.input}
       />
-      <button className={classes.btn}>Add Item</button>
+      <button className={classes.btn}>Add</button>
     </form>
   );
 };
