@@ -32,15 +32,7 @@ const projectData: project[] = [
     }
 ]
 
-/*Url mapper */
 
-const mapURL = (pd: project[]) => {
-    let data: string[];
-     pd.map(proj => {
-       return data.push(proj.url, proj.git)
-     })
 
-}
-const mappedURL = mapURL(projectData)
+
 export default projectData;
-export {mappedURL};
