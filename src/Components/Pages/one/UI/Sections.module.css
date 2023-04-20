@@ -44,6 +44,17 @@
     margin: auto;
     
 }
+/* image and animation*/ 
+
+.imagemain {
+    height: 0;
+    width: 0;
+}
+.showimagemain {
+    height: 55%;
+    width: 25%;
+    transition: width 0.5s, height 1s;
+}
 
 /* animations*/
 
