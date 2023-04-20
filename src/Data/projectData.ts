@@ -1,3 +1,6 @@
+import React from "react"
+import ReactPlayer from "react-player"
+
 /* Model import (see models for full type) */
 import project from "../Models/Projects"
 
@@ -7,7 +10,10 @@ import a1001 from "../Assets/GroupTask/1001a.png"
 import b1001 from "../Assets/GroupTask/1001b.png"
 import c1001 from "../Assets/GroupTask/1001c.png"
 import d1001 from "../Assets/GroupTask/1001d.png"
+import video from "../Assets/GroupTask/GroupTaskDemo.mp4"
 import content1001 from "../Content/Projects/grouptask"
+
+
 
 
 
@@ -29,7 +35,7 @@ const projectData: project[] = [
         git: "https://github.com/dnlstronge/groupTask",
         route: "/grouptask",
         isLive: true,
-        gif: false,
+        gif: video,
         contentMain: content1001.main,
         contentSup: "" ,
         techUsed: ["", "", ""]

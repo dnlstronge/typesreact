@@ -7,7 +7,7 @@ type project = {
     git: string /*github link */
     route: string, /* routes to live demo */
     isLive: boolean, /*if the demo is live */
-    gif: string | boolean /* false if no gif */
+    gif: string /* false if no gif */
     contentMain: string /* about project */
     contentSup: string /*supplementary content */
     techUsed: string[] /* array of react icons */

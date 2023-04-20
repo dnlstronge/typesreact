@@ -38,7 +38,7 @@
 .contentfoldertrans {
     background: rgb(169, 168, 168);
     display: flex;
-    height: 20rem;
+    height: 10rem;
     width: 99%;
     transition: width 0.5s, height 1s;
     margin: auto;
@@ -65,7 +65,11 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-/* animations*/
+/* Nav-bar and buttons */
+
+.nav {
+    
+}
 
 
 
