@@ -18,14 +18,21 @@ const Sections: React.FC<project> = (props) => {
   /*local state */
   const [showVid, setShowvid] = useState(false)
   const [showSub, setShowSub] = useState(false);
+  const [showAbout, setShowAbout] = useState(false)
 
   /* Handlers */
   const showVidHandler = () => {
+    setShowAbout(false)
     setShowvid(!showVid)
   }
+
   const showSubHandler = () => {
     setShowSub(!showSub);
   };
+  const showAboutHandler = () => {
+    setShowvid(false)
+    setShowAbout(!showAbout)
+  }
 
   /* animations (p) */
   const mounted = showSub ? classes.contentfoldertrans : classes.contentfolder;
@@ -44,14 +51,15 @@ const Sections: React.FC<project> = (props) => {
             {props.imageArray.map((image) => {
               return <img className={mainimage} src={image} alt="screen shot of app"/>
             })}
-            {showVid && 
+            {showVid && showSub &&
             <ReactPlayer url={props.gif} controls={true}/>}
+            {showSub && 
             <div className={classes.nav}>
               <button className={classes.navbtn} onClick={showVidHandler}>Video</button>
               <button className={classes.navbtn}>Live demo</button>
               <button className={classes.navbtn}>Github</button>
               <button className={classes.navbtn}>About</button>
-            </div>
+            </div>}
             
             <p className={classes.content}>{props.contentMain}</p>
           </section>
