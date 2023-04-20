@@ -15,11 +15,11 @@ content: points to content: datasource: string
 */
 
 const Sections: React.FC<project> = (props) => {
+
   /*local state */
   const [showVid, setShowvid] = useState(false);
   const [showSub, setShowSub] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
-  
 
   /* Handlers */
   const showVidHandler = () => {
@@ -36,7 +36,6 @@ const Sections: React.FC<project> = (props) => {
   };
 
   /* reset */
-
   
 
   /* animations (p) */
@@ -46,6 +45,7 @@ const Sections: React.FC<project> = (props) => {
 
   return (
     <section className={classes.subsection}>
+    
       <button onClick={showSubHandler} className={classes.btn}>
         {props.title}
       </button>
@@ -76,10 +76,21 @@ const Sections: React.FC<project> = (props) => {
                 About
               </button>
               <div className={classes.links}>
-                <a className={classes.navanchor} target="blank" href={props.git}>Github</a>
-                <a className={classes.navanchor} target="blank" href={props.url}>Live demo</a>
+                <a
+                  className={classes.navanchor}
+                  target="blank"
+                  href={props.git}
+                >
+                  Github
+                </a>
+                <a
+                  className={classes.navanchor}
+                  target="blank"
+                  href={props.url}
+                >
+                  Live demo
+                </a>
               </div>
-              
             </div>
           )}
 

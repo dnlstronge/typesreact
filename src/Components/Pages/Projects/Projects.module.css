@@ -10,6 +10,49 @@
     padding-top: 20%;
 
 }
+.headsection {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  background: rgb(34, 33, 33);
+  color: white;
+  height: 7rem;
+  width: 100%;
+  margin-bottom: 10rem;
+  text-align: center;
+  
+}
+.heading {
+  width: 70%;
+  font-size: 4rem;
+
+
+}
+.back {
+  font-size: 2rem;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 4rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  background:rgb(121, 118, 118);
+  color: white;
+  height: 2.5rem;
+  width: 10rem;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+}
+
+.back:hover {
+  background: rgb(182, 175, 175);
+  transition: background-color 1s ease;
+  transform: scale(1.1);
+  margin-right: 0.1rem;
+}
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
