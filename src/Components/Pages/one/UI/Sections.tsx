@@ -21,19 +21,19 @@ const Sections: React.FC<{ title: string }> = ({ title }) => {
   };
 
   /* animations (p)*/
-  const mounted = showSub ? `classes.contentfoldertrans` : `classes.contentfolder`
+  const mounted = showSub ? classes.contentfoldertrans : classes.contentfolder
 
 
   return (
     <section className={classes.subsection}>
       <button onClick={showSubHandler} className={classes.btn}>{title}</button>
-      {showSub && (
+      
         <div className={mounted} >
           <p className={classes.content}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse!
           </p>
         </div>
-      )}
+     
     </section>
   );
 };
