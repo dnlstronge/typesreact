@@ -159,6 +159,7 @@
 .navanchor:hover {
     background: grey;
     transition: background-color 0.5s ease;
+    transform: scale(1.1);
 }
 .navanchor:active {
     background: grey;;
