@@ -37,6 +37,7 @@ const Sections: React.FC<project> = (props) => {
   /* animations (p) */
   const mounted = showSub ? classes.contentfoldertrans : classes.contentfolder;
   const mainimage = showSub ? classes.showimagemain : classes.imagemain;
+  const about = showAbout ? classes.aboutactive : classes.aboutinactive
 
   return (
     <section className={classes.subsection}>
@@ -52,13 +53,16 @@ const Sections: React.FC<project> = (props) => {
               return <img className={mainimage} src={image} alt="screen shot of app"/>
             })}
             {showVid && showSub &&
-            <ReactPlayer url={props.gif} controls={true}/>}
+            <ReactPlayer className={classes.player} url={props.gif} controls={true}/>}
+            {showAbout && showSub &&
+            <p className={about}>{props.contentMain}</p> }
+
             {showSub && 
             <div className={classes.nav}>
               <button className={classes.navbtn} onClick={showVidHandler}>Video</button>
-              <button className={classes.navbtn}>Live demo</button>
-              <button className={classes.navbtn}>Github</button>
-              <button className={classes.navbtn}>About</button>
+              <a href={props.url} className={classes.navbtn}>Live demo</a>
+              <a href={props.git}className={classes.navbtn}>Github</a>
+              <button className={classes.navbtn} onClick={showAboutHandler}>About</button>
             </div>}
             
             <p className={classes.content}>{props.contentMain}</p>
