@@ -19,7 +19,7 @@ const projectData: project[] = [
     {
         uid: 1001,
         title: "GroupTask",
-        image: main1001 || "",
+        image: main1001,
         imageArray: ["", "", ""],
         url: "https://grouptaskapp-4eccd.web.app/",
         git: "https://github.com/dnlstronge/groupTask",

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Sections.module.css";
-
+import project from "../../../../Models/Projects";
 /* Testing (sections.test.tsx) */
 
 /* <Config>
@@ -14,7 +14,7 @@ content: points to content: datasource: string
 
 
 
-const Sections: React.FC<{ title: string }> = ({ title }) => {
+const Sections: React.FC<project> = (props) => {
   const [showSub, setShowSub] = useState(false);
   const showSubHandler = () => {
     setShowSub(!showSub);
@@ -26,7 +26,7 @@ const Sections: React.FC<{ title: string }> = ({ title }) => {
 
   return (
     <section className={classes.subsection}>
-      <button onClick={showSubHandler} className={classes.btn}>{title}</button>
+      <button onClick={showSubHandler} className={classes.btn}>{props.title}</button>
       
         <div className={mounted} >
           <p className={classes.content}>
