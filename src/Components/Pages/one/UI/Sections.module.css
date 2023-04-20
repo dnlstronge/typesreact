@@ -61,11 +61,25 @@
     border: 2px solid white;
     margin-left: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 0;
+}
+.showimagemainenlarged {
+    display: flex;
+    margin: 0;
+    z-index: 3;
+    height: 5rem;
+    width: 5rem;
+
 }
 .showimagemain:hover {
+    cursor: pointer;
     transform: scale(2);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 1;
 }
+
+/* enlarge image */
+
 
 /* Media Player */
 
@@ -76,9 +90,10 @@
 /* About (content) */
 
 .aboutinactive {
-    display: none;
+    
     height: 0;
-    width: 0;
+    width: 100;
+    transition: width 2s, height 3s;
 }
 .aboutactive {
     font-size: large;
@@ -89,7 +104,7 @@
     margin: auto;
     padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    transition: width 1s, height 2s;
+    transition: width 2s, height 3s;
 }
 /* Nav-bar and buttons */
 
