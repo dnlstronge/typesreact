@@ -25,6 +25,7 @@
 }
 .btn:hover {
     background: rgb(133, 131, 131);
+    transition: background-color 0.5s ease;
     cursor: pointer;
 }
 .contentfolder {
@@ -62,8 +63,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .showimagemain:hover {
-    transform: scale(2); 
-   
+    transform: scale(2);
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
@@ -74,6 +74,7 @@
 }
 
 /* About (content) */
+
 .aboutinactive {
     display: none;
     height: 0;
@@ -99,20 +100,67 @@
     margin: auto;
 }
 .navbtn {
+    font-family:Arial, Helvetica, sans-serif;
     font-size: larger;
+    padding: 0.2rem;
+    text-decoration: none;
+    padding-top: 1rem;
+    text-align: center;
     background: rgb(33, 32, 32);
-    width: 25%;
+    width: 24%;
     border-radius: 6px;
     height: 6rem;
     color: white;
     cursor: pointer;
+    border-radius: 6px;
+    border-top-right-radius: 10%;
    
     
 }
+
 .navbtn:hover {
-    background: grey;
+    background-color: grey;
+    transition: background-color 0.5s ease;
 }
 .navbtn:active {
+    background: grey;;
+}
+
+/*Project links to github & demo*/
+
+.links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    
+}
+.navanchor {
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding: 0.1rem;
+    text-decoration: none;
+    padding-top: 1rem;
+    text-align: center;
+    background: rgb(33, 32, 32);
+    width: 6rem;
+    height: 2rem;
+    border-radius: 6px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-top: 0,5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.navanchor:hover {
+    background: grey;
+    transition: background-color 0.5s ease;
+}
+.navanchor:active {
     background: grey;;
 }
 
