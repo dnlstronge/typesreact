@@ -2,7 +2,7 @@
 import project from "../Models/Projects"
 
 /*Group Task (1001) :  */
-// import main1001 from "../Assets/GroupTask/1001main.jpg"
+import main1001 from "../Assets/GroupTask/1001main.jpg"
 import content1001 from "../Content/Projects/grouptask"
 
 
@@ -19,7 +19,7 @@ const projectData: project[] = [
     {
         uid: 1001,
         title: "GroupTask",
-        image: "", // main1001,
+        image: main1001 || "",
         imageArray: ["", "", ""],
         url: "https://grouptaskapp-4eccd.web.app/",
         git: "https://github.com/dnlstronge/groupTask",
@@ -32,4 +32,15 @@ const projectData: project[] = [
     }
 ]
 
+/*Url mapper */
+
+const mapURL = (pd: project[]) => {
+    let data: string[];
+     pd.map(proj => {
+       return data.push(proj.url, proj.git)
+     })
+
+}
+const mappedURL = mapURL(projectData)
 export default projectData;
+export {mappedURL};
