@@ -39,9 +39,10 @@ const Sections: React.FC<project> = (props) => {
   /* enlarge Image */
   const enlargeHandler = (id: string) => {
     setImageClicked(!imageClicked)
-   if(!imageClicked) {
+   if(imageClicked) {
     const element = document.getElementById(id)!
     element.className = classes.showimageenlarged
+    element.scrollIntoView();
    }
    else {
     const element = document.getElementById(id)!
