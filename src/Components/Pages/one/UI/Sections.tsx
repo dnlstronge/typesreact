@@ -128,7 +128,7 @@ const Sections: React.FC<project> = (props) => {
           {showSub && (
             <p className={about}>{showAbout ? props.contentMain : ""}</p>
           )}
-          <About />
+          <About content={props.contentMain}/>
           {/* Navagation & links */}
 
           {showSub && (

@@ -1,14 +1,17 @@
 
 import React from "react"
 import classes from "./About.module.css"
+import { FaReact } from "react-icons/fa"
+import { BsFiletypeCss } from "react-icons/bs"
 
 
-/// need hash map for icons? 
 
-const icons = { 
+/* Map for all icons */
 
-    react: "",
-    css: "",
+const icons= { 
+
+    react: <FaReact className={classes.reacticon}/>,
+    css: <BsFiletypeCss className={classes.cssicon}/>,
     html5: "",
     typescript: "",
     javascript: "",
@@ -18,17 +21,19 @@ const icons = {
 /* config: 
 
 (props) - needs content from project data
+icons: array of strings (checked with icons map to render icons)
 
 req: react ICONS
 */
 
 
 
-const About = () => {
+const About: React.FC<{content: string}> = (props) => {
    return ( <div>
-        {/*content main */}
-        <p></p>
 
+        {/*content main */}
+        <p>{props.content}</p>
+        {icons.react}
         {/*content sup */}
         <p>
         </p>
