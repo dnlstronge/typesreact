@@ -63,9 +63,11 @@ const Sections: React.FC<project> = (props) => {
       <button onClick={showSubHandler} className={classes.btn}>
         {props.title}
       </button>
-
+      
       <div className={mounted}>
-        <section>
+
+         {/* images */}
+        <section className={classes.imageSection}>
           <img className={mainimage} src={props.image} alt={props.title} />
           {props.imageArray.map((image) => {
             return (
@@ -77,11 +79,13 @@ const Sections: React.FC<project> = (props) => {
                 id={image}
                 className={mainimage}
                 src={image}
-                alt="screen shot of app"
+                alt="screenshot of app"
               />
             );
           })}
-           
+           </section>
+
+          {/* Media Player */}
           {showVid && showSub && (
             <ReactPlayer
               className={classes.player}
@@ -89,11 +93,16 @@ const Sections: React.FC<project> = (props) => {
               controls={true}
             />
           )}
+
+          {/* Content paragraph */}
           {showSub && (
             <p className={about}>{showAbout ? props.contentMain : ""}</p>
           )}
 
+          {/* Navagation & links */}
+
           {showSub && (
+            <section className={classes.navbuttons}>
             <div className={classes.nav}>
               <button className={classes.navbtn} onClick={showVidHandler}>
                 Video
@@ -118,10 +127,11 @@ const Sections: React.FC<project> = (props) => {
                 </a>
               </div>
             </div>
+            </section>
           )}
-        </section>
+        
       </div>
-    </section>
+      </section>
   );
 };
 
