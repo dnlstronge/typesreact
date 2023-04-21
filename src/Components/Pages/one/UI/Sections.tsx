@@ -83,7 +83,6 @@ const Sections: React.FC<project> = (props) => {
   /* animations (p) */
   const mounted = showSub ? classes.contentfoldertrans : classes.contentfolder;
   const mainimage = showSub ? classes.showimagemain : classes.imagemain;
-  const about = showAbout ? classes.aboutactive : classes.aboutinactive;
   const snapto = showSub ? classes.snaptotrans : classes.snapto;
 
   return (
@@ -126,10 +125,7 @@ const Sections: React.FC<project> = (props) => {
 
           {/* Content paragraph */}
 
-          {showSub && (
-            <p className={about}>{showAbout ? props.contentMain : ""}</p>
-          )}
-          <About content={props.contentMain} icons={props.techUsed}/>
+          <About about={showAbout} content={props.contentMain} icons={props.techUsed}/>
           {/* Navagation & links */}
 
           {showSub && (

@@ -1,0 +1,24 @@
+.container {
+    color:rgb(53, 51, 51);
+    display: flex;
+    background-color: rgb(53, 51, 51);
+    margin: auto;
+    height: 0rem;
+    width: 90%;
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+.containerisactive {
+    display: flex;
+    background-color: rgb(53, 51, 51);
+    margin: auto;
+    height: 10rem;
+    width: 90%;
+    border-radius: 6px;
+    padding: 1rem;
+
+}
+.content {
+    color: white;
+}

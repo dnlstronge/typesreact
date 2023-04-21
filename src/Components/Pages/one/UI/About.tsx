@@ -24,15 +24,27 @@ const icons = {
 
 (props) - needs content from project data
 icons: array of strings (checked with icons map to render icons)
-
+about: boolean (if about has been clicked to expand)
 req: react ICONS
+
+
 */
 
-const About: React.FC<{ content: string, icons: JSX.Element[] }> = (props) => {
+
+
+
+const About: React.FC<{ content: string, icons: JSX.Element[], about: boolean }> = (props) => {
+
+
+
+/* animations */
+
+const activecontainer = props.about ? classes.containerisactive : classes.container
+const activecontent = props.about ? classes.activecontent : classes.inactivecontent
   return (
-    <div>
+    <div className={activecontainer}>
       {/*content main */}
-      <p>{props.content}</p>
+      <p className={activecontent}>{props.content}</p>
       
       {/*content sup */}
       <p></p>
