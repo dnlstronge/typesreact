@@ -1,7 +1,7 @@
 .subsection {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: auto;
     background: black;
     margin: auto;
@@ -74,13 +74,12 @@
 .showimageenlarged {
     display: flex;
     position: absolute;
-   
     z-index: 3;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 5rem;
-    height: 30rem;
-    width: 40rem;
+    margin-top: 1rem;
+    height: 25rem;
+    width: 35rem;
     border: 2rem solid rgba(32, 33, 33, 0.2);
     cursor: pointer;
     transition: width 1.2s, height 1.9s;
@@ -100,7 +99,12 @@
 .snapto {
     width: 100%;
     background:rgb(169, 168, 168);
-    height: 2rem;
+    height: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.snaptotrans {
+    margin-top: 14rem;
 }
 
 

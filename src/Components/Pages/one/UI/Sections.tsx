@@ -60,6 +60,7 @@ const Sections: React.FC<project> = (props) => {
   
 
   return (
+    <>
     <section className={classes.subsection}>
       <button onClick={showSubHandler} className={classes.btn}>
         {props.title}
@@ -135,6 +136,8 @@ const Sections: React.FC<project> = (props) => {
       </div>
       <section className={classes.snapto} id="snapto"></section>
       </section>
+      
+      </>
   );
 };
 
