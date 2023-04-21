@@ -1,8 +1,9 @@
 import React from "react";
 import classes from "./Home.module.css";
-import Navbar from "../Nav/Navbar";
+
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+
+import homeContent from "../../../Content/Home/homeContent";
 
 const Home = () => {
   return (
@@ -16,6 +17,17 @@ const Home = () => {
         <h4 className={classes.heading}>Home</h4>
       
       </header>
+      <div className={classes.content}>
+        <p className={classes.contentpara}>{homeContent.main}</p>
+        <section className={classes.techused}>
+          {homeContent.tech.map((tech, index) => {
+            return(
+              <div key={index}>{tech}</div>
+             
+            )
+          })}
+        </section>
+      </div>
     </motion.div>
   );
 };

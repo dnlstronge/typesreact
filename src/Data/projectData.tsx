@@ -20,14 +20,19 @@ import { BsFiletypeCss } from "react-icons/bs";
 import { IoLogoJavascript } from "react-icons/io";
 import { TbBrandTypescript } from "react-icons/tb";
 import { AiOutlineHtml5 } from "react-icons/ai";
+import { FaNodeJs } from "react-icons/fa"
+import { IoLogoFirebase } from "react-icons/io5"
+
 
 
 /* color variables */
 const colorReact = `rgb(155, 207, 225)` // light blue
 const colorCSS = `rgb(220, 125, 220)` // pinkish
 const colorTypes = `rgb(66, 163, 195)` // blueish (darker)
+const colorJS = `rgb(106, 148, 206);` // bluey
 const colorHtml = `rgb(250, 166, 9)` // orange
 const colorNode = `rgb(71, 176, 71)` // light green
+const colorFireB = ` rgb(248, 184, 65)` // lighter orange
 
 
 const icons = {
@@ -35,7 +40,9 @@ const icons = {
   css: <BsFiletypeCss color={colorCSS} size="3rem" />,
   html5: <AiOutlineHtml5 color={colorTypes} size="3rem"  />,
   typescript: <TbBrandTypescript color={colorHtml} size="3rem" />,
-  javascript: <IoLogoJavascript color={colorNode} size="3rem"  />,
+  javascript: <IoLogoJavascript color={colorJS} size="3rem"  />,
+  node: <FaNodeJs color={colorNode} size="3rem"  />,
+  firebase: < IoLogoFirebase color={colorFireB} size="3rem" />
 };
 
 /*  for typing config see models */
@@ -60,6 +67,7 @@ const projectData: project[] = [
       icons.css,
       icons.javascript,
       icons.html5,
+      icons.firebase
     ],
   },
 ];
