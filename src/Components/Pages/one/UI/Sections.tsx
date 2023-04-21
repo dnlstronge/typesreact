@@ -42,7 +42,8 @@ const Sections: React.FC<project> = (props) => {
    if(imageClicked) {
     const element = document.getElementById(id)!
     element.className = classes.showimageenlarged
-    element.scrollIntoView();
+    const snapto = document.getElementById("snapto")!
+    snapto.scrollIntoView();
    }
    else {
     const element = document.getElementById(id)!
@@ -127,10 +128,12 @@ const Sections: React.FC<project> = (props) => {
                 </a>
               </div>
             </div>
+            
             </section>
           )}
         
       </div>
+      <section className={classes.snapto} id="snapto"></section>
       </section>
   );
 };
