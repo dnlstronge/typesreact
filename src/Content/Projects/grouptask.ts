@@ -1,6 +1,6 @@
 const grouptaskcontent = {
     main: `Project management app built with React, allows different users to log in and
-     exchange messages, ideas and update tasks etc. Uses firebase to handle data requests and authorisation enabling some CRUD operations.
+     exchange messages, ideas and update tasks etc. Uses firebase to handle data requests and authentication enabling some CRUD operations.
      Users can create an account and log-in, they can view tasks based on different filters and whether they are assigned to them.
      Each task incorporates a simple messaging system`,
    sup: `I had alot of fun building this and think it turned out pretty well. It gave me a bit more insight

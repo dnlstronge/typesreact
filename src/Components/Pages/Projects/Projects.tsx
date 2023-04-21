@@ -3,10 +3,15 @@ import classes from "./Projects.module.css";
 import Sections from "../one/UI/Sections";
 import projectData from "../../../Data/projectData";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className={classes.container}>
+    <motion.div className={classes.container}
+    
+    initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <header className={classes.headsection}>
         <h4 className={classes.heading}>Projects</h4>
         <Link to="/" className={classes.back}>
@@ -32,7 +37,7 @@ const Projects = () => {
           />
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 export default Projects;
