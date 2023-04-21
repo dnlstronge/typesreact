@@ -1,3 +1,5 @@
+import { JsxElement } from "typescript"
+
 type project = {
     uid: number, /* Id of project*/
     title: string, /* Name of project*/
@@ -10,7 +12,7 @@ type project = {
     gif: string /* false if no gif */
     contentMain: string /* about project */
     contentSup: string /*supplementary content */
-    techUsed: string[] /* array of react icons */
+    techUsed: JSX.Element[] /* array of react icons */
 }
 
 export default project;

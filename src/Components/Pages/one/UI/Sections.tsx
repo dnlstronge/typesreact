@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import ReactPlayer from "react-player";
 import classes from "./Sections.module.css";
 import project from "../../../../Models/Projects";
@@ -128,7 +129,7 @@ const Sections: React.FC<project> = (props) => {
           {showSub && (
             <p className={about}>{showAbout ? props.contentMain : ""}</p>
           )}
-          <About content={props.contentMain}/>
+          <About content={props.contentMain} icons={props.techUsed}/>
           {/* Navagation & links */}
 
           {showSub && (

@@ -1,4 +1,5 @@
 import React from "react";
+import iconData from "../../../../Models/dataIcons";
 import classes from "./About.module.css";
 import { FaReact } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
@@ -7,6 +8,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { AiOutlineHtml5 } from "react-icons/ai";
 
 import {} from "react-icons/";
+import { JsxElement } from "typescript";
 
 /* Map for all icons */
 
@@ -26,15 +28,20 @@ icons: array of strings (checked with icons map to render icons)
 req: react ICONS
 */
 
-const About: React.FC<{ content: string }> = (props) => {
+const About: React.FC<{ content: string, icons: string[] }> = (props) => {
   return (
     <div>
       {/*content main */}
       <p>{props.content}</p>
-      {icons.react}
+      
       {/*content sup */}
       <p></p>
-      <section className={classes.icons}></section>
+      <section className={classes.icons}>
+       {props.icons.map((tech) => {
+        
+        return <div>{icons[tech]}</div>
+       })}
+      </section>
     </div>
   );
 };

@@ -13,9 +13,23 @@ import d1001 from "../Assets/GroupTask/1001d.png"
 import video from "../Assets/GroupTask/GroupTaskDemo.mp4"
 import content1001 from "../Content/Projects/grouptask"
 
+/* icons  */
 
+import { FaReact } from "react-icons/fa";
+import { BsFiletypeCss } from "react-icons/bs";
+import { IoLogoJavascript } from "react-icons/io";
+import { TbBrandTypescript } from "react-icons/tb";
+import { AiOutlineHtml5 } from "react-icons/ai";
 
-
+const icons = {
+    
+    react: <FaReact className={`classes.reacticon`} />,
+    css: <BsFiletypeCss className={"classes.cssicon"} />,
+    html5: <AiOutlineHtml5 className={"classes.htmlicon"}/>,
+    typescript: <TbBrandTypescript className={"classes.tsicon"}/>,
+    javascript: <IoLogoJavascript className={"classes.jsicon"} />,
+  };
+  
 
 
 
@@ -25,6 +39,9 @@ import content1001 from "../Content/Projects/grouptask"
 const projectData: project[] = [
     
     /*GroupTask */
+
+
+
 
     {
         uid: 1001,
@@ -38,7 +55,7 @@ const projectData: project[] = [
         gif: video,
         contentMain: content1001.main,
         contentSup: "" ,
-        techUsed: ["", "", ""]
+        techUsed: [icons.react, icons.css, icons.javascript , icons.typescript, icons.html5 ]
     }
 ]
 
