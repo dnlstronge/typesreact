@@ -33,7 +33,12 @@ req: react ICONS
 
 
 
-const About: React.FC<{ content: string, icons: JSX.Element[], about: boolean }> = (props) => {
+const About: React.FC<{ 
+  show: boolean,
+  content: string, 
+  content2: string,
+  icons: JSX.Element[],
+  about: boolean }> = (props) => {
 
 
 
@@ -41,20 +46,22 @@ const About: React.FC<{ content: string, icons: JSX.Element[], about: boolean }>
 
 const activecontainer = props.about ? classes.containerisactive : classes.container
 const activecontent = props.about ? classes.activecontent : classes.inactivecontent
-  return (
+
+  return (<>
+  {props.show && 
     <div className={activecontainer}>
       {/*content main */}
       <p className={activecontent}>{props.content}</p>
       
       {/*content sup */}
-      <p></p>
+      <p className={activecontent}>{props.content2}</p>
       <section className={classes.icons}>
        {props.icons.map((tech) => {
-        
-        return <div>{tech}</div>
+        return tech
        })}
       </section>
-    </div>
+    </div>}
+    </>
   );
 };
 export default About;

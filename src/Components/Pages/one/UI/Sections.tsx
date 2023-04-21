@@ -60,6 +60,8 @@ const Sections: React.FC<project> = (props) => {
     setShowSub(!showSub);
   };
   const showAboutHandler = () => {
+    const element = document.getElementById("about")
+    element?.scrollIntoView();
     setShowvid(false);
     setShowAbout(!showAbout);
   };
@@ -113,6 +115,7 @@ const Sections: React.FC<project> = (props) => {
           </section>
 
           {/* Media Player */}
+
           {showSub && (
             <ReactPlayer
               id="mediaplayer"
@@ -125,7 +128,8 @@ const Sections: React.FC<project> = (props) => {
 
           {/* Content paragraph */}
 
-          <About about={showAbout} content={props.contentMain} icons={props.techUsed}/>
+          <About show={showSub} about={showAbout} content={props.contentMain} content2={props.contentSup} icons={props.techUsed}/>
+         
           {/* Navagation & links */}
 
           {showSub && (
@@ -134,7 +138,7 @@ const Sections: React.FC<project> = (props) => {
                 <button id="videobtn" className={classes.navbtn} onClick={showVidHandler}>
                   Video
                 </button>
-                <button className={classes.navbtn} onClick={showAboutHandler}>
+                <button id="about" className={classes.navbtn} onClick={showAboutHandler}>
                   About
                 </button>
                 <div className={classes.links}>

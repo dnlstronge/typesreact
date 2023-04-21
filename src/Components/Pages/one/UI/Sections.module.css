@@ -67,7 +67,7 @@
     height: 6rem;
     width: 15%;
     transition: width 0.7s, height 1s;
-    transition: all 2s ease-in-out;
+    transition: all 1s ease-in-out;
     border: 2px solid white;
     margin-left: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -95,11 +95,6 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: 1;
 }
-
-
-
-
-/* Media Player */
 
 
 /* About (content) */
