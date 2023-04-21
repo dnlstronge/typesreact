@@ -3,6 +3,7 @@ import ReactPlayer from "react-player";
 import classes from "./Sections.module.css";
 import project from "../../../../Models/Projects";
 import { Link } from "react-router-dom";
+import About from "./About";
 /* Testing (sections.test.tsx) */
 
 /* <Config>
@@ -35,6 +36,7 @@ const Sections: React.FC<project> = (props) => {
           width: 640px;
           margin-left: 20%;
           margin-right: 20%;
+          marfin-bottom: 2rem;
           border: 2rem; solid black;
           transition: all 2s ease-in-out;
           transition: width 2s, height 3s;`;
@@ -45,6 +47,7 @@ const Sections: React.FC<project> = (props) => {
           width: 640px;
           margin-left: 20%;
           margin-right: 20%;
+          margin-bottom: 0;
           border: 2rem; solid black;
           transition: all 1s ease-in-out;
           transition: width 1s, height 2s;`;
@@ -121,10 +124,11 @@ const Sections: React.FC<project> = (props) => {
           )}
 
           {/* Content paragraph */}
+
           {showSub && (
             <p className={about}>{showAbout ? props.contentMain : ""}</p>
           )}
-
+          <About />
           {/* Navagation & links */}
 
           {showSub && (

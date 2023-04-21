@@ -11,14 +11,15 @@
 
 }
 .btn {
+    
     font-size: 2rem;
     height: 6rem;
     width: 100%;
     background: rgb(32, 32, 32);
     color: whitesmoke;
     border-radius: 6px;
-    border: 3px solid black;
-    border-top-left-radius: 90%;
+    
+    border-top-left-radius: 70%;
     border-top-right-radius: 6px;
     box-shadow: inset 0 0 10px #333;
     padding-left: 70%;
@@ -95,22 +96,7 @@
     z-index: 1;
 }
 
-/* bottom */ 
 
-.snapto {
-    width: 100%;
-    background:rgb(169, 168, 168);
-    height: 1rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.snaptotrans {
-    width: 100%;
-    background:rgb(169, 168, 168);
-    height: 1rem;
-    margin-top: 14rem;
-    margin-bottom: 4rem;
-}
 
 
 /* Media Player */
@@ -122,20 +108,22 @@
     
     height: 0;
     width: 100;
-  
-    transition: all 2s ease-in-out;
+    transition: all 2s ease-out;
     transition: width 2s, height 3s;
 }
 .aboutactive {
     font-size: large;
     color: white;
     background-color: #333;
-    height: 10rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    height: 12rem;
     width: 70%;
     margin: auto;
     padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: width 2s, height 3s;
+    
    
 }
 /* Nav-bar and buttons */
@@ -145,6 +133,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
+    margin-top: 1rem;
 }
 .navbtn {
     font-family:Arial, Helvetica, sans-serif;
@@ -152,6 +141,7 @@
     padding: 0.2rem;
     text-decoration: none;
     padding-top: 1rem;
+    margin-left: 2rem;
     text-align: center;
     background: rgb(33, 32, 32);
     width: 24%;
@@ -176,7 +166,7 @@
 /*Project links to github & demo*/
 
 .navbuttons {
-
+    background: black;
 }
 
 .links {
@@ -185,6 +175,7 @@
     margin-left: 10%;
     margin-bottom: 0;
     margin-top: 1rem;
+    margin-left: 2rem;
     
 }
 .navanchor {
@@ -203,7 +194,7 @@
     color: white;
     cursor: pointer;
     margin-left: 2rem;
-    margin-top: 0,5rem;
+    margin-top: 0.5rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
 }
@@ -216,6 +207,22 @@
     background: grey;;
 }
 
+/* bottom */ 
+
+.snapto {
+    width: 100%;
+    background:rgb(169, 168, 168);
+    height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.snaptotrans {
+    width: 100%;
+    background: transparent;
+    height: 1rem;
+    margin-top: 20rem;
+    margin-bottom: 4rem;
+}
 
 
 
