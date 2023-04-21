@@ -7,11 +7,12 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <motion.div className={classes.container}
-    
-    initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}>
+    <motion.div
+      className={classes.container}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <header className={classes.headsection}>
         <h4 className={classes.heading}>Projects</h4>
         <Link to="/" className={classes.back}>

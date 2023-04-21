@@ -17,7 +17,7 @@ const Navbar = () => {
             <Link className={classes.links} to="/projects">
                 <NavButton onClick={() => {}} text="Projects"/>
             </Link>
-            <Link className={classes.links} to="">
+            <Link className={classes.links} to="/playground">
                 <NavButton onClick={() => {}} text="Playground"/>
             </Link>
             <Link className={classes.links} to="">
