@@ -22,7 +22,6 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { AiOutlineHtml5 } from "react-icons/ai";
 
 const icons = {
-    
     react: <FaReact className={`classes.reacticon`} />,
     css: <BsFiletypeCss className={"classes.cssicon"} />,
     html5: <AiOutlineHtml5 className={"classes.htmlicon"}/>,

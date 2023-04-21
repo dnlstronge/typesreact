@@ -28,7 +28,7 @@ icons: array of strings (checked with icons map to render icons)
 req: react ICONS
 */
 
-const About: React.FC<{ content: string, icons: string[] }> = (props) => {
+const About: React.FC<{ content: string, icons: JSX.Element[] }> = (props) => {
   return (
     <div>
       {/*content main */}
@@ -39,7 +39,7 @@ const About: React.FC<{ content: string, icons: string[] }> = (props) => {
       <section className={classes.icons}>
        {props.icons.map((tech) => {
         
-        return <div>{icons[tech]}</div>
+        return <div>{tech}</div>
        })}
       </section>
     </div>
