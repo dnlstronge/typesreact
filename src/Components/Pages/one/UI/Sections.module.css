@@ -33,7 +33,7 @@
     display: flex;
     background: rgb(169, 168, 168);
     height: 1rem;
-    width: 99%;
+    width: 100%;
     margin: auto;
     transition: width 0.3s, height 0.5s;
     
@@ -45,7 +45,7 @@
     background: rgb(169, 168, 168);
     display: flex;
     height: 10rem;
-    width: 99%;
+    width: 100%;
     transition: width 0.5s, height 1s;
     margin: auto;
     
@@ -62,10 +62,11 @@
     width: 0;
 }
 .showimagemain {
+    position: relative;
     height: 6rem;
-    width: 17%;
+    width: 15%;
     transition: width 0.7s, height 1s;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     border: 2px solid white;
     margin-left: 1rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -75,9 +76,9 @@
     display: flex;
     position: absolute;
     z-index: 3;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0rem;
     height: 25rem;
     width: 35rem;
     border: 2rem solid rgba(32, 33, 33, 0.2);
@@ -104,7 +105,11 @@
     margin-bottom: 2rem;
 }
 .snaptotrans {
+    width: 100%;
+    background:rgb(169, 168, 168);
+    height: 1rem;
     margin-top: 14rem;
+    margin-bottom: 4rem;
 }
 
 
@@ -112,6 +117,7 @@
 
 .player {
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 /* About (content) */
@@ -120,6 +126,8 @@
     
     height: 0;
     width: 100;
+  
+    transition: all 2s ease-in-out;
     transition: width 2s, height 3s;
 }
 .aboutactive {
@@ -132,6 +140,7 @@
     padding: 2rem;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: width 2s, height 3s;
+   
 }
 /* Nav-bar and buttons */
 

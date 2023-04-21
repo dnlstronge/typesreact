@@ -57,6 +57,7 @@ const Sections: React.FC<project> = (props) => {
   const mounted = showSub ? classes.contentfoldertrans : classes.contentfolder;
   const mainimage = showSub ? classes.showimagemain : classes.imagemain;
   const about = showAbout ? classes.aboutactive : classes.aboutinactive;
+  const snapto = showSub ? classes.snaptotrans : classes.snapto;
   
 
   return (
@@ -134,7 +135,7 @@ const Sections: React.FC<project> = (props) => {
           )}
         
       </div>
-      <section className={classes.snapto} id="snapto"></section>
+      <section className={snapto} id="snapto"></section>
       </section>
       
       </>
