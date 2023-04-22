@@ -32,19 +32,21 @@ const icons = {
   git: <FaGitAlt color={colorGit} size="5rem" />,
   github: <VscGithub color={colorGithub} size="5rem" />,
   firebase: <IoLogoFirebase color={colorFireB}size="5rem"  />,
-  node: <FaNodeJs color={colorNode}size="5rem"  />,
-  mongoDB: <SiMongodb color={colorMongo} />
+  node: <FaNodeJs color={colorNode} size="5rem" />,
+  mongoDB: <SiMongodb color={colorMongo} size="5rem" />
 };
 
 const homeContent = {
-  main: `Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-     Libero soluta, repellendus eos quia, commodi, voluptatum
-      exercitationem corporis asperiores reprehenderit cumque odio natus 
-      non molestias sit eveniet adipisci! A tempora voluptatum 
-      pariatur mollitia facere eligendi odio fuga consequatur, 
-      enim suscipit distinctio inventore ullam explicabo blanditiis
-       dolorum at nostrum voluptatem commodi delectus, accusantium eos, 
-       maiores voluptas? Blanditiis.`,
+  main: `I am an enthusiastic and hard-working developmer who is really passionate about what they do.
+   I’m looking for my first professional opportunity in software development. 
+   I have already attained a solid knowledge base and competency with vanilla JavaScript and TypeScript
+   and have been building relatively complex SPAs with React. I am eager to develop my skills professionally
+   and I’m always eager to learn something new tech, and would relish the right opportunity.
+   I am currently employed in the public sector and have been leveraging my expertise and knowledge in this area to 
+   build helpful applications and tools which I use on a daily basis.
+   
+  `,
+  sup: ``,
   tech: [
     icons.react,
     icons.typescript,
@@ -55,6 +57,7 @@ const homeContent = {
     icons.css,
     icons.html5,
     icons.firebase,
+    icons.mongoDB
     
 
   ],

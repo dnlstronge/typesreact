@@ -19,7 +19,9 @@ const Home = () => {
       </header>
       <div className={classes.content}>
         <p className={classes.contentpara}>{homeContent.main}</p>
+        <h3 className={classes.techHead}>Tech</h3>
         <section className={classes.techused}>
+          
           {homeContent.tech.map((tech, index) => {
             return(
               <div key={index}>{tech}</div>
