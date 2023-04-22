@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FaReact } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
 import { IoLogoJavascript } from "react-icons/io";
@@ -37,16 +39,16 @@ const icons = {
 };
 
 const homeContent = {
-  main: `I am an enthusiastic and hard-working developer who is really passionate about what they do.
-   I’m looking for my first professional opportunity in software development. 
-   I have already attained a solid knowledge base and competency with vanilla JavaScript and TypeScript
-   and have been building relatively complex SPAs with React. I am eager to develop my skills professionally
-   and I’m always eager to learn something new tech, and would relish the right opportunity.
-   I am currently employed in the public sector and have been leveraging my expertise and knowledge in this area to 
-   build helpful applications and tools which I use on a daily basis.
-   
+  main: `
+  I am an enthusiastic and hard-working developer who is really passionate about what they do. 
+  I’m looking for my first professional opportunity in software development. 
+  I have a solid knowledge base and competency with vanilla JavaScript and TypeScript and have 
+  experience building relatively complex SPAs with React. I am eager to develop my skills professionally, always eager to learn some new tech, and would relish the right opportunity. I am currently working in the public sector and have been leveraging my expertise and knowledge in this area to build helpful applications and tools which I use on a daily basis.
   `,
-  sup: ``,
+  sup: `My tech stack primarily includes React, Typescript and Node. 
+  I have solid skills in Html and Css. I have experience using flexible data-models 
+  such as MongoDb and cloud-computing platforms such as Google Firebase. Please feel free to have a look though
+  my projects section.`,
   tech: [
     icons.react,
     icons.typescript,
