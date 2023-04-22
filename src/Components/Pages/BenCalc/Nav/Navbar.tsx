@@ -26,11 +26,11 @@ const Navbar: React.FC<navBar> = (props) => {
 
   return (
     <nav className={classes.navbar}>
-      <button onClick={() => props.showHome} className={homeActive}>Home</button>
+      <button onClick={props.showHome} className={homeActive}>Home</button>
       <div className={classes.navbtns}></div>
-      <button onClick={() => props.showPrograms} className={programsActive}>Programs</button>
-      <button onClick={() => props.showResources} className={resourcesActive}>Resources</button>
-      <button onClick={() => props.showInfo} className={infoActive}>Info</button>
+      <button onClick={props.showPrograms} className={programsActive}>Programs</button>
+      <button onClick={props.showResources} className={resourcesActive}>Resources</button>
+      <button onClick={props.showInfo} className={infoActive}>Info</button>
     </nav>
   );
 };
