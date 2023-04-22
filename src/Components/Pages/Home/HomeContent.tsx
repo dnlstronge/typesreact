@@ -30,7 +30,7 @@ const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
        animate={{ width: "90%", background: "black", marginLeft:"4rem" }}
        exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
       >
-      <h3 className={classes.techHead}>Tech</h3>
+      <h3 className={classes.techHead}>Tech...</h3>
       <section className={classes.techused}>
         {homeContent.tech.map((tech, index) => {
           return <div key={index}>{tech}</div>;

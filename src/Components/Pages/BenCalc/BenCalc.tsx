@@ -15,16 +15,32 @@ const BenCalc = () => {
 
   /* Handlers */
   const homeHandler = () => {
-    setHome(!home)
+    console.log("handler fired")
+    setHome(true)
+    setPrograms(false)
+    setResources(false)
+    setInfo(false)
   } 
   const programsHandler = () => {
-    setPrograms(!programs)
+    console.log("handler fired")
+    setHome(false)
+    setPrograms(true)
+    setResources(false)
+    setInfo(false)
   }
   const resourcesHandler = () => {
-    setResources(!resources)
+    console.log("handler fired")
+    setHome(false)
+    setPrograms(false)
+    setResources(true)
+    setInfo(false)
   }
   const infoHandler = () => {
-    setInfo(!info)
+    console.log("handler fired")
+    setHome(false)
+    setPrograms(false)
+    setResources(false)
+    setInfo(true)
   }
 
   return (

@@ -30,7 +30,7 @@ import { SiMongodb } from "react-icons/si"
 const colorReact = `rgb(155, 207, 225)` // light blue
 const colorCSS = `rgb(220, 125, 220)` // pinkish
 const colorTypes = `rgb(66, 163, 195)` // blueish (darker)
-const colorJS = `rgb(106, 148, 206);` // bluey
+const colorJS = `rgb(106, 148, 206)` // bluey
 const colorHtml = `rgb(250, 166, 9)` // orange
 const colorNode = `rgb(71, 176, 71)` // light green
 const colorFireB = ` rgb(248, 184, 65)` // lighter orange
@@ -38,14 +38,14 @@ const colorMongo = `rgb(94, 155, 94)` // lighter green
 
 
 const icons = {
-  react: <FaReact color={colorReact} size="3rem" />,
-  css: <BsFiletypeCss color={colorCSS} size="3rem" />,
-  html5: <AiOutlineHtml5 color={colorTypes} size="3rem"  />,
-  typescript: <TbBrandTypescript color={colorHtml} size="3rem" />,
-  javascript: <IoLogoJavascript color={colorJS} size="3rem"  />,
-  node: <FaNodeJs color={colorNode} size="3rem"  />,
-  firebase: < IoLogoFirebase color={colorFireB} size="3rem" />,
-  mongoDB: <SiMongodb color={colorMongo} size="3rem"/>
+  react: <FaReact key="react" color={colorReact} size="3rem" />,
+  css: <BsFiletypeCss key="css" color={colorCSS} size="3rem" />,
+  html5: <AiOutlineHtml5 key="html5" color={colorTypes} size="3rem"  />,
+  typescript: <TbBrandTypescript key="typescript" color={colorHtml} size="3rem" />,
+  javascript: <IoLogoJavascript key="javascript" color={colorJS} size="3rem"  />,
+  node: <FaNodeJs key="node" color={colorNode} size="3rem"  />,
+  firebase: < IoLogoFirebase key="firebase" color={colorFireB} size="3rem" />,
+  mongoDB: <SiMongodb key="mongodb" color={colorMongo} size="3rem"/>
 };
 
 /*  for typing config see models */

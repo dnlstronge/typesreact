@@ -1,5 +1,5 @@
 import React from "react";
-import iconData from "../../../../Models/dataIcons";
+
 import classes from "./About.module.css";
 import { FaReact } from "react-icons/fa";
 import { BsFiletypeCss } from "react-icons/bs";
@@ -19,6 +19,8 @@ const icons = {
   typescript: <TbBrandTypescript className={classes.tsicon}/>,
   javascript: <IoLogoJavascript className={classes.jsicon} />,
 };
+
+
 
 /* config: 
 

@@ -14,23 +14,23 @@ type navBar = {
 
 
 
-const Navbar: React.FC<navBar> = (props, {home, programs, resources, info}) => {
+const Navbar: React.FC<navBar> = (props) => {
 
      /* Styling and animation */
 
-  const homeActive = !home ? classes.navnbtn : classes.navbtnactive;
-  const programsActive = !programs ? classes.navnbtn : classes.navbtnactive;
-  const resourcesActive = !resources ? classes.navnbtn : classes.navbtnactive;
-  const infoActive = !info ? classes.navnbtn : classes.navbtnactive;
+  const homeActive = !props.home ? classes.navbtn : classes.btnactive;
+  const programsActive = !props.programs ? classes.navbtn : classes.btnactive;
+  const resourcesActive = !props.resources ? classes.navbtn : classes.btnactive;
+  const infoActive = !props.info ? classes.navbtn : classes.btnactive;
 
 
   return (
     <nav className={classes.navbar}>
-      <button onClick={props.showHome} className={homeActive}>Home</button>
+      <button onClick={() => props.showHome} className={homeActive}>Home</button>
       <div className={classes.navbtns}></div>
-      <button onClick={props.showPrograms} className={programsActive}>Programs</button>
-      <button onClick={props.showResources} className={resourcesActive}>Resources</button>
-      <button onClick={props.showInfo} className={infoActive}>Info</button>
+      <button onClick={() => props.showPrograms} className={programsActive}>Programs</button>
+      <button onClick={() => props.showResources} className={resourcesActive}>Resources</button>
+      <button onClick={() => props.showInfo} className={infoActive}>Info</button>
     </nav>
   );
 };
