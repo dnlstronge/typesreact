@@ -8,6 +8,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
 import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si"
 
 /* color variables */
 const colorReact = `rgb(155, 207, 225)`; // light blue
@@ -20,6 +21,7 @@ const colorGit = `rgb(211, 140, 8)`; // darker orange
 const colorJS = `rgb(106, 148, 206)` // bluey
 const colorFireB = ` rgb(248, 184, 65)`; // lighter orange
 const colorGithub = `rgb(255, 255, 255)`; // white
+const colorMongo = `rgb(94, 155, 94)` // lighter green
 
 const icons = {
   react: <FaReact color={colorReact} size="5rem" />,
@@ -31,6 +33,7 @@ const icons = {
   github: <VscGithub color={colorGithub} size="5rem" />,
   firebase: <IoLogoFirebase color={colorFireB}size="5rem"  />,
   node: <FaNodeJs color={colorNode}size="5rem"  />,
+  mongoDB: <SiMongodb color={colorMongo} />
 };
 
 const homeContent = {
@@ -50,6 +53,7 @@ const homeContent = {
     icons.git,
     icons.github,
     icons.css,
+    icons.html5,
     icons.firebase,
     
 

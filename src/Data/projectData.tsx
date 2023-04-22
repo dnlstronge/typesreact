@@ -22,6 +22,7 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaNodeJs } from "react-icons/fa"
 import { IoLogoFirebase } from "react-icons/io5"
+import { SiMongodb } from "react-icons/si"
 
 
 
@@ -33,6 +34,7 @@ const colorJS = `rgb(106, 148, 206);` // bluey
 const colorHtml = `rgb(250, 166, 9)` // orange
 const colorNode = `rgb(71, 176, 71)` // light green
 const colorFireB = ` rgb(248, 184, 65)` // lighter orange
+const colorMongo = `rgb(94, 155, 94)` // lighter green
 
 
 const icons = {
@@ -42,7 +44,8 @@ const icons = {
   typescript: <TbBrandTypescript color={colorHtml} size="3rem" />,
   javascript: <IoLogoJavascript color={colorJS} size="3rem"  />,
   node: <FaNodeJs color={colorNode} size="3rem"  />,
-  firebase: < IoLogoFirebase color={colorFireB} size="3rem" />
+  firebase: < IoLogoFirebase color={colorFireB} size="3rem" />,
+  mongoDB: <SiMongodb color={colorMongo} size="3rem"/>
 };
 
 /*  for typing config see models */
