@@ -2,14 +2,18 @@ import React from "react";
 import classes from "BenCalcLoader.module.css"
 
 const BenCalc = () => {
+    /* Local state */
+
+    /* Handlers */
+
     return (
         <div className={classes.container}>
-            <nav>
-                <button>Programs</button>
-                <button>Resources</button>
-                <button>Info</button>
+            <nav className={classes.navbar}>
+                <button className={classes.navbtn}>Programs</button>
+                <button className={classes.navbtn}>Resources</button>
+                <button className={classes.navbtn}>Info</button>
             </nav>
-            
+            <section className={classes.section}></section>
             {/* components for each section to follow */}
 
         </div>
