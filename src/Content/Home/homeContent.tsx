@@ -37,7 +37,7 @@ const icons = {
 };
 
 const homeContent = {
-  main: `I am an enthusiastic and hard-working developmer who is really passionate about what they do.
+  main: `I am an enthusiastic and hard-working developer who is really passionate about what they do.
    I’m looking for my first professional opportunity in software development. 
    I have already attained a solid knowledge base and competency with vanilla JavaScript and TypeScript
    and have been building relatively complex SPAs with React. I am eager to develop my skills professionally
