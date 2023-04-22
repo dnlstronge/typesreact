@@ -17,9 +17,9 @@ const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
       {showAbout && (
         <motion.div
           className={classes.abouttext}
-          initial={{ width: 0, background: "black", color: "black" }}
-          animate={{ width: "90%", background: "black", color: "white" }}
-          exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+          initial={{ width: 0, height: 0, background: "black", color: "black" }}
+          animate={{ width: "90%", height: "20%", background: "black", color: "white" }}
+          exit={{ y: window.outerHeight, transition: { duration: 0.7 } }}
         >
           {homeContent.main}<br></br>{homeContent.sup}
         </motion.div>
@@ -28,7 +28,7 @@ const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
       < motion.div
        initial={{ width: 0, background: "black", }}
        animate={{ width: "90%", background: "black", marginLeft:"4rem" }}
-       exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
       >
       <h3 className={classes.techHead}>Tech</h3>
       <section className={classes.techused}>
