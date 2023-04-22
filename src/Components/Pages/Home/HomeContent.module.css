@@ -1,7 +1,7 @@
 .headabout {
     color: white;
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
 
 
@@ -16,10 +16,10 @@
       margin-top: 8rem;
     }
     .techused {
-      margin-left: 10%;
+      margin-left: 5%;
       margin-right: 10%;
       display: flex;
-      margin-top: 4rem;
+      margin-top: 3rem;
       flex-direction: row;
     
     }
@@ -28,11 +28,12 @@
 
 
 .abouttext {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
   display: flex;
   height: auto;
   width: 90%;
-  margin-left: 2rem;
+  margin-left: 4rem;
   margin-bottom: 2rem;
 
 
