@@ -14,6 +14,18 @@ const BenCalc = () => {
  
 
   /* Handlers */
+  const homeHandler = () => {
+    setHome(!home)
+  } 
+  const programsHandler = () => {
+    setPrograms(!programs)
+  }
+  const resourcesHandler = () => {
+    setResources(!resources)
+  }
+  const infoHandler = () => {
+    setInfo(!info)
+  }
 
   return (
     <motion.div
@@ -23,10 +35,10 @@ const BenCalc = () => {
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <Navbar
-        showHome={setHome}
-        showPrograms={setPrograms}
-        showResources={setResources}
-        showInfo={setInfo}
+        showHome={homeHandler}
+        showPrograms={programsHandler}
+        showResources={resourcesHandler}
+        showInfo={infoHandler}
         home={home}
         programs={programs}
         resources={resources}

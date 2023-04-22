@@ -2,10 +2,10 @@ import React from "react";
 import classes from "./Navbar.module.css";
 
 type navBar = {
-  showHome: React.Dispatch<React.SetStateAction<boolean>>;
-  showPrograms: React.Dispatch<React.SetStateAction<boolean>>;
-  showResources: React.Dispatch<React.SetStateAction<boolean>>;
-  showInfo: React.Dispatch<React.SetStateAction<boolean>>;
+  showHome: () => void
+  showPrograms: () => void
+  showResources: () => void
+  showInfo: () => void
   home: boolean;
   programs: boolean;
   resources: boolean;
@@ -26,11 +26,11 @@ const Navbar: React.FC<navBar> = (props, {home, programs, resources, info}) => {
 
   return (
     <nav className={classes.navbar}>
-      <button className={homeActive}>Home</button>
+      <button onClick={props.showHome} className={homeActive}>Home</button>
       <div className={classes.navbtns}></div>
-      <button className={programsActive}>Programs</button>
-      <button className={resourcesActive}>Resources</button>
-      <button className={infoActive}>Info</button>
+      <button onClick={props.showPrograms} className={programsActive}>Programs</button>
+      <button onClick={props.showResources} className={resourcesActive}>Resources</button>
+      <button onClick={props.showInfo} className={infoActive}>Info</button>
     </nav>
   );
 };
