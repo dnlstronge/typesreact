@@ -1,0 +1,13 @@
+.container {
+    height: 0;
+    width: 100%;
+    color: white;
+    background: rgb(56, 56, 56);
+}
+
+.containerActive {
+    height: 20rem; 
+    width: 100%;
+    color: white;
+    background: rgb(56, 56, 56);
+}

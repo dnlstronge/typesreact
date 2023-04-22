@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import classes from "./BenCalc.module.css";
 import { motion } from "framer-motion";
-import Navbar from "./Nav/Navbar";
+import Navbar from "./BC-Nav/Navbar";
+import BCHome from "./BC-Home/BCHome";
 
 const BenCalc = () => {
   /* Local state */
@@ -15,28 +16,28 @@ const BenCalc = () => {
 
   /* Handlers */
   const homeHandler = () => {
-    console.log("handler fired")
+    
     setHome(true)
     setPrograms(false)
     setResources(false)
     setInfo(false)
   } 
   const programsHandler = () => {
-    console.log("handler fired")
+   
     setHome(false)
     setPrograms(true)
     setResources(false)
     setInfo(false)
   }
   const resourcesHandler = () => {
-    console.log("handler fired")
+   
     setHome(false)
     setPrograms(false)
     setResources(true)
     setInfo(false)
   }
   const infoHandler = () => {
-    console.log("handler fired")
+  
     setHome(false)
     setPrograms(false)
     setResources(false)
@@ -60,8 +61,11 @@ const BenCalc = () => {
         resources={resources}
         info={info}
       />
-      <section className={classes.section}></section>
+      <section className={classes.section}>
+         <BCHome showHome={home} />
+      </section>
       {/* components for each section to follow */}
+     
     </motion.div>
   );
 };

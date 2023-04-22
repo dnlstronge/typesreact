@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    height: 10rem;
+    height: 8rem;
     width: 100%;
     background: grey;
     flex-direction: row;
@@ -14,23 +14,23 @@
     padding: 1rem;
     display: flex;
     color: rgb(37, 36, 36);
-    height: 4rem;
+    height: 5rem;
     width: 7rem;
     margin-top: 6rem;
     margin-bottom: 0;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    
+    border-radius: 2px;
+    border-bottom: none;
+  
 }
 .navbtn:hover {
     background: rgb(56, 56, 56);
     color: white;
-    transition: all 1.2s;
+    transition: all 1.1s;
     cursor: pointer;
 }
 .btnactive {
     background: rgb(56, 56, 56);
     color: white;
     transition: all 1.2s;
+    border-width: 0;
 }
