@@ -1,41 +1,43 @@
-import React from 'react'
-import classes from "./HomeContent.module.css"
-import homeContent from '../../../Content/Home/homeContent'
-import { motion } from "framer-motion"
+import React from "react";
+import classes from "./HomeContent.module.css";
+import homeContent from "../../../Content/Home/homeContent";
+import { AnimatePresence, motion } from "framer-motion";
 
-
-const HomeContent: React.FC<{showAbout: boolean}> = ({showAbout}) => {
-
-    /* animations */
-const abouttext = showAbout ? classes.showabouttext : classes.abouttext
-
+const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
+  /* animations */
+  const abouttext = showAbout ? classes.showabouttext : classes.abouttext;
+  const variants = {
+    show: { color: "blue" },
+    open: { color: "red" },
+  };
   return (
     <div className={classes.content}>
-        <h2 className={classes.headabout}>About...</h2>
-     
-        <motion.div className={classes.abouttext}
-            initial={{ width: 0, background: "black" }}
-            animate={{ width: "100%", background: "black" }}
-            exit={{ x: window.innerWidth, transition: {duration: 0.1} }}
+      {showAbout && 
+      <h2 className={classes.headabout}>About...</h2>}
+      {showAbout && (
+        <motion.div
+          className={classes.abouttext}
+          initial={{ width: 0, background: "black", color: "black" }}
+          animate={{ width: "90%", background: "black", color: "white" }}
+          exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
         >
-         {showAbout &&
-          <p>{homeContent.main}</p>}
-          </motion.div>
-      
-    
-
-
-        <h3 className={classes.techHead}>Tech</h3>
-        <section className={classes.techused}>
-          
-          {homeContent.tech.map((tech, index) => {
-            return(
-              <div key={index}>{tech}</div>
-             
-            )
-          })}
-        </section>
-      </div>
-  )
-}
+          {homeContent.main}<br></br>{homeContent.sup}
+        </motion.div>
+      )}
+      {showAbout && 
+      < motion.div
+       initial={{ width: 0, background: "black", }}
+       animate={{ width: "90%", background: "black", marginLeft:"4rem" }}
+       exit={{ x: window.innerWidth, transition: { duration: 0.7 } }}
+      >
+      <h3 className={classes.techHead}>Tech</h3>
+      <section className={classes.techused}>
+        {homeContent.tech.map((tech, index) => {
+          return <div key={index}>{tech}</div>;
+        })}
+      </section>
+      </motion.div> }
+    </div>
+  );
+};
 export default HomeContent;

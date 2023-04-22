@@ -16,6 +16,8 @@ const [showAbout, setShowAbout] = useState(false)
   const showAboutHandler = () => {
    // setShowContact(false)
     setShowAbout(!showAbout)
+    const element = document.getElementById("focusdiv")
+    element?.scrollIntoView()
   }
 
 
@@ -37,7 +39,7 @@ const [showAbout, setShowAbout] = useState(false)
      
 
         <HomeContent showAbout={showAbout} />
-
+        <div id="focusdiv"></div>
      
       
       {/* add skills & tech */}
