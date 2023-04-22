@@ -34,13 +34,18 @@
 
 .aboutbtn {
   display: flex;
-  height: 10rem;
+  height: 3rem;
   width: 10rem;
   color: white;
   background: grey;
   margin-left: 6rem;
   padding: 1rem;
   border-radius: 6px;
+}
+.aboutbtn:hover {
+  background: rgb(213, 207, 207);
+  transition: all 2s;
+  transform: scale(1.1);
 }
 
 

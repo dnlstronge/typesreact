@@ -72,7 +72,7 @@ const Sections: React.FC<project> = (props) => {
     if (imageClicked) {
       const element = document.getElementById(id)!;
       element.className = classes.showimageenlarged;
-      const snapto = document.getElementById("snapto")!;
+      const snapto = document.getElementById("snapimage")!;
       snapto.scrollIntoView();
     } else {
       const element = document.getElementById(id)!;
@@ -94,7 +94,7 @@ const Sections: React.FC<project> = (props) => {
           {props.title}
         </button>
 
-        <div className={mounted}>
+        <div id="imagesnap" className={mounted}>
           {/* images */}
           <section className={classes.imageSection}>
             <img className={mainimage} src={props.image} alt={props.title} />
