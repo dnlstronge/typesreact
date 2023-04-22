@@ -18,6 +18,7 @@ const Home = () => {
       
       </header>
       <div className={classes.content}>
+        <h2 className={classes.headabout}>About...</h2>
         <p className={classes.contentpara}>{homeContent.main}</p>
         <p className={classes.contentpara}>{homeContent.sup}</p>
         <h3 className={classes.techHead}>Tech</h3>

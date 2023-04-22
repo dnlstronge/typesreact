@@ -20,9 +20,13 @@
   color: white;
   height: 7rem;
   width: 100%;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   text-align: center;
   
+}
+.headabout {
+  color: white;
+  font-size: 2rem;
 }
 .heading {
   width: 70%;
@@ -45,6 +49,7 @@ background: black;;
   padding-top: 0;
 }
 .techHead {
+  font-size: 2rem;
   color: white;
 }
 .techused {
