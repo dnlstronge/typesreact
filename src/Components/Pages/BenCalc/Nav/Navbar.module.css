@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    height: 10rem;
+    width: 100%;
+    background: grey;
+    flex-direction: row;
+    padding-left: 8rem;
+    
+}
+.navbtns {
+    margin-left: 3rem;
+}
+.navbtn {
+    padding: 1rem;
+    display: flex;
+    color: rgb(37, 36, 36);
+    height: 4rem;
+    width: 7rem;
+    margin-top: 6rem;
+    margin-bottom: 0;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+}
+.navbtn:hover {
+    background: rgb(56, 56, 56);
+    color: white;
+    transition: all 1.2s;
+    cursor: pointer;
+}
+.btnactive {
+    background: rgb(56, 56, 56);
+    color: white;
+    transition: all 1.2s;
+}
