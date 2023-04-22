@@ -2,22 +2,22 @@ import React from "react";
 import classes from "./Home.module.css";
 import { useState } from "react"
 import { easeIn, motion } from "framer-motion";
-
+import Contact from "./Contact";
 import homeContent from "../../../Content/Home/homeContent";
 import HomeContent from "./HomeContent";
 
 const Home = () => {
 
 const [showAbout, setShowAbout] = useState(false)
-
+//const [showContact, setShowContact] = useState(false)
 
   /* Handlers  */
 
   const showAboutHandler = () => {
+   // setShowContact(false)
     setShowAbout(!showAbout)
   }
-  /* animations */
-const abouttext = showAbout ? classes.showabouttext : classes.abouttext
+
 
   return (
     <motion.div
@@ -33,16 +33,12 @@ const abouttext = showAbout ? classes.showabouttext : classes.abouttext
       </header>
       <div className={classes.buttons}> 
         <button onClick={showAboutHandler} className={classes.aboutbtn}>About</button>
-        <button className={classes.aboutbtn}>Contact</button> </div>
+        <button onClick={() => {}} className={classes.aboutbtn}>Contact</button> </div>
      
-    {showAbout && 
-      <motion.div
-        initial={{ width: "100%", height: 0, background: "black", color: "black" }}
-        animate={{ width: "100%", height: "100%", color: "white"}}
-        transition={{ease: easeIn, duration: "2s"}}
-      >
-        <HomeContent />
-      </motion.div>}
+
+        <HomeContent showAbout={showAbout} />
+
+     
       
       {/* add skills & tech */}
  

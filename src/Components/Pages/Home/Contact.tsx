@@ -31,7 +31,7 @@ const Contact = () => {
              {/* github*/}
         <div className={classes.contact}>
                 <BsGithub size="3rem"/>
-             <p>dnlstronge@gmail.com</p>
+             <p>https://github.com/dnlstronge</p>
         </div>
         
         <section />

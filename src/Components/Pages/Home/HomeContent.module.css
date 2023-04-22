@@ -1,34 +1,51 @@
 .headabout {
     color: white;
     font-size: 2rem;
+    margin-left: 2rem;
   }
 
 
 
 
-.content {
-    margin-top: 0rem;
-    padding: 4rem;
-    height: auto;
-    background: black;;
-    }
-    
 
-    .contentpara {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem;
-      color: white;
-      padding: 1rem;
-      padding-top: 0;
-    }
+
     .techHead {
       font-size: 2rem;
       color: white;
+      margin-left: 2rem;
+      margin-top: 8rem;
     }
     .techused {
-      margin-left: 5%;
+      margin-left: 10%;
       margin-right: 10%;
       display: flex;
+      margin-top: 4rem;
       flex-direction: row;
     
     }
+
+    /* animation */
+
+
+.abouttext {
+  color: white;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+
+ 
+}
+
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+}
