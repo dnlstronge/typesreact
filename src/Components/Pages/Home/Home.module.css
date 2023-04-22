@@ -11,6 +11,13 @@
     padding-top: 10%;
     color: rgb(94, 155, 94)
 }
+
+.heading {
+  width: 70%;
+  font-size: 4rem;
+
+
+}
 .headsection {
   display: flex;
   flex-direction: row;
@@ -24,41 +31,18 @@
   text-align: center;
   
 }
-.headabout {
-  color: white;
-  font-size: 2rem;
-}
-.heading {
-  width: 70%;
-  font-size: 4rem;
 
-
-}
-.content {
-margin-top: 1rem;
-padding: 4rem;
-height: auto;
-background: black;;
-}
-
-.contentpara {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
-  color: white;
-  padding: 1rem;
-  padding-top: 0;
-}
-.techHead {
-  font-size: 2rem;
-  color: white;
-}
-.techused {
-  margin-left: 5%;
-  margin-right: 10%;
+.aboutbtn {
   display: flex;
-  flex-direction: row;
-
+  height: 10rem;
+  width: 10rem;
+  color: white;
+  background: grey;
+  margin-left: 6rem;
+  padding: 1rem;
+  border-radius: 6px;
 }
+
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {

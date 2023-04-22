@@ -4,6 +4,7 @@ import classes from "./Home.module.css";
 import { motion } from "framer-motion";
 
 import homeContent from "../../../Content/Home/homeContent";
+import HomeContent from "./HomeContent";
 
 const Home = () => {
   return (
@@ -17,21 +18,10 @@ const Home = () => {
         <h4 className={classes.heading}>Home</h4>
       
       </header>
-      <div className={classes.content}>
-        <h2 className={classes.headabout}>About...</h2>
-        <p className={classes.contentpara}>{homeContent.main}</p>
-        <p className={classes.contentpara}>{homeContent.sup}</p>
-        <h3 className={classes.techHead}>Tech</h3>
-        <section className={classes.techused}>
-          
-          {homeContent.tech.map((tech, index) => {
-            return(
-              <div key={index}>{tech}</div>
-             
-            )
-          })}
-        </section>
-      </div>
+      <button className={classes.aboutbtn}>About</button>
+      <HomeContent />
+      {/* add skills & tech */}
+ 
     </motion.div>
   );
 };

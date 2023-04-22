@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className={classes.nav}>
             <div className={classes.navbtns}>
             <Link className={classes.links} to="">
-                <NavButton onClick={() => {}} text="About"/>
+                <NavButton onClick={() => {}} text="Home"/>
             </Link>
             <Link className={classes.links} to="/projects">
                 <NavButton onClick={() => {}} text="Projects"/>
