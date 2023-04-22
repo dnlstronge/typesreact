@@ -11,12 +11,7 @@ const BenCalc = () => {
   const [resources, setResources] = useState(false);
   const [info, setInfo] = useState(false);
 
-  /* Styling and animation */
-
-  const homeActive = !home ? classes.navnbtn : classes.navbtnactive;
-  const programsActive = !programs ? classes.navnbtn : classes.navbtnactive;
-  const resourcesActive = !resources ? classes.navnbtn : classes.navbtnactive;
-  const infoActive = !info ? classes.navnbtn : classes.navbtnactive;
+ 
 
   /* Handlers */
 
@@ -32,6 +27,10 @@ const BenCalc = () => {
         showPrograms={setPrograms}
         showResources={setResources}
         showInfo={setInfo}
+        home={home}
+        programs={programs}
+        resources={resources}
+        info={info}
       />
       <section className={classes.section}></section>
       {/* components for each section to follow */}

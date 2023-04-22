@@ -6,9 +6,24 @@ type navBar = {
   showPrograms: React.Dispatch<React.SetStateAction<boolean>>;
   showResources: React.Dispatch<React.SetStateAction<boolean>>;
   showInfo: React.Dispatch<React.SetStateAction<boolean>>;
+  home: boolean;
+  programs: boolean;
+  resources: boolean;
+  info: boolean;
 };
 
-const Navbar: React.FC<navBar> = () => {
+
+
+const Navbar: React.FC<navBar> = (props, {home, programs, resources, info}) => {
+
+     /* Styling and animation */
+
+  const homeActive = !home ? classes.navnbtn : classes.navbtnactive;
+  const programsActive = !programs ? classes.navnbtn : classes.navbtnactive;
+  const resourcesActive = !resources ? classes.navnbtn : classes.navbtnactive;
+  const infoActive = !info ? classes.navnbtn : classes.navbtnactive;
+
+
   return (
     <nav className={classes.navbar}>
       <button className={classes.navbtn}>Home</button>
