@@ -7,8 +7,15 @@ import { BsFillCalculatorFill } from "react-icons/bs"
 const UC = () => {
     return (
         <div className={classes.container}>
+            <a href="https://uccalc-11c98.web.app/" target="blank">
             <BsFillCalculatorFill className={classes.icon} color="lightgreen" size="4rem"/>
-            <p className={classes.text}>Universal Credit Reckoner. Quick calculator for Universal Credit entitlement</p>
+            </a>
+            <div className={classes.textsection}>
+                <h5 className={classes.texthead}> Universal Credit</h5>
+                <p className={classes.text}>  Quick calculator for Universal Credit entitlement, allows
+                users to input fincancial and household circumstances and return estimted 
+                monthly entitlemennt. </p>
+                </div>
         </div>
     )
 }
