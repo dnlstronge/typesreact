@@ -12,9 +12,9 @@ const UC = () => {
             </a>
             <div className={classes.textsection}>
                 <h5 className={classes.texthead}> Universal Credit</h5>
-                <p className={classes.text}>  Quick calculator for Universal Credit entitlement, allows
+                <p className={classes.text}>  Quick calculator for Universal Credit , allows
                 users to input fincancial and household circumstances and return estimted 
-                monthly entitlemennt. </p>
+                monthly entitlement. </p>
                 </div>
         </div>
     )
