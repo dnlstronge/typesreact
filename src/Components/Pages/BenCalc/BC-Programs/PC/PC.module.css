@@ -3,7 +3,8 @@
     padding: 2rem;
     display: flex;
     flex-direction: row;
-    background: rgb(161, 160, 160)
+    background: rgb(161, 160, 160);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .icon {
@@ -35,6 +36,7 @@
     border-radius: 12px;
     border: 2px solid white;
     padding: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
 .texthead {

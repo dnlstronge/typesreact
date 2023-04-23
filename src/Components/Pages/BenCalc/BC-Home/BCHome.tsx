@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./BCHome.module.css"
 import bencalcdata from "../../../../Content/BencalcData/bencalccontent";
+import { motion } from "framer-motion"
 
 const BCHome: React.FC<{showHome: boolean}> = (props) => {
 
@@ -10,7 +11,11 @@ const BCHome: React.FC<{showHome: boolean}> = (props) => {
 
     return (
         <>
-        <div className={showActive}>
+        <motion.div className={showActive}
+         initial={{ width: "0%", opacity: 0 , background: "black"}}
+         animate={{ width: "100%", opacity: 1, background:"rgb(56, 56, 56)"  }}
+         exit={{  opacity: 1, transition: { duration: 1.1 } }}
+        >
             {props.showHome && 
             <section className={classes.welcome}>
                
@@ -26,7 +31,7 @@ const BCHome: React.FC<{showHome: boolean}> = (props) => {
                     })}
                 </p>
             </section>}
-        </div>
+        </motion.div>
     
         </>
     )
