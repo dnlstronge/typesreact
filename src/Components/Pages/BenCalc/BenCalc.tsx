@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Navbar from "./BC-Nav/Navbar";
 import BCHome from "./BC-Home/BCHome";
 import BCPrograms from "./BC-Programs/BCPrograms";
+import BCResources from "./BC-Resources/BCResources";
+import BCInfo from "./BC-Info/BCInfo";
 
 const BenCalc = () => {
   /* Local state */
@@ -67,6 +69,10 @@ const BenCalc = () => {
          <BCHome showHome={home} />
        
          <BCPrograms showPrograms={programs} />
+
+         <BCResources showResources={resources} />
+
+         <BCInfo showInfo={info}/>
       </section>
       {/* components for each section to follow */}
      

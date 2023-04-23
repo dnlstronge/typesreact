@@ -1,0 +1,26 @@
+.container {
+    height: 0;
+    width: 100%;
+    color: white;
+    background: rgb(56, 56, 56);
+    transition: width 2s, height 4s
+}
+
+.containerActive {
+    height: 20rem; 
+    width: 100%;
+    color: white;
+    background: rgb(56, 56, 56);
+    transition: width 2s, height 2s
+    
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+
+}
