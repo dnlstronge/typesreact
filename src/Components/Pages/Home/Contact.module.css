@@ -1,3 +1,12 @@
+.container {
+    margin: auto;
+    margin-top: 0;
+}
+.contact {
+    margin-left: 15%;
+}
+
+
 .contacttext {
     color: white;
 }

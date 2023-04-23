@@ -21,23 +21,23 @@ const Contact = () => {
         {/* email */}
         <div className={classes.contact}>
                 <MdEmail size="3rem" color="red"/>
-             <p className={classes.contacttext}>dnlstronge@gmail.com</p>
+             <a href="mailto:dnlstronge@gmail.com" className={classes.contacttext}>dnlstronge@gmail.com</a>
         </div>
              {/* twitter */}
         <div className={classes.contact}>
                 <BsTwitter size="3rem" color="blue"/>
-             <p className={classes.contacttext}>@Stronge_D</p>
+             <a href="https://twitter.com/Stronge_D" target="blank" className={classes.contacttext}>@Stronge_D</a>
         </div>
            {/* linkedin*/}
            <div className={classes.contact}>
                 <BsLinkedin size="3rem" color="lightblue"/>
-             <p className={classes.contacttext}>https://www.linkedin.com/in/daniel-stronge-65a764b7</p>
+             <a href="https://www.linkedin.com/in/daniel-stronge-65a764b7" target="blank" className={classes.contacttext}>LinkedIn</a>
         </div>
         
              {/* github*/}
         <div className={classes.contact}>
                 <BsGithub size="3rem" color="green"/>
-             <p className={classes.contacttext}>https://github.com/dnlstronge</p>
+             <a href="https://github.com/dnlstronge"  target="blank" className={classes.contacttext}>https://github.com/dnlstronge</a>
         </div>
         
         <section />
