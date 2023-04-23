@@ -2,7 +2,7 @@
     color: white;
     font-size: 2rem;
     margin-left: 4rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
 
@@ -14,13 +14,13 @@
       font-size: 2rem;
       color: white;
       margin-left: 4rem;
-      margin-top: 12rem;
+      margin-top: 2rem;
     }
     .techused {
       margin-left: 10%;
       margin-right: 10%;
       display: flex;
-      margin-top: 3rem;
+      margin-top: 1rem;
 
       flex-direction: row;
     
@@ -37,7 +37,7 @@
   height: auto;
   width: 90%;
   margin-left: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 
 
  
