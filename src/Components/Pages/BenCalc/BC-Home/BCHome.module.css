@@ -14,17 +14,29 @@
     transition: width 2s, height 2s
     
 }
+.welcome {
+    padding-top: 2rem;
 
-
-.uopdatesHead {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif
+}
+.updatesHead {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 2rem;
 }
 .updatesBox {
+    background: black;
+    margin-top: 3rem;
+    padding: 1rem;
     border: 2px solid white;
     overflow: scroll;
     height: 4rem;
-    width: 10rem;
+    width: 50%;
+    margin-left: 4rem;
+    border-radius: 6px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* On screens that are 992px or less, set the background color to blue */

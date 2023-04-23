@@ -1,5 +1,5 @@
 const bencalcdata = {
-    p1: `Welcome to bencalc, the welfare rights toolkit`,
+    p1: `Welfare rights advice toolkit and resource`,
 
     updates: [
         "Rebuilt UI April 23",
