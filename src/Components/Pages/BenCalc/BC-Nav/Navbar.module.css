@@ -29,6 +29,7 @@
     cursor: pointer;
 }
 .btnactive {
+   
     background: rgb(56, 56, 56);
     color: white;
     transition: all 1.2s;

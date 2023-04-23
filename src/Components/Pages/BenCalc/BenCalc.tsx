@@ -3,6 +3,7 @@ import classes from "./BenCalc.module.css";
 import { motion } from "framer-motion";
 import Navbar from "./BC-Nav/Navbar";
 import BCHome from "./BC-Home/BCHome";
+import BCPrograms from "./BC-Programs/BCPrograms";
 
 const BenCalc = () => {
   /* Local state */
@@ -62,7 +63,10 @@ const BenCalc = () => {
         info={info}
       />
       <section className={classes.section}>
+       
          <BCHome showHome={home} />
+       
+         <BCPrograms showPrograms={programs} />
       </section>
       {/* components for each section to follow */}
      

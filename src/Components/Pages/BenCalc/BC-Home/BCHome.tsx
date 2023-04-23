@@ -10,7 +10,9 @@ const BCHome: React.FC<{showHome: boolean}> = (props) => {
 
     return (
         <>
-        <div className={showActive}>test</div>
+        <div className={showActive}>
+            <section></section>
+        </div>
     
         </>
     )
