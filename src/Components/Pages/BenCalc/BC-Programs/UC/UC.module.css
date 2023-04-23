@@ -1,5 +1,5 @@
 .container {
-   
+    height: auto;
     padding: 3rem;
     display: flex;
     flex-direction: row;
