@@ -17,6 +17,8 @@
     
 }
 .programboxes {
+  
+    flex-wrap: wrap;
     padding-top: 3rem;
 }
 

@@ -26,13 +26,16 @@
     cursor: pointer;
 }
 .textsection {
-    font-family: Arial, Helvetica, sans-serif;
+    
     display: flex;
+    overflow: scroll;
+    font-family: Arial, Helvetica, sans-serif;
+  
     flex-direction: column;
     height: 5rem;
     margin-left: 2rem;
     background: grey;
-    width: 65%;
+    width: 85%;
     border-radius: 12px;
     border: 2px solid white;
     padding: 0.2rem;
