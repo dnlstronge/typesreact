@@ -8,7 +8,8 @@ const bencalcdata = {
         "Major changes to UI implmented - March 23",
         "Pension Credit reckoner has been updated = feb 23",
         "Added UC reckoner - jan 23",
-        "manual tests of UC calc - need to add capital section"
+        "manual tests of UC calc - need to add capital section",
+        "early version deployed - jan 23"
 
     ]
 }

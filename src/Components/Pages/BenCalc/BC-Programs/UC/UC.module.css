@@ -1,0 +1,30 @@
+.container {
+   
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    background: rgb(161, 160, 160)
+}
+
+.icon {
+    margin-left: 2rem;
+    background: rgb(127, 124, 124);
+    padding: 1rem;
+    border: 4px solid grey;
+    border-radius: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.icon:hover {
+    background: rgb(190, 181, 181);
+    color: rgb(28, 150, 28);
+    padding: 1rem;
+    border: 4px solid rgb(242, 241, 241);
+    border-radius: 25%;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.text {
+    margin-left: 3rem;
+}
