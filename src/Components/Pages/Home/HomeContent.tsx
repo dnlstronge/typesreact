@@ -4,12 +4,8 @@ import homeContent from "../../../Content/Home/homeContent";
 import { AnimatePresence, motion } from "framer-motion";
 
 const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
-  /* animations */
-  const abouttext = showAbout ? classes.showabouttext : classes.abouttext;
-  const variants = {
-    show: { color: "blue" },
-    open: { color: "red" },
-  };
+ 
+ 
   return (
     <div className={classes.content}>
       {showAbout && 
