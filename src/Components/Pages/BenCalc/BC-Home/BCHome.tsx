@@ -11,7 +11,11 @@ const BCHome: React.FC<{showHome: boolean}> = (props) => {
     return (
         <>
         <div className={showActive}>
-            <section></section>
+            <section className={classes.welcome}>
+                <p></p>
+                <h4 className={classes.updatesHead}>Updates</h4>
+                <p className={classes.updatesBox}></p>
+            </section>
         </div>
     
         </>

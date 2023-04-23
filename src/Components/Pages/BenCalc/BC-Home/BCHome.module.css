@@ -15,6 +15,18 @@
     
 }
 
+
+.uopdatesHead {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+.updatesBox {
+    border: 2px solid white;
+    overflow: scroll;
+    height: 4rem;
+    width: 10rem;
+}
+
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
   
