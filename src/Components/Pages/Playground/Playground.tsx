@@ -40,7 +40,7 @@ function Playground() {
       </header>
 
       <p className={classes.mainpara}>{playgroundContent.p1}</p>
-      {/* Custom nav to follow */}
+     
       <PGNav />
       <div className={classes.content}></div>
     </motion.div>

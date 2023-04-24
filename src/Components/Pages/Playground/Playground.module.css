@@ -27,35 +27,13 @@
 .heading {
   width: 70%;
   font-size: 4rem;
-
-
 }
-.back {
-  font-size: 2rem;
-  display: flex;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 4rem;
-  margin-top: 5rem;
-  text-decoration: none;
-  background:rgb(121, 118, 118);
-  color: rgb(246, 242, 242);
-  height: 2.5rem;
-  width: 6rem;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  
-}
-
-.back:hover {
+.mainpara {
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
-  background: rgb(59, 58, 58);
-  transition: background-color 1s ease;
-  transform: scale(1.1);
-  margin-right: 0.1rem;
+  width: 90%;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 /* On screens that are 992px or less, set the background color to blue */
