@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Playground.module.css"
 import { motion } from 'framer-motion';
 import playgroundContent from '../../../Content/Playground/playgroundContent';
+import PGNav from './PG-Nav/PGNav';
 
  function Playground() {
+    const [showApis, setShowApis] = useState(false)
+    const [showTrivial, setShowTrivial] = useState(false)
+    const [showMisc, setShowMisc] = useState(false)
+
   return (
     <motion.div
     className={classes.container}
@@ -17,7 +22,7 @@ import playgroundContent from '../../../Content/Playground/playgroundContent';
         {playgroundContent.p1}
       </p>
       {/* Custom nav to follow */}
-      <nav className={classes.nav}></nav>
+     <PGNav />
       <div className={classes.content}> 
 
       </div>
