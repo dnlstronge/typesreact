@@ -3,6 +3,7 @@ import classes from "./Playground.module.css"
 import { motion } from 'framer-motion';
 import playgroundContent from '../../../Content/Playground/playgroundContent';
 import PGNav from './PG-Nav/PGNav';
+import { FaSleigh } from 'react-icons/fa';
 
  function Playground() {
     const [showApis, setShowApis] = useState(false)
@@ -16,14 +17,20 @@ import PGNav from './PG-Nav/PGNav';
     /* handlers */
 
     const showApisHandler = () => {
-
+        setShowApis(true)
+        setShowTrivial(false)
+        setShowMisc(false)
     }
 
     const showTrivialHandler = () => {
-
+        setShowApis(false)
+        setShowTrivial(true)
+        setShowMisc(false)
     }
     const showMiscHandler = () => {
-      
+      setShowApis(false)
+        setShowTrivial(false)
+        setShowMisc(true)
     }
   return (
     <motion.div
