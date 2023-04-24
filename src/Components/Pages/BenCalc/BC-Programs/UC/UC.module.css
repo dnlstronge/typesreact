@@ -30,7 +30,6 @@
     display: flex;
     overflow: scroll;
     font-family: Arial, Helvetica, sans-serif;
-
     flex-direction: column;
     height: 5rem;
     margin-left: 2rem;
