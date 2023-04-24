@@ -1,0 +1,24 @@
+
+.navbtns {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+.navbtn {
+    display: flex;
+    height: 3rem;
+    width: 10rem;
+    color: white;
+    background: grey;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  .navbtn:hover {
+    background: rgb(213, 207, 207);
+    transition: all 2s;
+    transform: scale(1.1);
+  }
+  

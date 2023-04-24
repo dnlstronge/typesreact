@@ -6,9 +6,9 @@ const PGNav = () => {
     return (
         <nav className={classes.navbar}>
             <section className={classes.navbtns}>
-                <button>Working With Apis</button>
-                <button>Trivial Applications</button>
-                <button>Misc</button>
+                <button className={classes.navbtn}>Working With Apis</button>
+                <button className={classes.navbtn}>Trivial Applications</button>
+                <button className={classes.navbtn}>Misc</button>
             </section>
         </nav>
     )
