@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from "./Playground.module.css"
 import { motion } from 'framer-motion';
+import playgroundContent from '../../../Content/Playground/playgroundContent';
 
  function Playground() {
   return (
@@ -12,7 +13,9 @@ import { motion } from 'framer-motion';
   >
       <header className={classes.headsection}>
       <h4 className={classes.heading}>Playground</h4>
-      <p className={classes.mainpara}></p>
+      <p className={classes.mainpara}>
+        {playgroundContent.p1}
+      </p>
       {/* Custom nav to follow */}
       <nav className={classes.nav}></nav>
       <div className={classes.content}> 
