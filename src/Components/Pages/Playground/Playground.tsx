@@ -33,7 +33,7 @@ function Playground() {
       className={classes.container}
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      exit={{ x: window.innerWidth, display: "none" ,transition: { duration: 0.1 } }}
     >
       <header className={classes.headsection}>
         <h4 className={classes.heading}>Playground</h4>
@@ -41,9 +41,9 @@ function Playground() {
 
       <motion.p 
       className={classes.mainpara}
-        initial={{ width: "90%", background: "black", opacity: 0 }}
+        initial={{ width: "0%", background: "black", opacity: 0 }}
         animate={{ width: "100%", opacity: 1, background: "black",   }}
-        exit={{ x: window.innerWidth,  display: "none", opacity: 1, transition: { duration: 0.9 } }}
+        exit={{ x: window.innerWidth, opacity: 1, transition: { duration: 0.3 } }}
       
       >{playgroundContent.p1}</motion.p>
      
