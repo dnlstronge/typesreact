@@ -13,6 +13,7 @@ import { motion } from 'framer-motion';
       <header className={classes.headsection}>
       <h4 className={classes.heading}>Playground</h4>
       <p className={classes.mainpara}></p>
+      {/* Custom nav to follow */}
       <nav className={classes.nav}></nav>
       <div className={classes.content}> 
 

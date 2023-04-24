@@ -5,3 +5,5 @@ const playgroundContent = {
         by learning and development and to keep everything organised in the one place. 
     `
 }
+
+export default playgroundContent;
