@@ -12,6 +12,10 @@ import { motion } from 'framer-motion';
   >
       <header className={classes.headsection}>
       <h4 className={classes.heading}>Playground</h4>
+      <nav className={classes.nav}></nav>
+      <div className={classes.content}> 
+
+      </div>
     
     </header>
   </motion.div>
