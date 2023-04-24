@@ -9,6 +9,22 @@ import PGNav from './PG-Nav/PGNav';
     const [showTrivial, setShowTrivial] = useState(false)
     const [showMisc, setShowMisc] = useState(false)
 
+
+
+
+
+    /* handlers */
+
+    const showApisHandler = () => {
+
+    }
+
+    const showTrivialHandler = () => {
+
+    }
+    const showMiscHandler = () => {
+      
+    }
   return (
     <motion.div
     className={classes.container}
