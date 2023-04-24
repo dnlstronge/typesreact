@@ -3,7 +3,7 @@ import classes from "./Playground.module.css";
 import { motion } from "framer-motion";
 import playgroundContent from "../../../Content/Playground/playgroundContent";
 import PGNav from "./PG-Nav/PGNav";
-import { FaSleigh } from "react-icons/fa";
+
 
 function Playground() {
   const [showApis, setShowApis] = useState(false);
@@ -39,7 +39,13 @@ function Playground() {
         <h4 className={classes.heading}>Playground</h4>
       </header>
 
-      <p className={classes.mainpara}>{playgroundContent.p1}</p>
+      <motion.p 
+      className={classes.mainpara}
+        initial={{ width: "90%", background: "black", opacity: 0 }}
+        animate={{ width: "100%", opacity: 1, background: "black",   }}
+        exit={{ x: window.innerWidth,  display: "none", opacity: 1, transition: { duration: 0.9 } }}
+      
+      >{playgroundContent.p1}</motion.p>
      
       <PGNav />
       <div className={classes.content}></div>
