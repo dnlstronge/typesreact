@@ -1,6 +1,8 @@
 import { createContext } from "react"
 
-
-const Context = () => {
-
-}
+export const Context = createContext({
+    home: true,
+    programs: false,
+    playground: false,
+    about: false
+})
