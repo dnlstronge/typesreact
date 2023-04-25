@@ -5,12 +5,7 @@ import { Context } from "./Components/Context/Context";
 function App() {
   return (
     <>
-      <Context.Provider value={{
-         home: true,
-         programs: false,
-         playground: false,
-         about: false
-      }}>
+      <Context.Provider>
         <Navbar />
         <AnimationRoutes />;
       </Context.Provider>

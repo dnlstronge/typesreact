@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, { useContext, useState } from "react";
 import classes from "./Navbar.module.css"
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
@@ -8,12 +8,13 @@ import { Context } from "../../Context/Context";
 
 const Navbar = () => {
 
-
+    const [context, updateContext] = useState(Context)
 
     /* handlers - */
 
     const setHome = () => {
         
+      
     }   
     
     const setPrograms = () => {
