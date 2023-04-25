@@ -2,9 +2,9 @@ import React, { useContext, useState } from "react";
 import classes from "./Navbar.module.css"
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
+import GlobalContextProvider from "../../Context/Context";
 
 
-/** thinking of seting up context api for this - will see */
 
 const Navbar = () => {
 
@@ -12,9 +12,10 @@ const Navbar = () => {
 
     /* handlers - */
 
-    const SetHome = () => {
-        const { changeHome } = useContext(GlobalContext)
-        changeHome()
+    const setHome = () => {
+       console.log(GlobalContextProvider)
+      
+     
     }   
     
     const setPrograms = () => {
