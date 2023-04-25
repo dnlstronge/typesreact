@@ -13,4 +13,5 @@
     background-color: rgb(171, 165, 165);
     transition: all 1s;
     transform: scale(1.2);
+    cursor: pointer;
 }

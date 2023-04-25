@@ -13,15 +13,12 @@ const Navbar = () => {
     /* handlers - Custom hooks */
 
     const SetHome = () => {
-      let globalState = useContext(Context)
-      globalState.home = true
-      console.log(useContext(Context))
-    }
+        console.log("Button pressed")
+    }   
     
     const SetPrograms = () => {
-        let globalState = useContext(Context)
-      globalState.programs = true
-      console.log(useContext(Context))
+
+       console.log("button pressed")
     }
     const setPlayground = () => {
 
@@ -34,10 +31,10 @@ const Navbar = () => {
         <nav className={classes.nav}>
             <div className={classes.navbtns}>
             <Link className={classes.links} to="">
-                <NavButton onClick={() => {}} text="Home"/>
+                <NavButton onClick={SetHome} text="Home"/>
             </Link>
             <Link className={classes.links} to="/projects">
-                <NavButton onClick={() => {}} text="Projects"/>
+                <NavButton onClick={SetPrograms} text="Projects"/>
             </Link>
             <Link className={classes.links} to="/playground">
                 <NavButton onClick={() => {}} text="Playground"/>
