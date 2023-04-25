@@ -1,26 +1,27 @@
-import React from "react";
+import React, {useContext} from "react";
 import classes from "./Navbar.module.css"
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
 import { Context } from "../../Context/Context";
+
 /** thinking of seting up context api for this - will see */
 
 const Navbar = () => {
 
 
 
-    /* handlers - updates context */
+    /* handlers - Custom hooks */
 
-    const setHome = () => {
-        Context.Provider = {
-            home: true,
-            programs: false,
-            playground: false,
-            about: false
-        }
+    const SetHome = () => {
+      let globalState = useContext(Context)
+      globalState.home = true
+      console.log(useContext(Context))
     }
-    const setPrograms = () => {
-
+    
+    const SetPrograms = () => {
+        let globalState = useContext(Context)
+      globalState.programs = true
+      console.log(useContext(Context))
     }
     const setPlayground = () => {
 
