@@ -1,7 +1,3 @@
-import { createContext, useState} from "react"
+import { createContext, useState } from "react";
 
-export const Context = () => {
-    createContext(
-    {}
-    )
-}
+export const Context = createContext({})
