@@ -6,6 +6,7 @@ import PGNav from "./PG-Nav/PGNav";
 
 
 function Playground() {
+  
   const [showApis, setShowApis] = useState(false);
   const [showTrivial, setShowTrivial] = useState(false);
   const [showMisc, setShowMisc] = useState(false);
@@ -45,7 +46,8 @@ function Playground() {
         animate={{ width: "100%", opacity: 1, background: "black",   }}
         exit={{ x: window.innerWidth, opacity: 1, transition: { duration: 0.3 } }}
       
-      >{playgroundContent.p1}</motion.p>
+      >
+        </motion.p>
      
       <PGNav />
       <div className={classes.content}></div>
