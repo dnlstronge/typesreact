@@ -1,6 +1,6 @@
 import Navbar from "./Components/Pages/Nav/Navbar";
 import AnimationRoutes from "./Routes/AnimationRoutes";
-import { Context } from "./Components/Context/Context";
+import GlobalContextProvider from "./Components/Context/Context"
 import { useState } from "react";
 
 function App() {
@@ -8,10 +8,10 @@ function App() {
   const [homeState, setHomeState] = useState(false)
   return (
     <>
-      <Context.Provider value={homeState}>
+      <GlobalContextProvider>
         <Navbar />
         <AnimationRoutes />;
-      </Context.Provider>
+      </GlobalContextProvider>
     </>
   );
 }
