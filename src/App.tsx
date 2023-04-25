@@ -1,11 +1,19 @@
 import Navbar from "./Components/Pages/Nav/Navbar";
 import AnimationRoutes from "./Routes/AnimationRoutes";
+import { Context } from "./Components/Context/Context";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <AnimationRoutes />;
+      <Context.Provider value={{
+         home: true,
+         programs: false,
+         playground: false,
+         about: false
+      }}>
+        <Navbar />
+        <AnimationRoutes />;
+      </Context.Provider>
     </>
   );
 }
