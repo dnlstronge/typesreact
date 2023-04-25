@@ -10,13 +10,13 @@ const Navbar = () => {
 
 
 
-    /* handlers - Custom hooks */
+    /* handlers - */
 
-    const SetHome = () => {
-        console.log("Button pressed")
+    const setHome = () => {
+        
     }   
     
-    const SetPrograms = () => {
+    const setPrograms = () => {
 
        console.log("button pressed")
     }
@@ -31,10 +31,10 @@ const Navbar = () => {
         <nav className={classes.nav}>
             <div className={classes.navbtns}>
             <Link className={classes.links} to="">
-                <NavButton onClick={SetHome} text="Home"/>
+                <NavButton onClick={setHome} text="Home"/>
             </Link>
             <Link className={classes.links} to="/projects">
-                <NavButton onClick={SetPrograms} text="Projects"/>
+                <NavButton onClick={setPrograms} text="Projects"/>
             </Link>
             <Link className={classes.links} to="/playground">
                 <NavButton onClick={() => {}} text="Playground"/>

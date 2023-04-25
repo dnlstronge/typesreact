@@ -1,8 +1,5 @@
-import { createContext } from "react"
+import { createContext, useState } from "react"
 
 export const Context = createContext({
-    home: true,
-    programs: false,
-    playground: false,
-    about: false
+
 })

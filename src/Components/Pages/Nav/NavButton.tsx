@@ -7,7 +7,7 @@ import classes from "./NavButton.module.css"
 */
 
 const NavButton: React.FC<{ onClick: () => void , text: string}> = (props) => {
-    return <button className={classes.btn}>{props.text}</button>
+    return <button onClick={props.onClick} className={classes.btn}>{props.text}</button>
 }
 
 export default NavButton;
