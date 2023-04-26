@@ -24,6 +24,8 @@ function Playground() {
     setShowApis(false);
     setShowTrivial(!showTrivial);
     setShowMisc(false);
+    const element = document.getElementById("snaptocontent")!
+    element.scrollIntoView()
   };
   const showMiscHandler = () => {
     setShowApis(false);
@@ -54,6 +56,7 @@ function Playground() {
       <div className={classes.content}>
       {showTrivial && 
         <Trivial />}
+        <div id="snaptocontent"></div>
       </div>
     </motion.div>
   );

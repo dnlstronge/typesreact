@@ -8,6 +8,7 @@ const imageArray = [img001, img002, img003];
 
 const MoneyMan = () => {
   return (
+    <div className={classes.container}> 
     <section className={classes.section}>
       <a
         className={classes.anchor}
@@ -37,6 +38,7 @@ const MoneyMan = () => {
         to create an account and log expenses.
       </p>
     </section>
+    </div>
   );
 };
 
