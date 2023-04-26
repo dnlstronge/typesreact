@@ -7,6 +7,7 @@
     border: 1px solid white;
     padding: 1rem;
     border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .section {
@@ -18,11 +19,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .images {
-
+    margin-top: 1rem;
 }
 .image {
     height: 6rem;
     width: 8rem;
+    margin: 0.5rem;
+    transition: transform .5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.image:hover {
+    cursor: pointer;
+    transform: scale(1.5);
 }
 
 .para {

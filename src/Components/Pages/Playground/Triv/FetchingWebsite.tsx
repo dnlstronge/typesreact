@@ -23,7 +23,8 @@ const FetchingWebsite = () => {
           </a>
           <section className={classes.images}>
             {imageArray.map(img => {
-              return <img className={classes.image} id={img} src={img} alt="Screenshot website" />
+              
+              return <a target="blank" href="https://apifetch-5ea29.web.app/"><img className={classes.image} id={img} src={img} alt="Screenshot website" /></a>
             })}
           </section>
           <p className={classes.para}>

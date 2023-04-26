@@ -72,7 +72,7 @@ const Sections: React.FC<project> = (props) => {
     if (imageClicked) {
       const element = document.getElementById(id)!;
       element.className = classes.showimageenlarged;
-      const snapto = document.getElementById("snapimage")!;
+      const snapto = document.getElementById("snapto")!;
       snapto.scrollIntoView();
     } else {
       const element = document.getElementById(id)!;
