@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Trivial.module.css";
+import FetchingWebsite from "./FetchingWebsite";
 
 const Trivial = () => {
   return (
@@ -7,6 +8,7 @@ const Trivial = () => {
      
 
       <div className={classes.container}>
+        <FetchingWebsite />
         <section className={classes.section}>
           <a
             className={classes.anchor}
