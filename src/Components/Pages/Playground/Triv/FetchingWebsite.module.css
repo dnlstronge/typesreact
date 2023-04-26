@@ -1,0 +1,23 @@
+.container {
+    background: grey;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 1rem;
+}
+
+.section {
+
+}
+
+.anchor {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.para {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
