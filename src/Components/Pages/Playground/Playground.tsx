@@ -53,7 +53,7 @@ function Playground() {
       <PGNav />
       <div className={classes.content}>
 
-        <Trivial />
+        <Trivial onClick={showTrivialHandler}/>
       </div>
     </motion.div>
   );

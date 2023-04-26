@@ -1,6 +1,8 @@
 .navbar {
     width: 100%;
     background: rgb(21, 21, 21);
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .navbtns {
     display: flex;
