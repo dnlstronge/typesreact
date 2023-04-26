@@ -3,6 +3,7 @@ import classes from "./Playground.module.css";
 import { motion } from "framer-motion";
 import playgroundContent from "../../../Content/Playground/playgroundContent";
 import PGNav from "./PG-Nav/PGNav";
+import Trivial from "./Triv/Trivial";
 
 
 function Playground() {
@@ -50,7 +51,10 @@ function Playground() {
         </motion.p>
      
       <PGNav />
-      <div className={classes.content}></div>
+      <div className={classes.content}>
+
+        <Trivial />
+      </div>
     </motion.div>
   );
 }
