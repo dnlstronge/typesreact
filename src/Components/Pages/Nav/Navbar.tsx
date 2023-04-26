@@ -1,20 +1,21 @@
-import React, { useContext, useState } from "react";
+import React, { PropsWithChildren, useContext, useState } from "react";
 import classes from "./Navbar.module.css"
 import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
-import GlobalContextProvider from "../../Context/Context";
+import { GlobalContext } from "../../Context/Context";
 
 
 
-const Navbar = () => {
 
+const Navbar: React.FC<PropsWithChildren> = ({children}) => {
 
+    const data = useContext(GlobalContext)
 
     /* handlers - */
 
     const setHome = () => {
-       console.log(GlobalContextProvider)
-      
+      console.log(data)
+    
      
     }   
     

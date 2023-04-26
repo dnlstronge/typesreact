@@ -1,15 +1,16 @@
-import { createContext, useState } from "react";
+import React, { createContext, useContext } from "react";
 
-const GlobalContext = createContext({})
-const GlobalContextProvider: React.FC<{children: any}> = ({children}) => {
+const myData = { username: "Israel" };
+export const GlobalContext = createContext(myData);
 
-    const [homeState, setHomeState] = useState(false)
-    const changeHome = () => {
-        setHomeState(true)
-    }
-    return ( <GlobalContext.Provider value={{homeState, changeHome}}>
-        {children}
-    </GlobalContext.Provider>
-    )
+interface Props {
+  children: React.ReactNode;
 }
-export default GlobalContextProvider
+
+export const GlobalContextProvider: React.FC<Props> = ({ children }) => {
+  return (
+    <GlobalContext.Provider value={{ username: "Chibuzor" }}>
+      {children}
+    </GlobalContext.Provider>
+  );
+};
