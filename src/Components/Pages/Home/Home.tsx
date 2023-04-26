@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./Home.module.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Contact from "./Contact";
 
 import HomeContent from "./HomeContent";
+import { GlobalContext } from "../../Context/Context";
 
 const Home = () => {
+  
   const [showAbout, setShowAbout] = useState(false);
   const [showContact, setShowContact] = useState(false);
 
@@ -36,6 +38,7 @@ const Home = () => {
       <header className={classes.headsection}>
         <h4 className={classes.heading}>Home</h4>
       </header>
+      
       <div className={classes.buttons}>
         <button onClick={showAboutHandler} className={classes.aboutbtn}>
           About
