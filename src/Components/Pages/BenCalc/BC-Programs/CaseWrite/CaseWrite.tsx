@@ -1,10 +1,10 @@
 
 import React from "react";
-import classes from "./PC.module.css"
+import classes from "./CaseWrite.module.css"
 import { GrNotes } from "react-icons/gr"
 
 
-const PC = () => {
+const CaseWrite= () => {
     return (
         <div className={classes.container}>
             <a href="https://pccalc-3dbcd.web.app/" target="blank">
@@ -18,4 +18,4 @@ const PC = () => {
     )
 }
 
-export default PC;
+export default CaseWrite;
