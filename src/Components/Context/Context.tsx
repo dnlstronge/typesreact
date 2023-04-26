@@ -1,8 +1,9 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState } from "react";
 
-const myData = { };
 
-/* default values */
+
+/* default values - infers correct type */
+
 export const GlobalContext = createContext({
     homeActive: false, updateHome: () => {},
     programsActive: false, updatePrograms: () => {},
