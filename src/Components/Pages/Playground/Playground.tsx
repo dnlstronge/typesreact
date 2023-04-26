@@ -22,7 +22,7 @@ function Playground() {
 
   const showTrivialHandler = () => {
     setShowApis(false);
-    setShowTrivial(true);
+    setShowTrivial(!showTrivial);
     setShowMisc(false);
   };
   const showMiscHandler = () => {
@@ -50,10 +50,10 @@ function Playground() {
       >
         </motion.p>
      
-      <PGNav />
+      <PGNav onClick={showTrivialHandler} />
       <div className={classes.content}>
-
-        <Trivial onClick={showTrivialHandler}/>
+      {showTrivial && 
+        <Trivial />}
       </div>
     </motion.div>
   );
