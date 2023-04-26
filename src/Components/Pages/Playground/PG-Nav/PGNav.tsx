@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./PGNav.module.css";
 
-const PGNav: React.FC<{onClick: () => {}}> = (props) => {
+const PGNav: React.FC<{onClick: () => void}> = (props) => {
   return (
     <div className={classes.container}>
       <nav className={classes.navbar}>
