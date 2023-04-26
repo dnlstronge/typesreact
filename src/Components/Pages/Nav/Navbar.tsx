@@ -9,13 +9,14 @@ import { GlobalContext } from "../../Context/Context";
 
 const Navbar: React.FC<PropsWithChildren> = ({children}) => {
 
-    const data = useContext(GlobalContext)
+    const context = useContext(GlobalContext)
 
     /* handlers - */
 
     const setHome = () => {
-      console.log(data)
-    
+      //console.log(context.homeActive)
+      context.updateHome()
+      // console.log(context.homeActive)
      
     }   
     
