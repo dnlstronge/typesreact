@@ -36,6 +36,7 @@ const FetchingWebsite = () => {
           then manipulating the data in various ways
         </p>
       </section>
+      <a className={classes.anchorgit} href="https://github.com/dnlstronge/fetchapp">Github Repo</a>
     </div>
   );
 };

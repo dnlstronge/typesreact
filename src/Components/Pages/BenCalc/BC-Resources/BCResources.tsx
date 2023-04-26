@@ -17,6 +17,7 @@ const BCResources: React.FC<{showResources: boolean}> = (props) => {
         
         >
             <section></section>
+            <p className={classes.soonPara}>Coming soon...</p>
         </motion.div>
     
         </>

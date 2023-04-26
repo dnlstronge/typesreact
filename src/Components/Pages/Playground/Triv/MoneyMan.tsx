@@ -37,6 +37,7 @@ const MoneyMan = () => {
         firestore for users and data. It's a simple crud app which allows users
         to create an account and log expenses.
       </p>
+      <a className={classes.anchorgit} href="https://github.com/dnlstronge/React-Projects/tree/master/moneyMan">Github Repo</a>
     </section>
     </div>
   );
