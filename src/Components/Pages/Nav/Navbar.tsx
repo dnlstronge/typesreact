@@ -11,16 +11,24 @@ const Navbar: React.FC<PropsWithChildren> = ({ children }) => {
 
   const setHome = () => {
     context.updateHome();
+    console.log("home fired")
+    console.log(context.homeActive)
   };
 
   const setPrograms = () => {
     context.updatePrograms();
+    console.log("Progs fired")
+    console.log(context.programsActive)
   };
   const setPlayground = () => {
     context.updatePlayground();
+    console.log("playground fired")
+    console.log(context.playgroundActive)
   };
   const setAbout = () => {
     context.updateAbout();
+    console.log("about fired")
+    console.log(context.aboutActive)
   };
 
   return (
@@ -33,10 +41,10 @@ const Navbar: React.FC<PropsWithChildren> = ({ children }) => {
           <NavButton onClick={setPrograms} text="Projects" />
         </Link>
         <Link className={classes.links} to="/playground">
-          <NavButton onClick={() => {}} text="Playground" />
+          <NavButton onClick={setPlayground} text="Playground" />
         </Link>
         <Link className={classes.links} to="">
-          <NavButton onClick={() => {}} text="Contact" />
+          <NavButton onClick={setAbout} text="Contact" />
         </Link>
       </div>
     </nav>
