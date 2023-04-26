@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import playgroundContent from "../../../Content/Playground/playgroundContent";
 import PGNav from "./PG-Nav/PGNav";
 import Trivial from "./Triv/Trivial";
+import Misc from "./Misc/Misc";
 
 
 function Playground() {
@@ -31,6 +32,8 @@ function Playground() {
     setShowApis(false);
     setShowTrivial(false);
     setShowMisc(true);
+    const element = document.getElementById("snaptocontent")!
+    element.scrollIntoView()
   };
   return (
     <motion.div
@@ -56,8 +59,12 @@ function Playground() {
       <div className={classes.content}>
       {showTrivial && 
         <Trivial />}
-        <div id="snaptocontent"></div>
+      {showMisc && 
+        <Misc />
+        }
+       
       </div>
+      <div id="snaptocontent"></div>
     </motion.div>
   );
 }

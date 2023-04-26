@@ -21,6 +21,7 @@
     border-radius: 2px;
     border-bottom: none;
     transition: 1s;
+    z-index: 1;
   
 }
 .navbtn:hover {

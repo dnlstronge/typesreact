@@ -6,7 +6,7 @@ const PGNav: React.FC<{onClick: () => void}> = (props) => {
     <div className={classes.container}>
       <nav className={classes.navbar}>
         <section className={classes.navbtns}>
-          <button onClick={props.onClick} className={classes.navbtn}>Trivial Applications</button>
+          <button onClick={props.onClick} className={classes.navbtn}>Applications</button>
           <button className={classes.navbtn}>Misc</button>
         </section>
       </nav>
