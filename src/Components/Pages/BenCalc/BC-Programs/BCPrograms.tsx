@@ -11,9 +11,15 @@ const BCPrograms: React.FC<{ showPrograms: boolean }> = (props) => {
 
   return (
     <>
-      <UC />
-      <PC />
-      <CaseWrite />
+    <div className={classes.containerActive}>
+    {props.showPrograms && 
+      <section className={classes.programboxes}>
+        <UC />
+        <PC />
+        <CaseWrite />
+      </section> }
+    </div>
+    
     </>
   );
 };

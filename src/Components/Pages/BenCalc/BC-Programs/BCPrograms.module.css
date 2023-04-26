@@ -1,11 +1,4 @@
-.container {
-    height: 0;
-    width: 100%;
-    color: white;
-    background: rgb(56, 56, 56);
-    transition: all 1s;
-    
-}
+
 
 .containerActive {
     height: auto; 
