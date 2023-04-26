@@ -19,15 +19,17 @@
 .programboxes {
   
     
-    padding-top: 3rem;
+    padding-top: 1.5rem;
 }
 
-/* On screens that are 992px or less, set the background color to blue */
+/* On screens that are 992px or less,  */
 @media screen and (max-width: 992px) {
   
 }
 
-/* On screens that are 600px or less, set the background color to olive */
+/* On screens that are 600px or less,  */
 @media screen and (max-width: 600px) {
-
+.containerActive {
+   
+}
 }

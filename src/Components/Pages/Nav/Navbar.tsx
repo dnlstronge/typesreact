@@ -43,7 +43,7 @@ const Navbar: React.FC<PropsWithChildren> = ({ children }) => {
         <Link className={classes.links} to="/playground">
           <NavButton onClick={setPlayground} text="Playground" />
         </Link>
-        <Link className={classes.links} to="">
+        <Link className={classes.links} to="/bencalc">
           <NavButton onClick={setAbout} text="Contact" />
         </Link>
       </div>
