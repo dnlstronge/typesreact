@@ -50,9 +50,9 @@ const BenCalc = () => {
   return (
     <motion.div
       className={classes.container}
-      initial={{ width: "90%", background: "black", opacity: 0}}
+      initial={{ width: "100%", background: "black", opacity: 0}}
       animate={{ width: "100%", background: "black" , opacity: 1}}
-      exit={{ x: window.innerWidth, transition: { duration: 0.6 } }}
+      exit={{ x: window.innerWidth, opacity: 0, transition: { duration: 0.6 } }}
     >
       <Navbar
         showHome={homeHandler}

@@ -50,12 +50,12 @@ function Playground() {
       className={classes.mainpara}
         initial={{ width: "0%", background: "black", opacity: 0 }}
         animate={{ width: "100%", opacity: 1, background: "black",   }}
-        exit={{ x: window.innerWidth, opacity: 1, transition: { duration: 0.3 } }}
+        exit={{ x: window.innerWidth, opacity: 0, transition: { duration: 0.3 } }}
       
       >
         </motion.p>
      
-      <PGNav onClick={showTrivialHandler} />
+      <PGNav miscClick={showMiscHandler} onClick={showTrivialHandler} />
       <div className={classes.content}>
       {showTrivial && 
         <Trivial />}

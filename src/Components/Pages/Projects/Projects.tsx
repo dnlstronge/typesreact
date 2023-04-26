@@ -8,9 +8,9 @@ const Projects = () => {
   return (
     <motion.div
       className={classes.container}
-      initial={{ width: 0, background: "black" }}
-      animate={{ width: "100%", background: "black" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      initial={{ width: 0, background: "black", opacity: 0 }}
+      animate={{ width: "100%", background: "black", opacity: 1 }}
+      exit={{ x: window.innerWidth, opacity: 0, transition: { duration: 0.4 } }}
     >
       <header className={classes.headsection}>
         <h4 className={classes.heading}>Projects</h4>
