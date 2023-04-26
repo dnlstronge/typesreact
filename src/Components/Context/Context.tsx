@@ -4,10 +4,10 @@ const myData = { };
 
 /* default values */
 export const GlobalContext = createContext({
-    homeActive: false, updateActive: () => {},
+    homeActive: false, updateHome: () => {},
     programsActive: false, updatePrograms: () => {},
     playgroundActive: false, updatePlayground: () => {},
-    aboutActive: false, updatePlayGround: () => {}
+    aboutActive: false, updateAbout: () => {},
 });
 
 interface Props {
@@ -25,14 +25,43 @@ export const GlobalContextProvider: React.FC<Props> = ({ children }) => {
 
 
     /*Helpers to update global state */
+
     const updateHome = () => {
         setHomeActive(true)
+        setProgramsActive(false)
+        setPlaygroundActive(false)
+        setAboutActive(false)
     }
     const updatePrograms = () => {
-        
+        setHomeActive(false)
+        setProgramsActive(true)
+        setPlaygroundActive(false)
+        setAboutActive(false)
+    }
+
+    const updatePlayground = () => {
+        setHomeActive(false)
+        setProgramsActive(false)
+        setPlaygroundActive(true)
+        setAboutActive(false)
+    }
+
+    const updateAbout = () => {
+        setHomeActive(false)
+        setProgramsActive(false)
+        setPlaygroundActive(false)
+        setAboutActive(true)
     }
   return (
-    <GlobalContext.Provider value={{ homeActive, updateHome }}>
+    <GlobalContext.Provider value={{ 
+        homeActive, 
+        updateHome,  
+        programsActive, 
+        updatePrograms, 
+        playgroundActive, 
+        updatePlayground,
+        aboutActive,
+        updateAbout}}>
       {children}
     </GlobalContext.Provider>
   );
