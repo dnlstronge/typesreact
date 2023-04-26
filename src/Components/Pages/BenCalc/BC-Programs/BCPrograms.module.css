@@ -8,7 +8,7 @@
 }
 
 .containerActive {
-    height: 20rem; 
+    height: auto; 
     width: 100%;
     color: white;
     background: rgb(56, 56, 56);
@@ -18,7 +18,7 @@
 }
 .programboxes {
   
-    flex-wrap: wrap;
+    
     padding-top: 3rem;
 }
 

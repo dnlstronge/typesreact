@@ -12,7 +12,7 @@ const BCPrograms: React.FC<{ showPrograms: boolean }> = (props) => {
     : classes.container;
 
   return (
-    <motion.div className={showActive}
+    <motion.div className={classes.containerActive}
         initial={{ width: "0%", opacity: 0 }}
         animate={{ width: "100%", opacity: 1, background:"rgb(56, 56, 56)"  }}
         exit={{  opacity: 1, transition: { duration: 1.1 } }}

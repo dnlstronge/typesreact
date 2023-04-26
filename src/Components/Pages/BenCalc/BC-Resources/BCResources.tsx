@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./BCResources.module.css"
-
+import {motion } from "framer-motion"
 
 
 
@@ -12,9 +12,12 @@ const BCResources: React.FC<{showResources: boolean}> = (props) => {
 
     return (
         <>
-        <div className={showActive}>
+        <motion.div className={classes.containerActive}
+        
+        
+        >
             <section></section>
-        </div>
+        </motion.div>
     
         </>
     )

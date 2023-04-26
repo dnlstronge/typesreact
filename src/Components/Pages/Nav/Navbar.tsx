@@ -11,24 +11,24 @@ const Navbar: React.FC<PropsWithChildren> = ({ children }) => {
 
   const setHome = () => {
     context.updateHome();
-    console.log("home fired")
-    console.log(context.homeActive)
+    // console.log("home fired")
+    // console.log(context.homeActive)
   };
 
   const setPrograms = () => {
     context.updatePrograms();
-    console.log("Progs fired")
-    console.log(context.programsActive)
+    // console.log("Progs fired")
+    // console.log(context.programsActive)
   };
   const setPlayground = () => {
     context.updatePlayground();
-    console.log("playground fired")
-    console.log(context.playgroundActive)
+    // console.log("playground fired")
+    // console.log(context.playgroundActive)
   };
   const setAbout = () => {
     context.updateAbout();
-    console.log("about fired")
-    console.log(context.aboutActive)
+    // console.log("about fired")
+    // console.log(context.aboutActive)
   };
 
   return (
