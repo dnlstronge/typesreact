@@ -30,13 +30,20 @@ const Websites = () => {
        
     }
 
-    /**styles */
+    /* styles */
+
+    const pageoneStyle = pageOne ? classes.btnActive : classes.btn
+
+    const pageTwoStyle = pageTwo ? classes.btnActive : classes.btn
+
+    const pageThreeStyle = pageThree ? classes.btnActive : classes.btn
+
     return (
         <>
         <div className={classes.btncontainer}>
-            <button onClick={handlePages} value="one" className={classes.btn}>1</button>
-            <button onClick={handlePages} value="two" className={classes.btn}>2</button>
-            <button onClick={handlePages} value="three" className={classes.btn}>3</button>
+            <button onClick={handlePages} value="one" className={pageoneStyle}>1</button>
+            <button onClick={handlePages} value="two" className={pageTwoStyle}>2</button>
+            <button onClick={handlePages} value="three" className={pageThreeStyle}>3</button>
         </div>
         <section className={classes.applications}>
             {pageOne && 

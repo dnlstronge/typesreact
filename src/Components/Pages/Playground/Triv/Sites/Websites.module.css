@@ -14,5 +14,9 @@
     background: rgb(216, 210, 210);
 }
 .btnActive {
+    color: white;
     background: rgb(216, 210, 210);
+    height: 2rem;
+    width: 4rem;
+    border-radius: 6px;
 }
