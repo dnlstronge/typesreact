@@ -26,6 +26,10 @@ const Websites = () => {
             setPageOne(false)
             setPageTwo(false)
             setPageThree(true)
+        } else {
+            setPageOne(true)
+            setPageTwo(false)
+            setPageThree(false)
         }
        
     }
@@ -34,12 +38,15 @@ const Websites = () => {
     return (
         <>
         <div className={classes.btncontainer}>
-            <button value="one" className={classes.btn}>1</button>
+            <button onClick={handlePages} value="one" className={classes.btn}>1</button>
             <button onClick={handlePages} value="two" className={classes.btn}>2</button>
-            <button value="three" className={classes.btn}>3</button>
+            <button onClick={handlePages} value="three" className={classes.btn}>3</button>
         </div>
         <section className={classes.applications}>
-            <Trivial />
+            {pageOne && 
+            <Trivial />}
+            <p>Test page two</p>
+            <p>Test page three</p>
         </section>
         </>
     )
