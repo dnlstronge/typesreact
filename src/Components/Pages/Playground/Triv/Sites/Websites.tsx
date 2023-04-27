@@ -5,7 +5,7 @@ import classes from "./Websites.module.css"
 const Websites = () => {
     return (
         <>
-        <div className={classes.container}>
+        <div className={classes.btncontainer}>
             <button className={classes.btn}>1</button>
             <button className={classes.btn}>2</button>
             <button className={classes.btn}>3</button>

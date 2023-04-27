@@ -1,0 +1,14 @@
+.btncontainer {
+    margin:auto;
+    height: 4rem;
+    width: 70%;
+}
+.btn {
+    color: white;
+    background: grey;
+    height: 2rem;
+    width: 4rem;
+}
+.btn:hover {
+    background: rgb(216, 210, 210);
+}
