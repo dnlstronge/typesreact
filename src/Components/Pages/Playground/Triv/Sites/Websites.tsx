@@ -45,8 +45,10 @@ const Websites = () => {
         <section className={classes.applications}>
             {pageOne && 
             <Trivial />}
-            <p>Test page two</p>
-            <p>Test page three</p>
+            {pageTwo &&
+            <p>Test page two</p>}
+            {pageThree && 
+            <p>Test page three</p>}
         </section>
         </>
     )
