@@ -20,7 +20,7 @@ const MoneyMan = () => {
       <section className={classes.images}>
         {imageArray.map((img) => {
           return (
-            <a target="blank" href="https://moneyman-99322.web.app/login">
+            <a key={img} target="blank" href="https://moneyman-99322.web.app/login">
               <img
                 className={classes.image}
                 id={img}
