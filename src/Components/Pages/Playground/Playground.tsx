@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import PGNav from "./PG-Nav/PGNav";
 import Trivial from "./Triv/Trivial";
 import Misc from "./Misc/Misc";
+import Websites from "./Triv/Sites/Websites";
 
 function Playground() {
   const [showApis, setShowApis] = useState(false);
@@ -60,9 +61,12 @@ function Playground() {
 
       <PGNav miscClick={showMiscHandler} onClick={showTrivialHandler} />
       <div className={classes.content}>
-        {showTrivial && <Trivial />}
+     
         {showMisc && <Misc />}
       </div>
+      <section className={classes.subsection}>
+        <Websites />
+      </section>
       <div id="snaptocontent"></div>
     </motion.div>
   );

@@ -6,11 +6,13 @@ const Websites = () => {
     return (
         <>
         <div className={classes.container}>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
+            <button className={classes.btn}>1</button>
+            <button className={classes.btn}>2</button>
+            <button className={classes.btn}>3</button>
         </div>
-        <section className={classes.applications}></section>
+        <section className={classes.applications}>
+            <Trivial />
+        </section>
         </>
     )
 }
