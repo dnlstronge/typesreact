@@ -8,6 +8,7 @@
     background: grey;
     height: 2rem;
     width: 4rem;
+    border-radius: 6px;
 }
 .btn:hover {
     background: rgb(216, 210, 210);
