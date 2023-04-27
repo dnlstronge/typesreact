@@ -13,3 +13,6 @@
 .btn:hover {
     background: rgb(216, 210, 210);
 }
+.btnActive {
+    background: rgb(216, 210, 210);
+}

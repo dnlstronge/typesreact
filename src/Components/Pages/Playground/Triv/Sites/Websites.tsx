@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Trivial from "../Trivial";
 import classes from "./Websites.module.css"
 
 const Websites = () => {
+    const [pageOne, setPage] = useState(true)
+    const [pageTwo, setPageTwo] = useState(false)
+    const [pageThree, setPageThree] = useState(false)
+
+
+    /* handlers */
     return (
         <>
         <div className={classes.btncontainer}>
