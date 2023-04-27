@@ -23,13 +23,13 @@ const BCHome: React.FC<{showHome: boolean}> = (props) => {
                 <h4 className={classes.updatesHead}>Welcome to Bencalc</h4>
                 <p className={classes.text}>{bencalcdata.p1}</p>
                 <h4 className={classes.updatesHead}>Updates...</h4>
-                <p className={classes.updatesBox}> 
+                <div className={classes.updatesBox}> 
                     {bencalcdata.updates.map((update) => {
                         return (
-                            <p>-{update}</p>
+                            <p key={update.trim().replace(/ /g, "")}>-{update}</p>
                         )
                     })}
-                </p>
+                </div>
             </section>}
         </motion.div>
     

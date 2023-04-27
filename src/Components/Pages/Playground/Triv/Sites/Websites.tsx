@@ -11,7 +11,7 @@ const Websites = () => {
     /* handlers */
 
     const handlePages = (e: React.MouseEvent<HTMLButtonElement>) => {
-        console.log(e.currentTarget.value)
+        
         if(e.currentTarget.value === "one") {
             setPageOne(true)
             setPageTwo(false)
@@ -48,10 +48,7 @@ const Websites = () => {
         <section className={classes.applications}>
             {pageOne && 
             <Trivial />}
-            {pageTwo &&
-            <p style={{color: "white"}}>Test page two</p>}
-            {pageThree && 
-            <p style={{color: "white"}}>Test page three</p>}
+            
         </section>
         </>
     )
