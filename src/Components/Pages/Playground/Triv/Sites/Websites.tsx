@@ -11,7 +11,7 @@ const Websites = () => {
     /* handlers */
 
     const handlePages = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault()
+        console.log(e.currentTarget.value)
         if(e.currentTarget.value === "one") {
             setPageOne(true)
             setPageTwo(false)
@@ -26,10 +26,6 @@ const Websites = () => {
             setPageOne(false)
             setPageTwo(false)
             setPageThree(true)
-        } else {
-            setPageOne(true)
-            setPageTwo(false)
-            setPageThree(false)
         }
        
     }
@@ -46,9 +42,9 @@ const Websites = () => {
             {pageOne && 
             <Trivial />}
             {pageTwo &&
-            <p>Test page two</p>}
+            <p style={{color: "white"}}>Test page two</p>}
             {pageThree && 
-            <p>Test page three</p>}
+            <p style={{color: "white"}}>Test page three</p>}
         </section>
         </>
     )
