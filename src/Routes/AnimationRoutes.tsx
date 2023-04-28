@@ -7,6 +7,7 @@ import Projects from "../Components/Pages/Projects/Projects";
 import { AnimatePresence } from "framer-motion"
 import Playground from "../Components/Pages/Playground/Playground";
 import BenCalc from "../Components/Pages/BenCalc/BenCalc";
+import CaseWrite from "../Components/Pages/CaseWrite/CaseWrite";
 
 const AnimationRoutes = () => {
   const location = useLocation();
@@ -18,6 +19,7 @@ const AnimationRoutes = () => {
       <Route path="/projects" element={<Projects />} />
       <Route path="/playground" element={<Playground/>} /> 
       <Route path="/bencalc" element={<BenCalc/>}/>
+      <Route path="/casewrite" element={<CaseWrite/>}/>
     </Routes>
     </AnimatePresence>
   );

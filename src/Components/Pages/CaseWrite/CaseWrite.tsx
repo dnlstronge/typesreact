@@ -27,7 +27,7 @@ const CaseWrite = () => {
         <div className={classes.container}>
             <form>
                 {/* couple single?  */}
-                <section className={classes.sectionOne}>
+                <section className={classes.sections}>
                 <label htmlFor="relationships">Relationship Status</label>
                 <select id="relationships">
                     <option>Single</option>
@@ -35,7 +35,7 @@ const CaseWrite = () => {
                 </select>
                 </section>
                  {/* children */}
-                <section>
+                <section className={classes.sections}>
                     <label htmlFor="children"></label>
                     <input type="number"></input>
                 </section>
