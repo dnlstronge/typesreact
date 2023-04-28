@@ -1,5 +1,6 @@
 import React from "react"
 import classes from "./CaseWrite.module.css"
+import { useState } from "react"
 
 
 /* Part of larger bencalc project - 
@@ -17,18 +18,28 @@ const CaseWrite = () => {
             couple: "couple",
             children: 0,
             benefit: "",
-            entitlement: ""
+            entitlement: "",
+            disability: ""
         }
 
     )
     return (
         <div className={classes.container}>
             <form>
+                {/* couple single?  */}
+                <section className={classes.sectionOne}>
                 <label htmlFor="relationships">Relationship Status</label>
                 <select id="relationships">
                     <option>Single</option>
                     <option>Couple</option>
                 </select>
+                </section>
+                 {/* children */}
+                <section>
+                    <label htmlFor="children"></label>
+                    <input type="number"></input>
+                </section>
+
             </form>
         </div>
     )
