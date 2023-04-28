@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FormEventHandler } from "react"
 import classes from "./CaseWrite.module.css"
 import { useState } from "react"
 
@@ -37,24 +37,26 @@ const CaseWrite = () => {
         {
             single: false, // index 0 - 2
             couple: false, // index 0 - 2
-            children: 0, // log actual to string index 0 - 1
+            children: "", // log actual to string index 0 - 1
             benefits: "", // list benefits IRO - index 0 
             entitlement: "", // identified ent - index 0 - 
             disability: "" // index 0 - 2
         }
     )
 
-    const [caseNote, setCaseNote] = useState("") // state to be used to render paragraph
+    const [caseNote, setCaseNote] = useState("Initial Text value") // state to be used to render paragraph
     const [caseNotetwo, setCaseNoteTwo] = useState("") // 2nd para - disability
 
 /* Handlers  */ 
 
 
 /* submit (update state) */
-    const onSumbit = () =>  {
+    const onSubmit = (e: React.FormEventHandler<HTMLFormElement> ) =>  {
         console.log("Woohoo form submitted")
+       
         // single
         if(client.single) {
+            console.log("form has reached IF check")
             setCaseNote(
                 `
                 ${phrase.single[generateRandom(3)]}. 
@@ -65,7 +67,14 @@ const CaseWrite = () => {
             )
         }
         if(client.couple) {
+            setCaseNote(
+                `
+                ${phrase.couple[generateRandom(3)]}. 
+                ${phrase.children[generateRandom(2)]}${client.children} dependents.
+                ${phrase.benefits[generateRandom(4)]}${client.benefits}.
 
+                `
+                )
         }
     }
 
@@ -84,12 +93,20 @@ const handleSingle = (e: React.FormEvent <HTMLSelectElement>) => {
     }
 }
 
+const handleChildren = (e: React.FormEvent <HTMLInputElement>) => {
+    setClient({...client, children: e.currentTarget.value})
+}
+
+const handleBenefits = (e: React.FormEvent <HTMLInputElement>) => {
+    setClient({...client, benefits: e.currentTarget.value})
+}
+
 
 
 
     return (
         <div className={classes.container}>
-            <form onSubmit={onSumbit} className={classes.form}>
+            <form onSubmit={(e) => onSubmit} className={classes.form}>
                
                 <section className={classes.sections}>
                 <h2>CaseWrite</h2>
@@ -108,7 +125,7 @@ const handleSingle = (e: React.FormEvent <HTMLSelectElement>) => {
                  {/* children */}
                 <section className={classes.sections}>
                     <label className={classes.label} htmlFor="children">Enter Number of children</label>
-                    <input id="children" className={classes.input} type="number"></input>
+                    <input onChange={handleChildren} id="children" className={classes.input} type="number"></input>
                 </section>
                  {/* Benefit */}
                  <section className={classes.section}>
@@ -121,10 +138,11 @@ const handleSingle = (e: React.FormEvent <HTMLSelectElement>) => {
                         <input id="sup"className={classes.supplementaryText}></input>
                     </label>
                  </section>
-                <button>Generate</button>
+                <button type="submit">Generate</button>
             </form>
             <div className={classes.caseNote}>
                 <p className={classes.para}>{caseNote}</p>
+                <p className={classes.para}>{}</p>
             </div>
         </div>
     )

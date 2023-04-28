@@ -21,7 +21,7 @@ const phrase: phraseType = {
         "Single Adult"
     ],
     couple: [
-        "Joint claimant", "Household is a couple" , "Claimant forms part of a couple"
+        "Joint claimant", "Household status: couple" , "Claimant forms part of a couple"
     ],
    children: [
     "They have ", "Household has "
