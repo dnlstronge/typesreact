@@ -30,12 +30,12 @@ const CaseWrite = () => {
     /* to the right of each state value the number of phrases in the associated 
     array is listed */
 
-    const [client, setclient] = useState(
+    const [client, setClient] = useState(
         {
-            single: "single adult", // index 0 - 2
-            couple: "couple", // index 0 - 2
+            single: false, // index 0 - 2
+            couple: false, // index 0 - 2
             children: 0, // log actual to string index 0 - 1
-            benefit: "", // list benefits IRO - index 0 
+            benefits: "", // list benefits IRO - index 0 
             entitlement: "", // identified ent - index 0 - 
             disability: "" // index 0 - 2
         }
@@ -46,9 +46,29 @@ const CaseWrite = () => {
 
 /* Handlers  */ 
 
+
+/* submit (update state) */
     const onSumbit = () =>  {
         console.log("Woohoo form submitted")
     }
+
+/* event handlers for inputs */
+
+const handleSingle = (e: React.FormEvent <HTMLSelectElement>) => {
+    if(e.currentTarget.value === "single") {
+        setClient({...client, single: true, couple: false })
+    }
+
+    if(e.currentTarget.value === "couple") {
+        setClient({...client, single: false, couple: true  })
+    }
+    else {
+        setClient({...client, single: false, couple: false })
+    }
+}
+
+
+
 
     return (
         <div className={classes.container}>
@@ -63,9 +83,9 @@ const CaseWrite = () => {
                 {/* couple single?  */}
                 <section className={classes.sections}>
                 <label className={classes.label} htmlFor="relationships">Relationship Status</label>
-                <select className={classes.select} id="relationships">
-                    <option>Single</option>
-                    <option>Couple</option>
+                <select onChange={handleSingle} className={classes.select} id="relationships">
+                    <option value="Single">Single</option>
+                    <option value="Couple">Couple</option>
                 </select>
                 </section>
                  {/* children */}

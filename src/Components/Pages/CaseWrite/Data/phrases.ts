@@ -3,7 +3,7 @@ type phraseType = {
     single: string[]
     couple: string[]
     children: string[]
-    benefit: string[]
+    benefits: string[]
     entitlement: string[] 
     disability: string[]
 
@@ -15,7 +15,7 @@ type phraseType = {
 /* data object => object => strings[] */
 
 
-const phrase = {
+const phrase: phraseType = {
     single: [
         "Claimant is single", "Claimant is a single Adult", 
         "Single Adult"
@@ -31,7 +31,7 @@ const phrase = {
     "They are currently receiving ", "Benfefits currently in payment: "
    ],
    entitlement: ["I estimated they would be better off by ", "Estimate financial gain "],
-   disability: ["They are also receiving ", " Due to disabilty/ill health, they receive ", 
+   disability: ["They are also receiving ", "Due to disabilty/ill health, they receive ", 
    "Because of disability they receive "]
 
 }
