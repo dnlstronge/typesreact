@@ -30,7 +30,8 @@ const phrase = {
     "They are in receipt of ", "They currently receive ", "They are currently in receipt of ", 
     "They are currently receiving ", "Benfefits currently in payment: "
    ],
-   disability: ["They are also receiving ", " due to disabilty/ill health, they receive "]
+   disability: ["They are also receiving ", " Due to disabilty/ill health, they receive "]
+   
 }
 
 export default phrase;

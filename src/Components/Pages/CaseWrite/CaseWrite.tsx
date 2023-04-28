@@ -27,12 +27,15 @@ const generateRandom = (x: number) => {
 }
 const CaseWrite = () => {
 
+    /* to the right of each state value the number of phrases in the associated 
+    array is listed */
+
     const [client, setclient] = useState(
         {
-            single: "single adult",
-            couple: "couple",
-            children: 0,
-            benefit: "",
+            single: "single adult", // index 0 - 2
+            couple: "couple", // index 0 - 2
+            children: 0, // log actual to string index 0 - 1
+            benefit: "", // list benefits IRO - index 0 
             entitlement: "",
             disability: ""
         }
