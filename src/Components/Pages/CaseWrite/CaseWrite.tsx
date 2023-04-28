@@ -51,9 +51,9 @@ const CaseWrite = () => {
 
 
 /* submit (update state) */
-    const onSubmit = (e: React.FormEventHandler<HTMLFormElement> ) =>  {
+    const onSubmit = (e: React.FormEvent<HTMLFormElement> ) =>  {
         console.log("Woohoo form submitted")
-       
+       e.preventDefault()
         // single
         if(client.single) {
             console.log("form has reached IF check")
@@ -106,7 +106,7 @@ const handleBenefits = (e: React.FormEvent <HTMLInputElement>) => {
 
     return (
         <div className={classes.container}>
-            <form onSubmit={(e) => onSubmit} className={classes.form}>
+            <form onSubmit={onSubmit} className={classes.form}>
                
                 <section className={classes.sections}>
                 <h2>CaseWrite</h2>
