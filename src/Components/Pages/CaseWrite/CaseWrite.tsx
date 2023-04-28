@@ -78,6 +78,11 @@ const CaseWrite = () => {
                 `
       );
     }
+
+    /* disablity (para 2) */
+    if(client.disability) {
+        
+    }
   };
 
   /* event handlers for inputs */
@@ -101,6 +106,10 @@ const CaseWrite = () => {
   const handleBenefits = (e: React.FormEvent<HTMLInputElement>) => {
     setClient({ ...client, benefits: e.currentTarget.value });
   };
+
+  const handleDisability = (e: React.FormEvent<HTMLSelectElement>) => {
+    setClient({ ...client, disability: e.currentTarget.value });
+  }
 
   return (
     <div className={classes.container}>
@@ -153,6 +162,18 @@ const CaseWrite = () => {
           ></input>
         </section>
         {/* Disability benefit */}
+
+        <section className={classes.section}>
+            <label></label>
+            <select>
+                <option value="">None</option>
+                <option value="DLA">DLA</option>
+                <option value="PIP">PIP</option>
+                <option value="PIP Mobility">PIP (mob only)</option>
+                <option value="Attendence Allowance">AA</option>
+            </select>
+        </section>
+
         <section className={classes.section}>
           <label htmlFor="sup">
             <input id="sup" className={classes.supplementaryText}></input>

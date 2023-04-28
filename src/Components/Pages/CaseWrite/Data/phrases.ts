@@ -28,7 +28,7 @@ const phrase: phraseType = {
    ],
    benefits: [
     "They are in receipt of ", "They currently receive ", "They are currently in receipt of ", 
-    "They are currently receiving ", "Benfefits currently in payment: "
+    "They are currently receiving ", "Benefits currently in payment: "
    ],
    entitlement: ["I estimated they would be better off by ", "Estimate financial gain "],
    disability: ["They are also receiving ", "Due to disabilty/ill health, they receive ", 
