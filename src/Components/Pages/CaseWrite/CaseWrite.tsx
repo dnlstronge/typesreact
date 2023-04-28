@@ -36,8 +36,8 @@ const CaseWrite = () => {
             couple: "couple", // index 0 - 2
             children: 0, // log actual to string index 0 - 1
             benefit: "", // list benefits IRO - index 0 
-            entitlement: "",
-            disability: ""
+            entitlement: "", // identified ent - index 0 - 
+            disability: "" // index 0 - 2
         }
     )
 
