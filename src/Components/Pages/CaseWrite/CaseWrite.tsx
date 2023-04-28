@@ -36,11 +36,20 @@ const CaseWrite = () => {
             entitlement: "",
             disability: ""
         }
-
     )
+
+    const [caseNote, setCaseNote] = useState("") // state to be used to render paragraph
+
+
+/* Handlers  */ 
+
+    const onSumbit = () =>  {
+        console.log("Woohoo form submitted")
+    }
+
     return (
         <div className={classes.container}>
-            <form className={classes.form}>
+            <form onSubmit={onSumbit} className={classes.form}>
                
                 <section className={classes.sections}>
                 <h2>CaseWrite</h2>
@@ -58,17 +67,25 @@ const CaseWrite = () => {
                 </section>
                  {/* children */}
                 <section className={classes.sections}>
-                    <label className={classes.label} htmlFor="children"></label>
-                    <input className={classes.input} type="number"></input>
+                    <label className={classes.label} htmlFor="children">Enter Number of children</label>
+                    <input id="children" className={classes.input} type="number"></input>
                 </section>
                  {/* Benefit */}
                  <section className={classes.section}>
-                    <label className={classes.label}></label>
-                    <input className={classes.input} type="text"></input>
+                    <label htmlFor="benefit" className={classes.label}>Enter main benefit: e.g UC</label>
+                    <input id="benefit" className={classes.input} type="text"></input>
                  </section>
                  {/* Disability benefit */}
-
+                 <section className={classes.section}>
+                    <label htmlFor="sup">
+                        <input id="sup"className={classes.supplementaryText}></input>
+                    </label>
+                 </section>
+                <button>Generate</button>
             </form>
+            <div className={classes.caseNote}>
+                <p className={classes.para}>{caseNote}</p>
+            </div>
         </div>
     )
 }
