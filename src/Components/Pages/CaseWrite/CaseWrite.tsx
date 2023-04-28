@@ -54,7 +54,10 @@ const CaseWrite = () => {
     const onSubmit = (e: React.FormEvent<HTMLFormElement> ) =>  {
         console.log("Woohoo form submitted")
        e.preventDefault()
-        // single
+        console.log(client.single)
+        console.log(client.couple)
+        console.log(client.children)
+        console.log(client.benefits)
         if(client.single) {
             console.log("form has reached IF check")
             setCaseNote(
@@ -130,7 +133,7 @@ const handleBenefits = (e: React.FormEvent <HTMLInputElement>) => {
                  {/* Benefit */}
                  <section className={classes.section}>
                     <label htmlFor="benefit" className={classes.label}>Enter main benefit: e.g UC</label>
-                    <input id="benefit" className={classes.input} type="text"></input>
+                    <input onChange={handleBenefits} id="benefit" className={classes.input} type="text"></input>
                  </section>
                  {/* Disability benefit */}
                  <section className={classes.section}>
