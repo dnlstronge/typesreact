@@ -8,8 +8,23 @@ import { useState } from "react"
 goal is to generate generic welfare advice casenotes.
 Notes returned should be specific to circumstances entered but also vary in wording\
 
+
+I will acomplish this by holding different phrases in an array and using 
+RNG select indexes....
+
 */
 
+
+
+/*helper function */
+
+// config -  length of array as an argument: 
+// will return 0 - (x - 1) as index
+
+const generateRandom = (x: number) => {
+    let random = Math.floor(Math.random() * x)
+    return random;
+}
 const CaseWrite = () => {
 
     const [client, setclient] = useState(
