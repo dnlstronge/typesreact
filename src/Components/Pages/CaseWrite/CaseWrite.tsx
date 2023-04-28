@@ -14,6 +14,9 @@ RNG select indexes....
 
 */
 
+/* data */ 
+
+import phrase from "./Data/phrases"
 
 
 /*helper function */
@@ -42,7 +45,7 @@ const CaseWrite = () => {
     )
 
     const [caseNote, setCaseNote] = useState("") // state to be used to render paragraph
-
+    const [caseNotetwo, setCaseNoteTwo] = useState("") // 2nd para - disability
 
 /* Handlers  */ 
 
@@ -50,6 +53,20 @@ const CaseWrite = () => {
 /* submit (update state) */
     const onSumbit = () =>  {
         console.log("Woohoo form submitted")
+        // single
+        if(client.single) {
+            setCaseNote(
+                `
+                ${phrase.single[generateRandom(3)]}. 
+                ${phrase.children[generateRandom(2)]}${client.children} dependents.
+                ${phrase.benefits[generateRandom(4)]}${client.benefits}.
+
+                `
+            )
+        }
+        if(client.couple) {
+
+        }
     }
 
 /* event handlers for inputs */
