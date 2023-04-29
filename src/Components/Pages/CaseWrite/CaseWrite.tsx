@@ -80,8 +80,7 @@ const CaseWrite = () => {
     }
 
     /* disablity (para 2) */
-    if(client.disability) {
-        
+    if (client.disability) {
     }
   };
 
@@ -109,7 +108,7 @@ const CaseWrite = () => {
 
   const handleDisability = (e: React.FormEvent<HTMLSelectElement>) => {
     setClient({ ...client, disability: e.currentTarget.value });
-  }
+  };
 
   return (
     <div className={classes.container}>
@@ -122,7 +121,7 @@ const CaseWrite = () => {
             can be added in the text box at the end of form{" "}
           </p>
         </section>
- {/* couple single?  */}
+        {/* couple single?  */}
         <section className={classes.sections}>
           <label className={classes.label} htmlFor="relationships">
             Relationship Status
@@ -137,7 +136,7 @@ const CaseWrite = () => {
             <option value="couple">Couple</option>
           </select>
         </section>
- {/* children */}
+        {/* children */}
         <section className={classes.sections}>
           <label className={classes.label} htmlFor="children">
             Enter Number of children
@@ -162,19 +161,19 @@ const CaseWrite = () => {
           ></input>
         </section>
 
-{/* Disability benefit */}
+        {/* Disability benefit */}
 
         <section className={classes.section}>
-            <label></label>
-            <select>
-                <option value="">None</option>
-                <option value="DLA">DLA</option>
-                <option value="PIP">PIP</option>
-                <option value="PIP Mobility">PIP (mob only)</option>
-                <option value="Attendence Allowance">AA</option>
-            </select>
+          <label></label>
+          <select>
+            <option value="">None</option>
+            <option value="DLA">DLA</option>
+            <option value="PIP">PIP</option>
+            <option value="PIP Mobility">PIP (mob only)</option>
+            <option value="Attendence Allowance">AA</option>
+          </select>
         </section>
-{/* Supplementary text */}
+        {/* Supplementary text */}
         <section className={classes.section}>
           <label htmlFor="sup">
             <input id="sup" className={classes.supplementaryText}></input>
