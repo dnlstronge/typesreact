@@ -110,6 +110,9 @@ const CaseWrite = () => {
     setClient({ ...client, disability: e.currentTarget.value });
   };
 
+  const handleSupplementary = (e: React.FormEvent<HTMLSelectElement>) => {
+    setClient({ ...client, supplementary: e.currentTarget.value });
+
   return (
     <div className={classes.container}>
       <form onSubmit={onSubmit} className={classes.form}>
