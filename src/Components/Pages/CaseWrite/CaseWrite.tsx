@@ -113,6 +113,7 @@ const CaseWrite = () => {
 
   const handleSupplementary = (e: React.FormEvent<HTMLSelectElement>) => {
     setClient({ ...client, supplementary: e.currentTarget.value });
+  }
 
   return (
     <div className={classes.container}>
