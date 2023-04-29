@@ -37,6 +37,7 @@ const CaseWrite = () => {
     benefits: "", // list benefits IRO - index 0
     entitlement: "", // identified ent - index 0 -
     disability: "", // index 0 - 2
+    supplementary: ""
   });
 
   const [caseNote, setCaseNote] = useState("Initial Text value"); // state to be used to render paragraph
