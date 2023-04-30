@@ -21,6 +21,7 @@ import HasChildren from "./Sections/HasChildren";
 import CurrentBenefit from "./Sections/CurrentBenefit";
 import HeadSec from "./Sections/HeadSec";
 import Disability from "./Sections/Disability";
+import Entitlement from "./Sections/Entitlement";
 
 /*helper function */
 
@@ -149,28 +150,9 @@ const CaseWrite = () => {
         <CurrentBenefit handleBenefits={handleBenefits} />
         {/* Disability benefit */}
         <Disability handleDisability={handleDisability} />
-        {/* Entitlement identified */}
-
-        <section className={classes.section}>
-          <label className={classes.label} htmlFor="ent">
-            Entitlement identified
-          </label>
-          <input
-            onChange={handleEntitlement}
-            className={classes.input}
-            type="text"
-            id="ent"
-          ></input>
-          <label className={classes.label} htmlFor="amount">
-            Better off (pm)
-          </label>
-          <input
-            onChange={handleBetterOff}
-            className={classes.input}
-            type="number"
-          ></input>
-        </section>
-
+        {/* Entitlement identified & better off */}
+        <Entitlement handleEntitlement={handleEntitlement} handleBetterOff={handleBetterOff}/>
+        
         {/* Supplementary text */}
         <section className={classes.section}>
           <label htmlFor="sup">
