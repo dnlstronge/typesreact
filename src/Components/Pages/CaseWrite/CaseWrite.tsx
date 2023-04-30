@@ -19,6 +19,7 @@ import phrase from "./Data/phrases";
 import Relationship from "./Sections/Relationship";
 import HasChildren from "./Sections/HasChildren";
 import CurrentBenefit from "./Sections/CurrentBenefit";
+import HeadSec from "./Sections/HeadSec";
 
 /*helper function */
 
@@ -40,7 +41,7 @@ const CaseWrite = () => {
     benefits: "", // list benefits IRO - index 0
     entitlement: "", // identified ent - index 0 -
     disability: "", // index 0 - 2
-    supplementary: ""
+    supplementary: "",
   });
 
   const [caseNote, setCaseNote] = useState("Initial Text value"); // state to be used to render paragraph
@@ -116,27 +117,19 @@ const CaseWrite = () => {
 
   const handleSupplementary = (e: React.FormEvent<HTMLSelectElement>) => {
     setClient({ ...client, supplementary: e.currentTarget.value });
-  }
+  };
 
   return (
     <div className={classes.container}>
       <form onSubmit={onSubmit} className={classes.form}>
-        <section className={classes.sections}>
-          <h2>CaseWrite</h2>
-          <p className={classes.para}>
-            Case note generator: Enter values about household/client and click
-            generate to compile a generic case note. Supplementary information
-            can be added in the text box at the end of form{" "}
-          </p>
-        </section>
-
-
+        {/*Head section */}
+        <HeadSec />
         {/* couple single?  */}
-        <Relationship handleSingle={handleSingle}/>
+        <Relationship handleSingle={handleSingle} />
         {/* children */}
         <HasChildren handleChildren={handleChildren} />
         {/* Benefit */}
-        <CurrentBenefit handleBenefits={handleBenefits}/>
+        <CurrentBenefit handleBenefits={handleBenefits} />
 
         {/* Disability benefit */}
 
@@ -153,14 +146,10 @@ const CaseWrite = () => {
 
         {/* Entitlement identified */}
         <section>
-            <label htmlFor="ent">
-               Entitlement identified
-            </label>
-            <input type="text" id="ent"></input>
-            <label htmlFor="amount">
-                Better off (pm)
-            </label>
-            <input type="number"></input>
+          <label htmlFor="ent">Entitlement identified</label>
+          <input type="text" id="ent"></input>
+          <label htmlFor="amount">Better off (pm)</label>
+          <input type="number"></input>
         </section>
 
         {/* Supplementary text */}
