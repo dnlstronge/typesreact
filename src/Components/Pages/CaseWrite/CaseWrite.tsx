@@ -182,11 +182,13 @@ const CaseWrite = () => {
         {/* Entitlement identified */}
         <section>
             <label htmlFor="ent">
-               
+               Entitlement identified
             </label>
-            <input id="ent"></input>
+            <input type="text" id="ent"></input>
             <label htmlFor="amount">
+                Better off (pm)
             </label>
+            <input type="number"></input>
         </section>
 
         {/* Supplementary text */}
