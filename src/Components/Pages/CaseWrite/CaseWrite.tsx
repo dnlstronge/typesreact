@@ -16,6 +16,7 @@ RNG select indexes....
 /* data */
 
 import phrase from "./Data/phrases";
+import Relationship from "./Sections/Relationship";
 
 /*helper function */
 
@@ -126,21 +127,10 @@ const CaseWrite = () => {
             can be added in the text box at the end of form{" "}
           </p>
         </section>
+
+
         {/* couple single?  */}
-        <section className={classes.sections}>
-          <label className={classes.label} htmlFor="relationships">
-            Relationship Status
-          </label>
-          <select
-            onChange={handleSingle}
-            className={classes.select}
-            id="relationships"
-          >
-            <option value="none">--select--</option>
-            <option value="single">Single</option>
-            <option value="couple">Couple</option>
-          </select>
-        </section>
+        <Relationship handleSingle={handleSingle}/>
         {/* children */}
         <section className={classes.sections}>
           <label className={classes.label} htmlFor="children">
