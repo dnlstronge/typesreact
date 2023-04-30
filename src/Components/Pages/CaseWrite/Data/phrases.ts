@@ -4,8 +4,11 @@ type phraseType = {
     couple: string[]
     children: string[]
     benefits: string[]
-    entitlement: string[] 
     disability: string[]
+    entitlement: string[] 
+    betterOff: string[]
+
+    
 
 }
 
@@ -34,7 +37,14 @@ const phrase: phraseType = {
    disability: ["They are also receiving ", "Due to disabilty/ill health, they receive ", 
    "Because of disability they receive "],
 
-   entitlement: [" Based on information provided, estimated they would be better off by ", "Based on info provided, Estimated financial gain "],
+   entitlement: [" Based on information provided claimant may be entitled to: ", "Based on info provided found entitlement to: ", 
+   "Based on information provided they could be entitled to:  " ],
+
+   betterOff: [
+    "They could be better off by ", "They may be better of by", "The could be entitled to an additional award of"
+   ]
+
+
 
 }
 

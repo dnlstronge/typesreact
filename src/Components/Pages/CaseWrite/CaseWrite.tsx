@@ -20,6 +20,7 @@ import Relationship from "./Sections/Relationship";
 import HasChildren from "./Sections/HasChildren";
 import CurrentBenefit from "./Sections/CurrentBenefit";
 import HeadSec from "./Sections/HeadSec";
+import Disability from "./Sections/Disability";
 
 /*helper function */
 
@@ -39,7 +40,8 @@ const CaseWrite = () => {
     couple: false, // index 0 - 2
     children: "", // log actual to string index 0 - 1
     benefits: "", // list benefits IRO - index 0
-    entitlement: "", // identified ent - index 0 -
+    entitlement: "", // identified ent - index 2 -
+    betterOff: "", // better off figure
     disability: "", // index 0 - 2
     supplementary: "",
   });
@@ -86,7 +88,9 @@ const CaseWrite = () => {
 
     /* disablity (para 2) - Needs added! */
     if (client.disability.trim().replace(/ /g, "").length > 0) {
-        setCaseNoteTwo(`${phrase.disability[generateRandom(3)]} ${client.disability}`)
+      setCaseNoteTwo(
+        `${phrase.disability[generateRandom(3)]} ${client.disability}`
+      );
     }
   };
 
@@ -131,26 +135,15 @@ const CaseWrite = () => {
         <HasChildren handleChildren={handleChildren} />
         {/* Benefit */}
         <CurrentBenefit handleBenefits={handleBenefits} />
-
         {/* Disability benefit */}
+        <Disability handleDisability={handleDisability} />
+        {/* Entitlement identified */}
 
         <section className={classes.section}>
-          <label htmlFor="disablilty">Disability</label>
-          <select onChange={handleDisability}>
-            <option value="">None</option>
-            <option value="DLA">DLA</option>
-            <option value="PIP">PIP</option>
-            <option value="PIP Mobility">PIP (mob only)</option>
-            <option value="Attendence Allowance">AA</option>
-          </select>
-        </section>
-
-        {/* Entitlement identified */}
-        <section>
-          <label htmlFor="ent">Entitlement identified</label>
-          <input type="text" id="ent"></input>
-          <label htmlFor="amount">Better off (pm)</label>
-          <input type="number"></input>
+          <label className={classes.label} htmlFor="ent">Entitlement identified</label>
+          <input className={classes.input} type="text" id="ent"></input>
+          <label className={classes.label} htmlFor="amount">Better off (pm)</label>
+          <input className={classes.input} type="number"></input>
         </section>
 
         {/* Supplementary text */}
@@ -161,7 +154,9 @@ const CaseWrite = () => {
         </section>
 
         {/*Submit  */}
-        <button className={classes.btn} type="submit">Generate</button>
+        <button className={classes.btn} type="submit">
+          Generate
+        </button>
       </form>
       <div className={classes.caseNote}>
         <p className={classes.para}>{caseNote}</p>
