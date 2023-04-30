@@ -86,7 +86,7 @@ const CaseWrite = () => {
 
     /* disablity (para 2) - Needs added! */
     if (client.disability.trim().replace(/ /g, "").length > 0) {
-        setCaseNoteTwo(`${phrase.disability[generateRandom()]}`)
+        setCaseNoteTwo(`${phrase.disability[generateRandom(3)]} ${client.disability}`)
     }
   };
 
@@ -165,7 +165,7 @@ const CaseWrite = () => {
       </form>
       <div className={classes.caseNote}>
         <p className={classes.para}>{caseNote}</p>
-        <p className={classes.para}>{}</p>
+        <p className={classes.para}>{caseNotetwo}</p>
       </div>
     </div>
   );

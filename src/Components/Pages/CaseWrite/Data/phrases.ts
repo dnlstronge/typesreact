@@ -34,7 +34,7 @@ const phrase: phraseType = {
    disability: ["They are also receiving ", "Due to disabilty/ill health, they receive ", 
    "Because of disability they receive "],
 
-   entitlement: [" Based on information provided, estimated they would be better off by ", "Estimated financial gain "],
+   entitlement: [" Based on information provided, estimated they would be better off by ", "Based on info provided, Estimated financial gain "],
 
 }
 
