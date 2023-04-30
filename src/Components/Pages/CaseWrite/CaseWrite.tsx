@@ -180,7 +180,14 @@ const CaseWrite = () => {
         </section>
 
         {/* Entitlement identified */}
-        
+        <section>
+            <label htmlFor="ent">
+               
+            </label>
+            <input id="ent"></input>
+            <label htmlFor="amount">
+            </label>
+        </section>
 
         {/* Supplementary text */}
         <section className={classes.section}>
