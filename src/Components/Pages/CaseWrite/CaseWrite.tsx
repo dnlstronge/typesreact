@@ -48,6 +48,8 @@ const CaseWrite = () => {
 
   const [caseNote, setCaseNote] = useState("Initial Text value"); // state to be used to render paragraph
   const [caseNotetwo, setCaseNoteTwo] = useState(""); // 2nd para - disability
+  const [caseNoteThree, setCaseNoteThree] = useState("") // entitlement identified
+  const [caseNoteFour, setCaseNoteFour] = useState("") // better off by
 
   /* Handlers  */
 
@@ -82,11 +84,18 @@ const CaseWrite = () => {
       );
     }
 
-    /* disablity (para 2) - Needs added! */
+    /* disablity (para 2)  */
     if (client.disability.trim().replace(/ /g, "").length > 0) {
       setCaseNoteTwo(
         `${phrase.disability[generateRandom(3)]} ${client.disability}`
       );
+    }
+    /*Better off and entitlement paragraph - (para 3 & 4) */
+    if(client.entitlement.trim().replace(/ /g, "").length > 0) {
+        setCaseNoteThree(`${phrase.entitlement[generateRandom(2)]} ${client.entitlement}.`)
+    }
+    if(Number(client.betterOff) > 0) {
+        setCaseNoteFour(`${phrase.betterOff[generateRandom(2)]}${client.betterOff}`)
     }
   };
 
@@ -177,6 +186,8 @@ const CaseWrite = () => {
       <div className={classes.caseNote}>
         <p className={classes.para}>{caseNote}</p>
         <p className={classes.para}>{caseNotetwo}</p>
+        <p className={classes.para}>{caseNoteThree}</p>
+        <p className={classes.para}>{caseNoteFour}</p>
       </div>
     </div>
   );
