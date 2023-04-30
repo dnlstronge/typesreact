@@ -169,8 +169,8 @@ const CaseWrite = () => {
         {/* Disability benefit */}
 
         <section className={classes.section}>
-          <label></label>
-          <select>
+          <label htmlFor="disablilty">Disability</label>
+          <select onChange={handleDisability}>
             <option value="">None</option>
             <option value="DLA">DLA</option>
             <option value="PIP">PIP</option>
@@ -178,6 +178,10 @@ const CaseWrite = () => {
             <option value="Attendence Allowance">AA</option>
           </select>
         </section>
+
+        {/* Entitlement identified */}
+        
+
         {/* Supplementary text */}
         <section className={classes.section}>
           <label htmlFor="sup">
