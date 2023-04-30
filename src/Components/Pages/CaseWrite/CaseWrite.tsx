@@ -17,6 +17,7 @@ RNG select indexes....
 
 import phrase from "./Data/phrases";
 import Relationship from "./Sections/Relationship";
+import HasChildren from "./Sections/HasChildren";
 
 /*helper function */
 
@@ -81,7 +82,7 @@ const CaseWrite = () => {
       );
     }
 
-    /* disablity (para 2) */
+    /* disablity (para 2) - Needs added! */
     if (client.disability) {
     }
   };
@@ -132,17 +133,7 @@ const CaseWrite = () => {
         {/* couple single?  */}
         <Relationship handleSingle={handleSingle}/>
         {/* children */}
-        <section className={classes.sections}>
-          <label className={classes.label} htmlFor="children">
-            Enter Number of children
-          </label>
-          <input
-            onChange={handleChildren}
-            id="children"
-            className={classes.input}
-            type="number"
-          ></input>
-        </section>
+        <HasChildren handleChildren={handleChildren} />
         {/* Benefit */}
         <section className={classes.section}>
           <label htmlFor="benefit" className={classes.label}>
