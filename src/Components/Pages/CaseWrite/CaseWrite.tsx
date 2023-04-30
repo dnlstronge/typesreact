@@ -40,8 +40,8 @@ const CaseWrite = () => {
     couple: false, // index 0 - 2
     children: "", // log actual to string index 0 - 1
     benefits: "", // list benefits IRO - index 0
-    entitlement: "", // identified ent - index 2 -
-    betterOff: "", // better off figure
+    entitlement: "", // identified ent - index 0 - 2
+    betterOff: "", // better off figure index 0 -2
     disability: "", // index 0 - 2
     supplementary: "",
   });
@@ -56,10 +56,6 @@ const CaseWrite = () => {
     console.log("Woohoo form submitted");
     e.preventDefault();
 
-    console.log(client.single);
-    console.log(client.couple);
-    console.log(client.children);
-    console.log(client.benefits);
     if (client.single) {
       console.log("form has reached IF check");
       setCaseNote(
@@ -120,6 +116,13 @@ const CaseWrite = () => {
     setClient({ ...client, disability: e.currentTarget.value });
   };
 
+  const handleEntitlement = (e: React.FormEvent<HTMLInputElement>) => {
+    setClient({ ...client, entitlement: e.currentTarget.value });
+  };
+
+  const handleBetterOff = (e: React.FormEvent<HTMLInputElement>) => {
+    setClient({ ...client, betterOff: e.currentTarget.value });
+  };
   const handleSupplementary = (e: React.FormEvent<HTMLSelectElement>) => {
     setClient({ ...client, supplementary: e.currentTarget.value });
   };
@@ -140,10 +143,23 @@ const CaseWrite = () => {
         {/* Entitlement identified */}
 
         <section className={classes.section}>
-          <label className={classes.label} htmlFor="ent">Entitlement identified</label>
-          <input className={classes.input} type="text" id="ent"></input>
-          <label className={classes.label} htmlFor="amount">Better off (pm)</label>
-          <input className={classes.input} type="number"></input>
+          <label className={classes.label} htmlFor="ent">
+            Entitlement identified
+          </label>
+          <input
+            onChange={handleEntitlement}
+            className={classes.input}
+            type="text"
+            id="ent"
+          ></input>
+          <label className={classes.label} htmlFor="amount">
+            Better off (pm)
+          </label>
+          <input
+            onChange={handleBetterOff}
+            className={classes.input}
+            type="number"
+          ></input>
         </section>
 
         {/* Supplementary text */}
