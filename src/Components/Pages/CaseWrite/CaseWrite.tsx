@@ -85,7 +85,8 @@ const CaseWrite = () => {
     }
 
     /* disablity (para 2) - Needs added! */
-    if (client.disability) {
+    if (client.disability.trim().replace(/ /g, "").length > 0) {
+        setCaseNoteTwo(`${phrase.disability[generateRandom()]}`)
     }
   };
 
