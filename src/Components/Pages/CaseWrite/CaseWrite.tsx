@@ -155,10 +155,12 @@ const CaseWrite = () => {
         {/* Supplementary text */}
         <section className={classes.section}>
           <label htmlFor="sup">
-            <input id="sup" className={classes.supplementaryText}></input>
+            <input id="sup" className={classes.input}></input>
           </label>
         </section>
-        <button type="submit">Generate</button>
+
+        {/*Submit  */}
+        <button className={classes.btn} type="submit">Generate</button>
       </form>
       <div className={classes.caseNote}>
         <p className={classes.para}>{caseNote}</p>
