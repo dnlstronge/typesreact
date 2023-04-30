@@ -18,6 +18,7 @@ RNG select indexes....
 import phrase from "./Data/phrases";
 import Relationship from "./Sections/Relationship";
 import HasChildren from "./Sections/HasChildren";
+import CurrentBenefit from "./Sections/CurrentBenefit";
 
 /*helper function */
 
@@ -135,17 +136,7 @@ const CaseWrite = () => {
         {/* children */}
         <HasChildren handleChildren={handleChildren} />
         {/* Benefit */}
-        <section className={classes.section}>
-          <label htmlFor="benefit" className={classes.label}>
-            Enter main benefit: e.g UC
-          </label>
-          <input
-            onChange={handleBenefits}
-            id="benefit"
-            className={classes.input}
-            type="text"
-          ></input>
-        </section>
+        <CurrentBenefit handleBenefits={handleBenefits}/>
 
         {/* Disability benefit */}
 
