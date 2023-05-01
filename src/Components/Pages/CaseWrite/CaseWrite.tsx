@@ -50,9 +50,9 @@ const CaseWrite = () => {
 
   const [caseNote, setCaseNote] = useState("Initial Text value"); // state to be used to render paragraph
   const [caseNotetwo, setCaseNoteTwo] = useState(""); // 2nd para - disability
-  const [caseNoteThree, setCaseNoteThree] = useState("") // entitlement identified
-  const [caseNoteFour, setCaseNoteFour] = useState("") // better off by
-  const [supplementary, setSupplementary] = useState("")
+  const [caseNoteThree, setCaseNoteThree] = useState(""); // entitlement identified
+  const [caseNoteFour, setCaseNoteFour] = useState(""); // better off by
+  const [supplementary, setSupplementary] = useState("");
 
   /* Handlers  */
 
@@ -94,11 +94,15 @@ const CaseWrite = () => {
       );
     }
     /*Better off and entitlement paragraph - (para 3 & 4) */
-    if(client.entitlement.trim().replace(/ /g, "").length > 0) {
-        setCaseNoteThree(`${phrase.entitlement[generateRandom(2)]} ${client.entitlement}.`)
+    if (client.entitlement.trim().replace(/ /g, "").length > 0) {
+      setCaseNoteThree(
+        `${phrase.entitlement[generateRandom(2)]} ${client.entitlement}.`
+      );
     }
-    if(Number(client.betterOff) > 0) {
-        setCaseNoteFour(`${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`)
+    if (Number(client.betterOff) > 0) {
+      setCaseNoteFour(
+        `${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`
+      );
     }
   };
 
@@ -153,10 +157,13 @@ const CaseWrite = () => {
         {/* Disability benefit */}
         <Disability handleDisability={handleDisability} />
         {/* Entitlement identified & better off */}
-        <Entitlement handleEntitlement={handleEntitlement} handleBetterOff={handleBetterOff}/>
-        
+        <Entitlement
+          handleEntitlement={handleEntitlement}
+          handleBetterOff={handleBetterOff}
+        />
+
         {/* Supplementary text */}
-       <Supplementary handleSupplementary={handleSupplementary}/>
+        <Supplementary handleSupplementary={handleSupplementary} />
 
         {/*Submit  */}
         <button className={classes.btn} type="submit">
