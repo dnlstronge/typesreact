@@ -11,5 +11,17 @@
 }
 .para {
     color: white;
+    margin: auto;
+    width: 60%;
 
+}
+.btn {
+    color: white;
+    background:rgb(93, 92, 92) ;
+    border-radius: 6px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+.btn:hover {
+    background:rgb(181, 178, 178);
 }
