@@ -4,7 +4,7 @@ import classes from "./Relationship.module.css"
 const Entitlement: React.FC<{handleEntitlement: (e: React.FormEvent<HTMLInputElement>) => void, 
     handleBetterOff: (e: React.FormEvent<HTMLInputElement>) => void}> = (props) => {
         return (
-            <section className={classes.section}>
+            <section className={classes.sections}>
             <label className={classes.label} htmlFor="ent">
               Entitlement identified
             </label>

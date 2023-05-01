@@ -5,7 +5,7 @@ const Disability: React.FC<{
   handleDisability: (e: React.FormEvent<HTMLSelectElement>) => void;
 }> = (props) => {
   return (
-    <section className={classes.section}>
+    <section className={classes.sections}>
       <label className={classes.label} htmlFor="disablilty">Disability</label>
       <select className={classes.select} onChange={props.handleDisability}>
         <option value="">None</option>

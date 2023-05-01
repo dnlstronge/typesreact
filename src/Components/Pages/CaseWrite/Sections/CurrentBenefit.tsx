@@ -5,7 +5,7 @@ const CurrentBenefit: React.FC<{
   handleBenefits: (e: React.FormEvent<HTMLInputElement>) => void;
 }> = (props) => {
   return (
-    <section className={classes.section}>
+    <section className={classes.sections}>
       <label htmlFor="benefit" className={classes.label}>
         Enter main benefit: e.g UC
       </label>
