@@ -22,6 +22,7 @@ import CurrentBenefit from "./Sections/CurrentBenefit";
 import HeadSec from "./Sections/HeadSec";
 import Disability from "./Sections/Disability";
 import Entitlement from "./Sections/Entitlement";
+import Supplementary from "./Sections/Supplementary";
 
 /*helper function */
 
@@ -134,7 +135,7 @@ const CaseWrite = () => {
   const handleBetterOff = (e: React.FormEvent<HTMLInputElement>) => {
     setClient({ ...client, betterOff: e.currentTarget.value });
   };
-  const handleSupplementary = (e: React.FormEvent<HTMLSelectElement>) => {
+  const handleSupplementary = (e: React.FormEvent<HTMLInputElement>) => {
     setClient({ ...client, supplementary: e.currentTarget.value });
   };
 
@@ -155,7 +156,7 @@ const CaseWrite = () => {
         <Entitlement handleEntitlement={handleEntitlement} handleBetterOff={handleBetterOff}/>
         
         {/* Supplementary text */}
-       
+       <Supplementary handleSupplementary={handleSupplementary}/>
 
         {/*Submit  */}
         <button className={classes.btn} type="submit">
