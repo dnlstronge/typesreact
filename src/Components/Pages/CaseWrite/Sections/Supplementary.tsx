@@ -5,7 +5,7 @@ const Supplementary: React.FC<{
 }> = (props) => {
   return (
     <section className={classes.section}>
-      <label className={classes.label} htmlFor="sup"></label>
+      <label className={classes.label} htmlFor="sup">Additional Notes</label>
       <input
         onChange={props.handleSupplementary}
         id="sup"
