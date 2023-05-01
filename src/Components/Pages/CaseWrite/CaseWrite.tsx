@@ -51,6 +51,7 @@ const CaseWrite = () => {
   const [caseNotetwo, setCaseNoteTwo] = useState(""); // 2nd para - disability
   const [caseNoteThree, setCaseNoteThree] = useState("") // entitlement identified
   const [caseNoteFour, setCaseNoteFour] = useState("") // better off by
+  const [supplementary, setSupplementary] = useState("")
 
   /* Handlers  */
 
@@ -154,11 +155,7 @@ const CaseWrite = () => {
         <Entitlement handleEntitlement={handleEntitlement} handleBetterOff={handleBetterOff}/>
         
         {/* Supplementary text */}
-        <section className={classes.section}>
-          <label htmlFor="sup">
-            <input id="sup" className={classes.input}></input>
-          </label>
-        </section>
+       
 
         {/*Submit  */}
         <button className={classes.btn} type="submit">
@@ -170,6 +167,7 @@ const CaseWrite = () => {
         <p className={classes.para}>{caseNotetwo}</p>
         <p className={classes.para}>{caseNoteThree}</p>
         <p className={classes.para}>{caseNoteFour}</p>
+        <p className={classes.para}>{supplementary}</p>
       </div>
     </div>
   );

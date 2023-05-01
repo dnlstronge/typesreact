@@ -6,8 +6,8 @@ const Disability: React.FC<{
 }> = (props) => {
   return (
     <section className={classes.section}>
-      <label htmlFor="disablilty">Disability</label>
-      <select onChange={props.handleDisability}>
+      <label className={classes.label} htmlFor="disablilty">Disability</label>
+      <select className={classes.select} onChange={props.handleDisability}>
         <option value="">None</option>
         <option value="DLA">DLA</option>
         <option value="PIP">PIP</option>
