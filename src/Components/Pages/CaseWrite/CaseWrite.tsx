@@ -96,7 +96,7 @@ const CaseWrite = () => {
         setCaseNoteThree(`${phrase.entitlement[generateRandom(2)]} ${client.entitlement}.`)
     }
     if(Number(client.betterOff) > 0) {
-        setCaseNoteFour(`${phrase.betterOff[generateRandom(2)]}${client.betterOff}`)
+        setCaseNoteFour(`${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`)
     }
   };
 
