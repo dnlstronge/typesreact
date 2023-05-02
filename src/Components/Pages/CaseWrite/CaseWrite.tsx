@@ -104,8 +104,8 @@ const CaseWrite = () => {
         `${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`
       );
     }
-    if(supplementary.trim().replace(/ /g, "").length > 0) {
-
+    if(client.supplementary.trim().replace(/ /g, "").length > 0) {
+      setSupplementary(client.supplementary)
     }
   };
 
