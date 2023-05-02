@@ -104,6 +104,9 @@ const CaseWrite = () => {
         `${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`
       );
     }
+    if(supplementary.trim().replace(/ /g, "").length > 0) {
+
+    }
   };
 
   /* event handlers for inputs */
@@ -159,9 +162,7 @@ const CaseWrite = () => {
         {/* Entitlement identified & better off */}
         <Entitlement
           handleEntitlement={handleEntitlement}
-          handleBetterOff={handleBetterOff}
-        />
-
+          handleBetterOff={handleBetterOff}/>
         {/* Supplementary text */}
         <Supplementary handleSupplementary={handleSupplementary} />
 
@@ -176,6 +177,7 @@ const CaseWrite = () => {
         <p className={classes.para}>{caseNoteThree}</p>
         <p className={classes.para}>{caseNoteFour}</p>
         <p className={classes.para}>{supplementary}</p>
+       
       </div>
     </div>
   );
