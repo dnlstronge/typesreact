@@ -48,7 +48,7 @@ const CaseWrite = () => {
     supplementary: "",
   });
 
-  const [caseNote, setCaseNote] = useState("Initial Text value"); // state to be used to render paragraph
+  const [caseNote, setCaseNote] = useState("..."); // state to be used to render paragraph
   const [caseNotetwo, setCaseNoteTwo] = useState(""); // 2nd para - disability
   const [caseNoteThree, setCaseNoteThree] = useState(""); // entitlement identified
   const [caseNoteFour, setCaseNoteFour] = useState(""); // better off by

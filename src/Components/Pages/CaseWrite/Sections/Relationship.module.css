@@ -9,6 +9,10 @@
 .heading {
   margin: 2rem;
   padding-top: 1rem;
+  width: 100%;
+  background: grey;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 .label {
