@@ -172,11 +172,12 @@ const CaseWrite = () => {
         </button>
       </form>
       <div className={classes.caseNote}>
-        <p className={classes.para}>{caseNote}</p>
-        <p className={classes.para}>{caseNotetwo}</p>
-        <p className={classes.para}>{caseNoteThree}</p>
-        <p className={classes.para}>{caseNoteFour}</p>
-        <p className={classes.para}>{supplementary}</p>
+        <p id="casenote" className={classes.para}>
+        {caseNote}
+        {caseNotetwo}
+        {caseNoteThree}
+        {caseNoteFour}
+        {supplementary}</p>
        
       </div>
     </div>
