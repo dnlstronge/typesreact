@@ -74,11 +74,11 @@ const CaseWrite = () => {
 
   /* submit (update state) */
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    console.log("Woohoo form submitted");
+    //console.log("Woohoo form submitted");
     e.preventDefault();
 
     if (client.single) {
-      console.log("form has reached IF check");
+      //console.log("form has reached IF check");
       setCaseNote(
         `
                 ${phrase.single[generateRandom(3)]}. 
