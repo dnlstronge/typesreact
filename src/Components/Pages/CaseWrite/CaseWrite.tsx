@@ -54,6 +54,23 @@ const CaseWrite = () => {
   const [caseNoteFour, setCaseNoteFour] = useState(""); // better off by
   const [supplementary, setSupplementary] = useState("");
 
+  /* copy casenote function */
+
+ const handleCopy = () => {
+  const text = document.getElementById("casenote")!.innerHTML
+  console.log(text)
+  const copyContent = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log('Content copied to clipboard');
+    } catch (err) {
+      console.error('Failed to copy: ', err);
+    }
+  }
+  copyContent()
+ }
+
+
   /* Handlers  */
 
   /* submit (update state) */
@@ -104,8 +121,8 @@ const CaseWrite = () => {
         `${phrase.betterOff[generateRandom(2)]}£${client.betterOff}pm`
       );
     }
-    if(client.supplementary.trim().replace(/ /g, "").length > 0) {
-      setSupplementary(client.supplementary)
+    if (client.supplementary.trim().replace(/ /g, "").length > 0) {
+      setSupplementary(client.supplementary);
     }
   };
 
@@ -162,24 +179,26 @@ const CaseWrite = () => {
         {/* Entitlement identified & better off */}
         <Entitlement
           handleEntitlement={handleEntitlement}
-          handleBetterOff={handleBetterOff}/>
+          handleBetterOff={handleBetterOff}
+        />
         {/* Supplementary text */}
         <Supplementary handleSupplementary={handleSupplementary} />
-
+        {/* Casenote */}
+        <div className={classes.caseNote}>
+          <p id="casenote" className={classes.para}>
+            {caseNote}
+            {caseNotetwo}
+            {caseNoteThree}
+            {caseNoteFour}
+            {supplementary}
+          </p>
+        </div>
         {/*Submit  */}
         <button className={classes.btn} type="submit">
           Generate
         </button>
+        <button onClick={handleCopy} className={classes.btn}>copy</button>
       </form>
-      <div className={classes.caseNote}>
-        <p id="casenote" className={classes.para}>
-        {caseNote}
-        {caseNotetwo}
-        {caseNoteThree}
-        {caseNoteFour}
-        {supplementary}</p>
-       
-      </div>
     </div>
   );
 };
