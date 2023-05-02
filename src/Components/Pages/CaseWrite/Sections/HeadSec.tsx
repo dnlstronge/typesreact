@@ -4,7 +4,7 @@ import classes from "./Relationship.module.css"
 const HeadSec = () => {
     return (
         <section className={classes.sections}>
-          <h2>CaseWrite</h2>
+          <h2 className={classes.heading}>CaseWrite</h2>
           <p className={classes.para}>
             Case note generator: Enter values about household/client and click
             generate to compile a generic case note. Supplementary information
