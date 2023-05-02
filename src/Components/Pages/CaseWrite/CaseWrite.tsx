@@ -56,20 +56,19 @@ const CaseWrite = () => {
 
   /* copy casenote function */
 
- const handleCopy = () => {
-  const text = document.getElementById("casenote")!.innerHTML
-  console.log(text)
-  const copyContent = async () => {
-    try {
-      await navigator.clipboard.writeText(text);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
-  }
-  copyContent()
- }
-
+  const handleCopy = () => {
+    const text = document.getElementById("casenote")!.innerHTML;
+    console.log(text);
+    const copyContent = async () => {
+      try {
+        await navigator.clipboard.writeText(text);
+        console.log("Content copied to clipboard");
+      } catch (err) {
+        console.error("Failed to copy: ", err);
+      }
+    };
+    copyContent();
+  };
 
   /* Handlers  */
 
@@ -197,7 +196,9 @@ const CaseWrite = () => {
         <button className={classes.btn} type="submit">
           Generate
         </button>
-        <button onClick={handleCopy} className={classes.btn}>copy</button>
+        <button onClick={handleCopy} className={classes.btn}>
+          copy
+        </button>
       </form>
     </div>
   );
