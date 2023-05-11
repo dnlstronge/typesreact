@@ -20,36 +20,18 @@ const Contact = () => {
       <h2>Get in touch...</h2>
       {/* email */}
       <div className={classes.contact}>
-      <a href="mailto:dnlstronge@gmail.com" target="blank">
-      <MdEmail
-          
-          size="3rem"
-          color="red"
-          style={{ marginTop: "2rem" }}
-        />
-     
-      </a>
-        
-          
-       
+        <a href="mailto:dnlstronge@gmail.com" target="blank">
+          <MdEmail size="3rem" color="red" style={{ marginTop: "2rem" }} />
+        </a>
+
         <a href="mailto:dnlstronge@gmail.com" className={classes.contacttext}>
           dnlstronge@gmail.com
         </a>
       </div>
       {/* twitter */}
       <div className={classes.contact}>
-       
-         <a
-          href="https://twitter.com/Stronge_D"
-          target="blank"
-    
-        >
-          <BsTwitter
-          
-          size="3rem"
-          color="blue"
-          style={{ marginTop: "2rem" }}
-        />
+        <a href="https://twitter.com/Stronge_D" target="blank">
+          <BsTwitter size="3rem" color="blue" style={{ marginTop: "2rem" }} />
         </a>
         <a
           href="https://twitter.com/Stronge_D"
