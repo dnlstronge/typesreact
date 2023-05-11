@@ -1,33 +1,24 @@
 .headabout {
-    color: white;
-    font-size: 2rem;
-    margin-left: 4rem;
-    margin-top: 1rem;
-  }
+  color: white;
+  font-size: 2rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+}
+.techHead {
+  font-size: 2rem;
+  color: white;
+  margin-left: 4rem;
+  margin-top: 2rem;
+}
+.techused {
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+}
 
-
-
-
-
-
-    .techHead {
-      font-size: 2rem;
-      color: white;
-      margin-left: 4rem;
-      margin-top: 2rem;
-    }
-    .techused {
-      margin-left: 10%;
-      margin-right: 10%;
-      display: flex;
-      margin-top: 1rem;
-
-      flex-direction: row;
-    
-    }
-
-    /* animation */
-
+/* animation */
 
 .abouttext {
   font-family: Arial, Helvetica, sans-serif;
@@ -38,19 +29,12 @@
   width: 90%;
   margin-left: 4rem;
   margin-bottom: 1rem;
-
-
- 
 }
-
-
 
 /* On screens that are 992px or less, set the background color to blue */
 @media screen and (max-width: 992px) {
-  
 }
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-
 }
