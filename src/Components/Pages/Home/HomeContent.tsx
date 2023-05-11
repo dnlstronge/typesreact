@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./HomeContent.module.css";
 import homeContent from "../../../Content/Home/homeContent";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const HomeContent: React.FC<{ showAbout: boolean }> = ({ showAbout }) => {
   return (
